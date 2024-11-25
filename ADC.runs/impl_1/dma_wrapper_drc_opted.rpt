@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
-| Date         : Mon Nov 25 16:02:53 2024
+| Date         : Mon Nov 25 16:47:28 2024
 | Host         : DonGun running 64-bit major release  (build 9200)
 | Command      : report_drc -file dma_wrapper_drc_opted.rpt -pb dma_wrapper_drc_opted.pb -rpx dma_wrapper_drc_opted.rpx
 | Design       : dma_wrapper
@@ -24,11 +24,11 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 10
+             Violations found: 8
 +----------+----------+--------------------------+------------+
 | Rule     | Severity | Description              | Violations |
 +----------+----------+--------------------------+------------+
-| BUFC-1   | Warning  | Input Buffer Connections | 8          |
+| BUFC-1   | Warning  | Input Buffer Connections | 6          |
 | REQP-165 | Advisory | writefirst               | 1          |
 | REQP-181 | Advisory | writefirst               | 1          |
 +----------+----------+--------------------------+------------+
@@ -47,30 +47,20 @@ Related violations: <none>
 
 BUFC-1#3 Warning
 Input Buffer Connections  
-Input buffer ja_pin2_iobuf/IBUF (in ja_pin2_iobuf macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Input buffer ja_pin4_iobuf/IBUF (in ja_pin4_iobuf macro) has no loads. It is recommended to have an input buffer drive an internal load.
 Related violations: <none>
 
 BUFC-1#4 Warning
 Input Buffer Connections  
-Input buffer ja_pin3_iobuf/IBUF (in ja_pin3_iobuf macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Input buffer ja_pin7_iobuf/IBUF (in ja_pin7_iobuf macro) has no loads. It is recommended to have an input buffer drive an internal load.
 Related violations: <none>
 
 BUFC-1#5 Warning
 Input Buffer Connections  
-Input buffer ja_pin4_iobuf/IBUF (in ja_pin4_iobuf macro) has no loads. It is recommended to have an input buffer drive an internal load.
-Related violations: <none>
-
-BUFC-1#6 Warning
-Input Buffer Connections  
-Input buffer ja_pin7_iobuf/IBUF (in ja_pin7_iobuf macro) has no loads. It is recommended to have an input buffer drive an internal load.
-Related violations: <none>
-
-BUFC-1#7 Warning
-Input Buffer Connections  
 Input buffer ja_pin8_iobuf/IBUF (in ja_pin8_iobuf macro) has no loads. It is recommended to have an input buffer drive an internal load.
 Related violations: <none>
 
-BUFC-1#8 Warning
+BUFC-1#6 Warning
 Input Buffer Connections  
 Input buffer ja_pin9_iobuf/IBUF (in ja_pin9_iobuf macro) has no loads. It is recommended to have an input buffer drive an internal load.
 Related violations: <none>

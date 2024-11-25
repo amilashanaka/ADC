@@ -48,7 +48,7 @@
 
 
 // IP VLNV: spicer.local:user:data_anchor:1.0
-// IP Revision: 3
+// IP Revision: 5
 
 (* X_CORE_INFO = "data_anchor,Vivado 2024.1.2" *)
 (* CHECK_LICENSE_TYPE = "dma_data_anchor_0_0,data_anchor,{}" *)
@@ -87,7 +87,10 @@ input wire chan1_rdy;
 
   data_anchor #(
     .C_M_AXIS_TDATA_WIDTH(32),  // Width of S_AXIS address bus. The slave accepts the read and write addresses of width C_M_AXIS_TDATA_WIDTH.
-    .C_M_AXIS_START_COUNT(32)  // Start count is the number of clock cycles the master will wait before initiating/issuing any transaction.
+    .C_M_AXIS_START_COUNT(32),  // Start count is the number of clock cycles the master will wait before initiating/issuing any transaction.
+    .DATA_WIDTH(32),
+    .TOTAL_SAMPLES(1024),
+    .ADC_MAX_COUNT(10)
   ) inst (
     .m_axis_aclk(m_axis_aclk),
     .m_axis_aresetn(m_axis_aresetn),

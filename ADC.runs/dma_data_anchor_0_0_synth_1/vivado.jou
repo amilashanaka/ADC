@@ -3,8 +3,8 @@
 # SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
 # IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
 # SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
-# Start of session at: Fri Nov 22 15:46:56 2024
-# Process ID: 35428
+# Start of session at: Mon Nov 25 16:45:07 2024
+# Process ID: 13020
 # Current directory: C:/Projects/ERN24004/Projects/ADC/ADC.runs/dma_data_anchor_0_0_synth_1
 # Command line: vivado.exe -log dma_data_anchor_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dma_data_anchor_0_0.tcl
 # Log file: C:/Projects/ERN24004/Projects/ADC/ADC.runs/dma_data_anchor_0_0_synth_1/dma_data_anchor_0_0.vds
@@ -19,6 +19,6 @@
 # Host memory       :34124 MB
 # Swap memory       :2147 MB
 # Total Virtual     :36272 MB
-# Available Virtual :9228 MB
+# Available Virtual :15028 MB
 #-----------------------------------------------------------
 source dma_data_anchor_0_0.tcl -notrace

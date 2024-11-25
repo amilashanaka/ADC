@@ -2851,7 +2851,7 @@
       },
       "data_anchor_0": {
         "vlnv": "spicer.local:user:data_anchor:1.0",
-        "ip_revision": "3",
+        "ip_revision": "5",
         "xci_name": "dma_data_anchor_0_0",
         "xci_path": "ip\\dma_data_anchor_0_0\\dma_data_anchor_0_0.xci",
         "inst_hier_path": "data_anchor_0"
@@ -3034,13 +3034,13 @@
           "axi_dma_0/s_axi_lite_aclk",
           "axis_data_fifo_0/s_axis_aclk",
           "PmodAD1_0/clk",
-          "data_anchor_0/m_axis_aclk",
           "ps7_0_axi_periph/M01_ACLK",
           "ps7_0_axi_periph/M02_ACLK",
           "ps7_0_axi_periph/M03_ACLK",
           "decimation_filter_0/clk",
           "decimation_filter_1/clk",
-          "filter_ctrl_0/s_axi_aclk"
+          "filter_ctrl_0/s_axi_aclk",
+          "data_anchor_0/m_axis_aclk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -3064,13 +3064,13 @@
           "axi_dma_0/axi_resetn",
           "axis_data_fifo_0/s_axis_aresetn",
           "PmodAD1_0/reset_n",
-          "data_anchor_0/m_axis_aresetn",
           "ps7_0_axi_periph/M01_ARESETN",
           "ps7_0_axi_periph/M02_ARESETN",
           "ps7_0_axi_periph/M03_ARESETN",
           "decimation_filter_0/reset_n",
           "decimation_filter_1/reset_n",
-          "filter_ctrl_0/s_axi_aresetn"
+          "filter_ctrl_0/s_axi_aresetn",
+          "data_anchor_0/m_axis_aresetn"
         ]
       },
       "xlconcat_0_dout": {

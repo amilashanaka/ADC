@@ -4,17 +4,23 @@
     "xci_name": "dma_data_anchor_0_0",
     "cell_name": "data_anchor_0",
     "component_reference": "spicer.local:user:data_anchor:1.0",
-    "ip_revision": "3",
+    "ip_revision": "5",
     "gen_directory": "../../../../../../ADC.gen/sources_1/bd/dma/ip/dma_data_anchor_0_0",
     "parameters": {
       "component_parameters": {
         "C_M_AXIS_TDATA_WIDTH": [ { "value": "32", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
         "C_M_AXIS_START_COUNT": [ { "value": "32", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "Component_Name": [ { "value": "dma_data_anchor_0_0", "resolve_type": "user", "usage": "all" } ]
+        "Component_Name": [ { "value": "dma_data_anchor_0_0", "resolve_type": "user", "usage": "all" } ],
+        "DATA_WIDTH": [ { "value": "32", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "TOTAL_SAMPLES": [ { "value": "1024", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "ADC_MAX_COUNT": [ { "value": "10", "resolve_type": "user", "format": "long", "usage": "all" } ]
       },
       "model_parameters": {
         "C_M_AXIS_TDATA_WIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "C_M_AXIS_START_COUNT": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ]
+        "C_M_AXIS_START_COUNT": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "DATA_WIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "TOTAL_SAMPLES": [ { "value": "1024", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "ADC_MAX_COUNT": [ { "value": "10", "resolve_type": "generated", "format": "long", "usage": "all" } ]
       },
       "project_parameters": {
         "ARCHITECTURE": [ { "value": "zynq" } ],
@@ -32,7 +38,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "3" } ],
+        "IPREVISION": [ { "value": "5" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../ADC.gen/sources_1/bd/dma/ip/dma_data_anchor_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

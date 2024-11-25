@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Nov 25 15:59:16 2024" VIVADOVERSION="2024.1.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Nov 25 16:45:01 2024" VIVADOVERSION="2024.1.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:cora-z7-07s:part0:1.1" DEVICE="7z007s" NAME="dma" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -3132,11 +3132,14 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="3" FULLNAME="/data_anchor_0" HWVERSION="1.0" INSTANCE="data_anchor_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="data_anchor" VLNV="spicer.local:user:data_anchor:1.0">
+    <MODULE COREREVISION="5" FULLNAME="/data_anchor_0" HWVERSION="1.0" INSTANCE="data_anchor_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="data_anchor" VLNV="spicer.local:user:data_anchor:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
+        <PARAMETER NAME="ADC_MAX_COUNT" VALUE="10"/>
         <PARAMETER NAME="C_M_AXIS_START_COUNT" VALUE="32"/>
         <PARAMETER NAME="C_M_AXIS_TDATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="TOTAL_SAMPLES" VALUE="1024"/>
         <PARAMETER NAME="Component_Name" VALUE="dma_data_anchor_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
@@ -4553,13 +4556,13 @@
             <CONNECTION INSTANCE="axi_dma_0" PORT="s_axi_lite_aclk"/>
             <CONNECTION INSTANCE="axis_data_fifo_0" PORT="s_axis_aclk"/>
             <CONNECTION INSTANCE="PmodAD1_0" PORT="clk"/>
-            <CONNECTION INSTANCE="data_anchor_0" PORT="m_axis_aclk"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M01_ACLK"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M02_ACLK"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M03_ACLK"/>
             <CONNECTION INSTANCE="decimation_filter_0" PORT="clk"/>
             <CONNECTION INSTANCE="decimation_filter_1" PORT="clk"/>
             <CONNECTION INSTANCE="filter_ctrl_0" PORT="s_axi_aclk"/>
+            <CONNECTION INSTANCE="data_anchor_0" PORT="m_axis_aclk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="FCLK_RESET0_N" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="processing_system7_0_FCLK_RESET0_N">
@@ -6460,13 +6463,13 @@
             <CONNECTION INSTANCE="axi_dma_0" PORT="axi_resetn"/>
             <CONNECTION INSTANCE="axis_data_fifo_0" PORT="s_axis_aresetn"/>
             <CONNECTION INSTANCE="PmodAD1_0" PORT="reset_n"/>
-            <CONNECTION INSTANCE="data_anchor_0" PORT="m_axis_aresetn"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M01_ARESETN"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M02_ARESETN"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M03_ARESETN"/>
             <CONNECTION INSTANCE="decimation_filter_0" PORT="reset_n"/>
             <CONNECTION INSTANCE="decimation_filter_1" PORT="reset_n"/>
             <CONNECTION INSTANCE="filter_ctrl_0" PORT="s_axi_aresetn"/>
+            <CONNECTION INSTANCE="data_anchor_0" PORT="m_axis_aresetn"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="peripheral_reset" POLARITY="ACTIVE_HIGH" RIGHT="0" SIGIS="rst"/>

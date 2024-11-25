@@ -8,12 +8,12 @@
   **** SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
   **** IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
   **** SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
-  **** Start of session at: Mon Nov 25 16:01:27 2024
+  **** Start of session at: Mon Nov 25 16:46:02 2024
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source dma_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 692.039 ; gain = 243.562
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 690.555 ; gain = 237.379
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0'. The path is contained within another repository.
 WARNING: [IP_Flow 19-2207] Repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0' already exists; ignoring attempt to add it again.
@@ -42,16 +42,16 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 37492
+INFO: [Synth 8-7075] Helper process launched with PID 11376
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1587.746 ; gain = 446.637
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1589.617 ; gain = 449.301
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'dma_wrapper' [C:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/hdl/dma_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'dma' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:13]
-INFO: [Synth 8-6157] synthesizing module 'dma_PmodAD1_0_1' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-40492-DonGun/realtime/dma_PmodAD1_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dma_PmodAD1_0_1' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-40492-DonGun/realtime/dma_PmodAD1_0_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'dma_axi_dma_0_1' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-40492-DonGun/realtime/dma_axi_dma_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dma_axi_dma_0_1' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-40492-DonGun/realtime/dma_axi_dma_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dma_PmodAD1_0_1' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-30344-DonGun/realtime/dma_PmodAD1_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dma_PmodAD1_0_1' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-30344-DonGun/realtime/dma_PmodAD1_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dma_axi_dma_0_1' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-30344-DonGun/realtime/dma_axi_dma_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dma_axi_dma_0_1' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-30344-DonGun/realtime/dma_axi_dma_0_1_stub.v:6]
 WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'dma_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:406]
 WARNING: [Synth 8-7071] port 'm_axis_mm2s_tdata' of module 'dma_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:406]
 WARNING: [Synth 8-7071] port 'm_axis_mm2s_tkeep' of module 'dma_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:406]
@@ -62,25 +62,25 @@ WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'dma_axi_dma_0_1' is unc
 WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'dma_axi_dma_0_1' has 64 connections declared, but only 57 given [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:406]
 INFO: [Synth 8-6157] synthesizing module 'dma_axi_mem_intercon_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:932]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1EA4IN8' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:3048]
-INFO: [Synth 8-6157] synthesizing module 'dma_auto_pc_1' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-40492-DonGun/realtime/dma_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dma_auto_pc_1' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-40492-DonGun/realtime/dma_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dma_auto_pc_1' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-30344-DonGun/realtime/dma_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dma_auto_pc_1' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-30344-DonGun/realtime/dma_auto_pc_1_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1EA4IN8' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:3048]
 INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_T14D7L' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:3453]
-INFO: [Synth 8-6157] synthesizing module 'dma_auto_pc_2' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-40492-DonGun/realtime/dma_auto_pc_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dma_auto_pc_2' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-40492-DonGun/realtime/dma_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dma_auto_pc_2' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-30344-DonGun/realtime/dma_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dma_auto_pc_2' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-30344-DonGun/realtime/dma_auto_pc_2_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_T14D7L' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:3453]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_7T634U' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4601]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_7T634U' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4601]
 INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1HQQ1GB' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4705]
-INFO: [Synth 8-6157] synthesizing module 'dma_auto_us_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-40492-DonGun/realtime/dma_auto_us_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dma_auto_us_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-40492-DonGun/realtime/dma_auto_us_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dma_auto_us_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-30344-DonGun/realtime/dma_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dma_auto_us_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-30344-DonGun/realtime/dma_auto_us_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'dma_auto_us_0' is unconnected for instance 'auto_us' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4856]
 WARNING: [Synth 8-7023] instance 'auto_us' of module 'dma_auto_us_0' has 40 connections declared, but only 39 given [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4856]
 INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1HQQ1GB' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4705]
 INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_YJE1P1' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4898]
 INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_YJE1P1' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4898]
-INFO: [Synth 8-6157] synthesizing module 'dma_xbar_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-40492-DonGun/realtime/dma_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dma_xbar_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-40492-DonGun/realtime/dma_xbar_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dma_xbar_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-30344-DonGun/realtime/dma_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dma_xbar_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-30344-DonGun/realtime/dma_xbar_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'dma_axi_mem_intercon_0' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:932]
 WARNING: [Synth 8-7071] port 'S02_AXI_arready' of module 'dma_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:464]
 WARNING: [Synth 8-7071] port 'S02_AXI_awready' of module 'dma_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:464]
@@ -94,20 +94,20 @@ WARNING: [Synth 8-7071] port 'S02_AXI_rresp' of module 'dma_axi_mem_intercon_0' 
 WARNING: [Synth 8-7071] port 'S02_AXI_rvalid' of module 'dma_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:464]
 WARNING: [Synth 8-7071] port 'S02_AXI_wready' of module 'dma_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:464]
 WARNING: [Synth 8-7023] instance 'axi_mem_intercon' of module 'dma_axi_mem_intercon_0' has 154 connections declared, but only 143 given [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:464]
-INFO: [Synth 8-6157] synthesizing module 'dma_axis_data_fifo_0_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-40492-DonGun/realtime/dma_axis_data_fifo_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dma_axis_data_fifo_0_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-40492-DonGun/realtime/dma_axis_data_fifo_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dma_axis_data_fifo_0_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-30344-DonGun/realtime/dma_axis_data_fifo_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dma_axis_data_fifo_0_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-30344-DonGun/realtime/dma_axis_data_fifo_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axis_tstrb' of module 'dma_axis_data_fifo_0_0' is unconnected for instance 'axis_data_fifo_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:608]
 WARNING: [Synth 8-7023] instance 'axis_data_fifo_0' of module 'dma_axis_data_fifo_0_0' has 12 connections declared, but only 11 given [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:608]
-INFO: [Synth 8-6157] synthesizing module 'dma_data_anchor_0_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-40492-DonGun/realtime/dma_data_anchor_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dma_data_anchor_0_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-40492-DonGun/realtime/dma_data_anchor_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'dma_decimation_filter_0_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-40492-DonGun/realtime/dma_decimation_filter_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dma_decimation_filter_0_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-40492-DonGun/realtime/dma_decimation_filter_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'dma_decimation_filter_1_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-40492-DonGun/realtime/dma_decimation_filter_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dma_decimation_filter_1_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-40492-DonGun/realtime/dma_decimation_filter_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'dma_filter_ctrl_0_3' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-40492-DonGun/realtime/dma_filter_ctrl_0_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dma_filter_ctrl_0_3' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-40492-DonGun/realtime/dma_filter_ctrl_0_3_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'dma_processing_system7_0_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-40492-DonGun/realtime/dma_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dma_processing_system7_0_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-40492-DonGun/realtime/dma_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dma_data_anchor_0_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-30344-DonGun/realtime/dma_data_anchor_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dma_data_anchor_0_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-30344-DonGun/realtime/dma_data_anchor_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dma_decimation_filter_0_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-30344-DonGun/realtime/dma_decimation_filter_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dma_decimation_filter_0_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-30344-DonGun/realtime/dma_decimation_filter_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dma_decimation_filter_1_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-30344-DonGun/realtime/dma_decimation_filter_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dma_decimation_filter_1_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-30344-DonGun/realtime/dma_decimation_filter_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dma_filter_ctrl_0_3' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-30344-DonGun/realtime/dma_filter_ctrl_0_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dma_filter_ctrl_0_3' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-30344-DonGun/realtime/dma_filter_ctrl_0_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dma_processing_system7_0_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-30344-DonGun/realtime/dma_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dma_processing_system7_0_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-30344-DonGun/realtime/dma_processing_system7_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:670]
 WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:670]
 WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:670]
@@ -129,11 +129,11 @@ INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1HYH0CX' (0#1) [
 INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_8UGEJ8' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4150]
 INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_8UGEJ8' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4150]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_345CV4' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4296]
-INFO: [Synth 8-6157] synthesizing module 'dma_auto_pc_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-40492-DonGun/realtime/dma_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dma_auto_pc_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-40492-DonGun/realtime/dma_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dma_auto_pc_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-30344-DonGun/realtime/dma_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dma_auto_pc_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-30344-DonGun/realtime/dma_auto_pc_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_345CV4' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4296]
-INFO: [Synth 8-6157] synthesizing module 'dma_xbar_1' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-40492-DonGun/realtime/dma_xbar_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dma_xbar_1' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-40492-DonGun/realtime/dma_xbar_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dma_xbar_1' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-30344-DonGun/realtime/dma_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dma_xbar_1' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-30344-DonGun/realtime/dma_xbar_1_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'dma_ps7_0_axi_periph_0' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:2082]
 WARNING: [Synth 8-7071] port 'M02_AXI_araddr' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:817]
 WARNING: [Synth 8-7071] port 'M02_AXI_arprot' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:817]
@@ -158,8 +158,8 @@ WARNING: [Synth 8-7071] port 'M03_AXI_wdata' of module 'dma_ps7_0_axi_periph_0' 
 WARNING: [Synth 8-7071] port 'M03_AXI_wstrb' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:817]
 WARNING: [Synth 8-7071] port 'M03_AXI_wvalid' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:817]
 WARNING: [Synth 8-7023] instance 'ps7_0_axi_periph' of module 'dma_ps7_0_axi_periph_0' has 123 connections declared, but only 101 given [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:817]
-INFO: [Synth 8-6157] synthesizing module 'dma_rst_ps7_0_50M_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-40492-DonGun/realtime/dma_rst_ps7_0_50M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dma_rst_ps7_0_50M_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-40492-DonGun/realtime/dma_rst_ps7_0_50M_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dma_rst_ps7_0_50M_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-30344-DonGun/realtime/dma_rst_ps7_0_50M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dma_rst_ps7_0_50M_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-30344-DonGun/realtime/dma_rst_ps7_0_50M_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'dma_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:919]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'dma_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:919]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'dma_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:919]
@@ -275,18 +275,18 @@ WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_6_xlconcat is eith
 WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1714.609 ; gain = 573.500
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1715.723 ; gain = 575.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1714.609 ; gain = 573.500
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1715.723 ; gain = 575.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1714.609 ; gain = 573.500
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1715.723 ; gain = 575.406
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1714.609 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1715.723 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -334,23 +334,23 @@ Parsing XDC File [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/dont_touch.
 Finished Parsing XDC File [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1763.359 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1772.566 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 8 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 8 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1763.359 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1772.566 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1763.359 ; gain = 622.250
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1772.566 ; gain = 632.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z007sclg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1763.359 ; gain = 622.250
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1772.566 ; gain = 632.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -635,10 +635,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for dma_i/decimation_filter_1. (const
 Applied set_property KEEP_HIERARCHY = SOFT for dma_i/xlconcat_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for dma_i/filter_ctrl_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1763.359 ; gain = 622.250
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1772.566 ; gain = 632.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1763.359 ; gain = 622.250
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1772.566 ; gain = 632.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -661,25 +661,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1763.359 ; gain = 622.250
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1772.566 ; gain = 632.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1763.359 ; gain = 622.250
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1772.566 ; gain = 632.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1763.359 ; gain = 622.250
+Finished Timing Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1772.566 ; gain = 632.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1763.359 ; gain = 622.250
+Finished Technology Mapping : Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1772.566 ; gain = 632.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -697,37 +697,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1763.359 ; gain = 622.250
+Finished IO Insertion : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1772.566 ; gain = 632.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1763.359 ; gain = 622.250
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1772.566 ; gain = 632.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1763.359 ; gain = 622.250
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1772.566 ; gain = 632.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1763.359 ; gain = 622.250
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1772.566 ; gain = 632.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1763.359 ; gain = 622.250
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1772.566 ; gain = 632.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1763.359 ; gain = 622.250
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1772.566 ; gain = 632.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -773,18 +773,18 @@ Report Cell Usage:
 |16    |IOBUF                    |     8|
 +------+-------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1763.359 ; gain = 622.250
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1772.566 ; gain = 632.250
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 37 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1763.359 ; gain = 573.500
-Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1763.359 ; gain = 622.250
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1772.566 ; gain = 575.406
+Synthesis Optimization Complete : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1772.566 ; gain = 632.250
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1763.359 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1772.566 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1763.359 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1772.566 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 8 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 8 instances
@@ -793,8 +793,8 @@ Synth Design complete | Checksum: efcaccdc
 INFO: [Common 17-83] Releasing license: Synthesis
 92 Infos, 179 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 1763.359 ; gain = 1017.250
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1763.359 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 1772.566 ; gain = 1028.426
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1772.566 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/dma_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file dma_wrapper_utilization_synth.rpt -pb dma_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Nov 25 16:02:08 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 25 16:46:42 2024...

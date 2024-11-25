@@ -8,13 +8,25 @@
   **** SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
   **** IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
   **** SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
-  **** Start of session at: Fri Nov 22 15:46:56 2024
+  **** Start of session at: Mon Nov 25 16:45:07 2024
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source dma_data_anchor_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 691.621 ; gain = 238.129
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 692.484 ; gain = 243.055
 INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0' already exists; ignoring attempt to add it again.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0' already exists; ignoring attempt to add it again.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl_1_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0' already exists; ignoring attempt to add it again.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl_1_0' already exists; ignoring attempt to add it again.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl_1_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl_1_0' already exists; ignoring attempt to add it again.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl_1_0'. The path is contained within another repository.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dma_data_anchor_0_0
@@ -26,123 +38,96 @@ INFO: [Device 21-403] Loading part xc7z007sclg400-1
 INFO: [Device 21-9227] Part: xc7z007sclg400-1 does not have CEAM library.
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 25088
+INFO: [Synth 8-7075] Helper process launched with PID 28536
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1560.355 ; gain = 446.602
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1560.906 ; gain = 447.398
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-11065] parameter 'IDLE' becomes localparam in 'data_anchor_master_stream_v1_0_M_AXIS' with formal parameter declaration list [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/4af1/hdl/data_anchor_master_stream_v1_0_M_AXIS.v:58]
-WARNING: [Synth 8-11065] parameter 'INIT_COUNTER' becomes localparam in 'data_anchor_master_stream_v1_0_M_AXIS' with formal parameter declaration list [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/4af1/hdl/data_anchor_master_stream_v1_0_M_AXIS.v:60]
-WARNING: [Synth 8-11065] parameter 'SEND_STREAM' becomes localparam in 'data_anchor_master_stream_v1_0_M_AXIS' with formal parameter declaration list [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/4af1/hdl/data_anchor_master_stream_v1_0_M_AXIS.v:63]
 INFO: [Synth 8-6157] synthesizing module 'dma_data_anchor_0_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_data_anchor_0_0/synth/dma_data_anchor_0_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'data_anchor' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/4af1/hdl/data_anchor.v:4]
-INFO: [Synth 8-6157] synthesizing module 'data_anchor_master_stream_v1_0_M_AXIS' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/4af1/hdl/data_anchor_master_stream_v1_0_M_AXIS.v:4]
-INFO: [Synth 8-155] case statement is not full and has no default [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/4af1/hdl/data_anchor_master_stream_v1_0_M_AXIS.v:106]
-INFO: [Synth 8-6155] done synthesizing module 'data_anchor_master_stream_v1_0_M_AXIS' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/4af1/hdl/data_anchor_master_stream_v1_0_M_AXIS.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'data_anchor' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/4af1/hdl/data_anchor.v:4]
+INFO: [Synth 8-6157] synthesizing module 'data_anchor' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/76de/hdl/data_anchor.v:4]
+WARNING: [Synth 8-6104] Input port 'chanel1' has an internal driver [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/76de/hdl/data_anchor.v:55]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/76de/hdl/data_anchor.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'data_anchor' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/76de/hdl/data_anchor.v:4]
 INFO: [Synth 8-6155] done synthesizing module 'dma_data_anchor_0_0' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_data_anchor_0_0/synth/dma_data_anchor_0_0.v:53]
-WARNING: [Synth 8-7129] Port chanel1[31] in module data_anchor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[30] in module data_anchor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[29] in module data_anchor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[28] in module data_anchor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[27] in module data_anchor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[26] in module data_anchor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[25] in module data_anchor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[24] in module data_anchor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[23] in module data_anchor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[22] in module data_anchor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[21] in module data_anchor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[20] in module data_anchor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[19] in module data_anchor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[18] in module data_anchor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[17] in module data_anchor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[16] in module data_anchor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[15] in module data_anchor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[14] in module data_anchor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[13] in module data_anchor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[12] in module data_anchor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[11] in module data_anchor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[10] in module data_anchor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[9] in module data_anchor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[8] in module data_anchor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[7] in module data_anchor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[6] in module data_anchor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[5] in module data_anchor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[4] in module data_anchor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[3] in module data_anchor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[2] in module data_anchor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[1] in module data_anchor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[0] in module data_anchor is either unconnected or has no load
+WARNING: [Synth 8-3848] Net drdy in module/entity data_anchor does not have driver. [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/76de/hdl/data_anchor.v:46]
+WARNING: [Synth 8-3848] Net ad1_data in module/entity data_anchor does not have driver. [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/76de/hdl/data_anchor.v:44]
+WARNING: [Synth 8-3848] Net m_axis_tstrb in module/entity data_anchor does not have driver. [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/76de/hdl/data_anchor.v:25]
+WARNING: [Synth 8-7129] Port m_axis_tstrb[3] in module data_anchor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_tstrb[2] in module data_anchor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_tstrb[1] in module data_anchor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_tstrb[0] in module data_anchor is either unconnected or has no load
 WARNING: [Synth 8-7129] Port chan1_rdy in module data_anchor is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1675.711 ; gain = 561.957
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1676.734 ; gain = 563.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1675.711 ; gain = 561.957
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1676.734 ; gain = 563.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1675.711 ; gain = 561.957
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1676.734 ; gain = 563.227
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1675.711 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1676.734 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1752.457 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1752.055 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1752.715 ; gain = 0.258
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1752.363 ; gain = 0.309
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1752.715 ; gain = 638.961
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1752.363 ; gain = 638.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z007sclg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1752.715 ; gain = 638.961
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1752.363 ; gain = 638.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1752.715 ; gain = 638.961
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1752.363 ; gain = 638.855
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-802] inferred FSM for state register 'mst_exec_state_reg' in module 'data_anchor_master_stream_v1_0_M_AXIS'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'data_anchor'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
                     IDLE |                               00 |                               00
-            INIT_COUNTER |                               01 |                               01
-             SEND_STREAM |                               10 |                               10
+               BUFFERING |                               01 |                               01
+               STREAMING |                               10 |                               10
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'mst_exec_state_reg' using encoding 'sequential' in module 'data_anchor_master_stream_v1_0_M_AXIS'
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'data_anchor'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1752.715 ; gain = 638.961
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1752.363 ; gain = 638.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input    5 Bit       Adders := 1     
-	   2 Input    4 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 3     
 +---Registers : 
 	               32 Bit    Registers := 1     
-	                5 Bit    Registers := 1     
-	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 3     
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit	(1024 X 32 bit)          RAMs := 1     
 +---Muxes : 
+	   2 Input   10 Bit        Muxes := 1     
+	   3 Input   10 Bit        Muxes := 2     
 	   3 Input    2 Bit        Muxes := 1     
-	   2 Input    2 Bit        Muxes := 2     
-	   2 Input    1 Bit        Muxes := 4     
-	   3 Input    1 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 9     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -159,63 +144,62 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-INFO: [Synth 8-3917] design dma_data_anchor_0_0 has port m_axis_tstrb[3] driven by constant 1
-INFO: [Synth 8-3917] design dma_data_anchor_0_0 has port m_axis_tstrb[2] driven by constant 1
-INFO: [Synth 8-3917] design dma_data_anchor_0_0 has port m_axis_tstrb[1] driven by constant 1
-INFO: [Synth 8-3917] design dma_data_anchor_0_0 has port m_axis_tstrb[0] driven by constant 1
-WARNING: [Synth 8-7129] Port chanel1[31] in module dma_data_anchor_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[30] in module dma_data_anchor_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[29] in module dma_data_anchor_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[28] in module dma_data_anchor_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[27] in module dma_data_anchor_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[26] in module dma_data_anchor_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[25] in module dma_data_anchor_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[24] in module dma_data_anchor_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[23] in module dma_data_anchor_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[22] in module dma_data_anchor_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[21] in module dma_data_anchor_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[20] in module dma_data_anchor_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[19] in module dma_data_anchor_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[18] in module dma_data_anchor_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[17] in module dma_data_anchor_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[16] in module dma_data_anchor_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[15] in module dma_data_anchor_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[14] in module dma_data_anchor_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[13] in module dma_data_anchor_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[12] in module dma_data_anchor_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[11] in module dma_data_anchor_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[10] in module dma_data_anchor_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[9] in module dma_data_anchor_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[8] in module dma_data_anchor_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[7] in module dma_data_anchor_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[6] in module dma_data_anchor_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[5] in module dma_data_anchor_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[4] in module dma_data_anchor_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[3] in module dma_data_anchor_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[2] in module dma_data_anchor_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[1] in module dma_data_anchor_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port chanel1[0] in module dma_data_anchor_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_tstrb[3] in module dma_data_anchor_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_tstrb[2] in module dma_data_anchor_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_tstrb[1] in module dma_data_anchor_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_tstrb[0] in module dma_data_anchor_0_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port chan1_rdy in module dma_data_anchor_0_0 is either unconnected or has no load
+INFO: [Synth 8-3332] Sequential element (inst/FSM_sequential_state_reg[1]) is unused and will be removed from module dma_data_anchor_0_0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1752.715 ; gain = 638.961
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1752.363 ; gain = 638.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++--------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name         | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|dma_data_anchor_0_0 | inst/buffer_reg | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++--------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1752.715 ; gain = 638.961
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1752.363 ; gain = 638.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1752.715 ; gain = 638.961
+Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1752.363 ; gain = 638.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++--------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name         | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|dma_data_anchor_0_0 | inst/buffer_reg | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++--------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1752.715 ; gain = 638.961
+Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1752.363 ; gain = 638.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -233,37 +217,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 1752.715 ; gain = 638.961
+Finished IO Insertion : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1752.363 ; gain = 638.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 1752.715 ; gain = 638.961
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1752.363 ; gain = 638.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 1752.715 ; gain = 638.961
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1752.363 ; gain = 638.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 1752.715 ; gain = 638.961
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1752.363 ; gain = 638.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 1752.715 ; gain = 638.961
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1752.363 ; gain = 638.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 1752.715 ; gain = 638.961
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1752.363 ; gain = 638.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -276,42 +260,36 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-----+------+
-|      |Cell |Count |
-+------+-----+------+
-|1     |LUT1 |     3|
-|2     |LUT2 |     2|
-|3     |LUT3 |     3|
-|4     |LUT4 |     6|
-|5     |LUT5 |     5|
-|6     |LUT6 |     1|
-|7     |FDRE |    17|
-|8     |FDSE |     1|
-+------+-----+------+
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT2     |     1|
+|2     |RAMB36E1 |     1|
+|3     |FDRE     |     1|
++------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 1752.715 ; gain = 638.961
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1752.363 ; gain = 638.855
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 34 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 1752.715 ; gain = 561.957
-Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 1752.715 ; gain = 638.961
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 1752.363 ; gain = 563.227
+Synthesis Optimization Complete : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1752.363 ; gain = 638.855
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1752.715 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1752.363 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1752.715 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1752.363 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: ab852e7b
+Synth Design complete | Checksum: a7428232
 INFO: [Common 17-83] Releasing license: Synthesis
-31 Infos, 70 Warnings, 0 Critical Warnings and 0 Errors encountered.
+29 Infos, 27 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1752.715 ; gain = 1036.836
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1752.715 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:22 . Memory (MB): peak = 1752.363 ; gain = 1035.797
 INFO: [Common 17-1381] The checkpoint 'C:/Projects/ERN24004/Projects/ADC/ADC.runs/dma_data_anchor_0_0_synth_1/dma_data_anchor_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP dma_data_anchor_0_0, cache-ID = 13c18ae22887835c
-INFO: [Coretcl 2-1174] Renamed 2 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1752.715 ; gain = 0.000
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP dma_data_anchor_0_0, cache-ID = 9dfe5bb007b68538
 INFO: [Common 17-1381] The checkpoint 'C:/Projects/ERN24004/Projects/ADC/ADC.runs/dma_data_anchor_0_0_synth_1/dma_data_anchor_0_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file dma_data_anchor_0_0_utilization_synth.rpt -pb dma_data_anchor_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Nov 22 15:47:35 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 25 16:45:49 2024...

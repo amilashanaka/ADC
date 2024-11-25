@@ -210,3 +210,348 @@ launch_runs impl_1 -to_step write_bitstream -jobs 4
 Run output will be captured here: C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/runme.log
 [Mon Nov 25 16:01:25 2024] Launched impl_1...
 Run output will be captured here: C:/Projects/ERN24004/Projects/ADC/ADC.runs/impl_1/runme.log
+ipx::edit_ip_in_project -upgrade true -name data_anchor_v1_0_project -directory C:/Projects/ERN24004/Projects/ADC/ADC.tmp/data_anchor_v1_0_project c:/Projects/ERN24004/Projects/ADC/ip_repo/anchor/data_anchor_1_0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0' already exists; ignoring attempt to add it again.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0' already exists; ignoring attempt to add it again.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl_1_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0' already exists; ignoring attempt to add it again.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl_1_0' already exists; ignoring attempt to add it again.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl_1_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl_1_0' already exists; ignoring attempt to add it again.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl_1_0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'c:/Projects/ERN24004/Projects/ADC/ip_repo/anchor/data_anchor_1_0/hdl/data_anchor_master_stream_v1_0_M_AXIS.v'.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Projects/ERN24004/Projects/ADC/ip_repo/anchor/data_anchor_1_0/hdl/data_anchor_master_stream_v1_0_M_AXIS.v' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Projects/ERN24004/Projects/ADC/ip_repo/anchor/data_anchor_1_0/hdl/data_anchor_master_stream_v1_0_M_AXIS.v' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'c:/Projects/ERN24004/Projects/ADC/ip_repo/anchor/data_anchor_1_0/hdl/data_anchor_master_stream_v1_0_M_AXIS.v'.
+set_property core_revision 4 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+WARNING: [IP_Flow 19-11889] HDL Parameter 'C_M_AXIS_TDATA_WIDTH (C M AXIS TDATA WIDTH)': Order is obsolete with XGUI version >= 2.0
+WARNING: [IP_Flow 19-11889] HDL Parameter 'C_M_AXIS_START_COUNT (C M AXIS START COUNT)': Order is obsolete with XGUI version >= 2.0
+WARNING: [IP_Flow 19-11770] Clock interface 'M_AXIS_CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-2181] Payment is not required for this core.
+WARNING: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project
+update_ip_catalog -rebuild -repo_path c:/Projects/ERN24004/Projects/ADC/ip_repo
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv spicer.local:user:data_anchor:1.0 [get_ips  dma_data_anchor_0_0] -log ip_upgrade.log
+Upgrading 'C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/dma.bd'
+INFO: [IP_Flow 19-3422] Upgraded dma_data_anchor_0_0 (data_anchor_v1.0 1.0) from revision 3 to revision 4
+Wrote  : <C:\Projects\ERN24004\Projects\ADC\ADC.srcs\sources_1\bd\dma\dma.bd> 
+Wrote  : <C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/ui/bd_87aee958.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Projects/ERN24004/Projects/ADC/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips dma_data_anchor_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/dma.bd]
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/processing_system7_0/Data' to master interface '/ps7_0_axi_periph/M02_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/processing_system7_0/Data' to master interface '/ps7_0_axi_periph/M03_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /ps7_0_axi_periph/xbar/M02_AXI'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /ps7_0_axi_periph/xbar/M03_AXI'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressed -of_object /axi_mem_intercon/S02_AXI'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressable -of_object /axi_mem_intercon/S02_AXI'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressing -of_object /axi_mem_intercon/S02_AXI'
+Wrote  : <C:\Projects\ERN24004\Projects\ADC\ADC.srcs\sources_1\bd\dma\dma.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m01_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m01_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m01_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m01_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_AWID'(6) to pin: '/axi_mem_intercon/M01_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_WID'(6) to pin: '/axi_mem_intercon/M01_AXI_wid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_ARID'(6) to pin: '/axi_mem_intercon/M01_AXI_arid'(2) - Only lower order bits will be connected.
+Verilog Output written to : c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m01_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m01_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m01_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m01_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_AWID'(6) to pin: '/axi_mem_intercon/M01_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_WID'(6) to pin: '/axi_mem_intercon/M01_AXI_wid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_ARID'(6) to pin: '/axi_mem_intercon/M01_AXI_arid'(2) - Only lower order bits will be connected.
+Verilog Output written to : c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/sim/dma.v
+Verilog Output written to : c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/hdl/dma_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block data_anchor_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_0/dma_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_us_0/dma_auto_us_0_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_1/dma_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_2/dma_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m01_couplers/auto_pc .
+Exporting to file c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/hw_handoff/dma.hwh
+Generated Hardware Definition File c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.hwdef
+generate_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 2440.875 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all dma_data_anchor_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dma_data_anchor_0_0
+catch { config_ip_cache -export [get_ips -all dma_auto_pc_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dma_auto_pc_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 8303ab40dec7ec38 to dir: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_0
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/8/3/8303ab40dec7ec38/dma_auto_pc_0.dcp to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_0/dma_auto_pc_0.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_0/dma_auto_pc_0.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/8/3/8303ab40dec7ec38/dma_auto_pc_0_sim_netlist.v to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_0/dma_auto_pc_0_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_0/dma_auto_pc_0_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/8/3/8303ab40dec7ec38/dma_auto_pc_0_sim_netlist.vhdl to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_0/dma_auto_pc_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_0/dma_auto_pc_0_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/8/3/8303ab40dec7ec38/dma_auto_pc_0_stub.v to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_0/dma_auto_pc_0_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_0/dma_auto_pc_0_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/8/3/8303ab40dec7ec38/dma_auto_pc_0_stub.vhdl to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_0/dma_auto_pc_0_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_0/dma_auto_pc_0_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP dma_auto_pc_0, cache-ID = 8303ab40dec7ec38; cache size = 13.750 MB.
+catch { config_ip_cache -export [get_ips -all dma_auto_us_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dma_auto_us_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry f171da39e8932f68 to dir: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_us_0
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/f/1/f171da39e8932f68/dma_auto_us_0.dcp to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_us_0/dma_auto_us_0.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_us_0/dma_auto_us_0.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/f/1/f171da39e8932f68/dma_auto_us_0_sim_netlist.v to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_us_0/dma_auto_us_0_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_us_0/dma_auto_us_0_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/f/1/f171da39e8932f68/dma_auto_us_0_sim_netlist.vhdl to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_us_0/dma_auto_us_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_us_0/dma_auto_us_0_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/f/1/f171da39e8932f68/dma_auto_us_0_stub.v to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_us_0/dma_auto_us_0_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_us_0/dma_auto_us_0_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/f/1/f171da39e8932f68/dma_auto_us_0_stub.vhdl to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_us_0/dma_auto_us_0_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_us_0/dma_auto_us_0_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP dma_auto_us_0, cache-ID = f171da39e8932f68; cache size = 13.750 MB.
+catch { config_ip_cache -export [get_ips -all dma_auto_pc_1] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dma_auto_pc_1
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry b1c72505146bb989 to dir: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/b/1/b1c72505146bb989/dma_auto_pc_1.dcp to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_1/dma_auto_pc_1.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_1/dma_auto_pc_1.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/b/1/b1c72505146bb989/dma_auto_pc_1_sim_netlist.v to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_1/dma_auto_pc_1_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_1/dma_auto_pc_1_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/b/1/b1c72505146bb989/dma_auto_pc_1_sim_netlist.vhdl to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_1/dma_auto_pc_1_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_1/dma_auto_pc_1_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/b/1/b1c72505146bb989/dma_auto_pc_1_stub.v to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_1/dma_auto_pc_1_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_1/dma_auto_pc_1_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/b/1/b1c72505146bb989/dma_auto_pc_1_stub.vhdl to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_1/dma_auto_pc_1_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_1/dma_auto_pc_1_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP dma_auto_pc_1, cache-ID = b1c72505146bb989; cache size = 13.750 MB.
+catch { config_ip_cache -export [get_ips -all dma_auto_pc_2] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dma_auto_pc_2
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry b1c72505146bb989 to dir: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_2
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/b/1/b1c72505146bb989/dma_auto_pc_1.dcp to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_2/dma_auto_pc_2.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_2/dma_auto_pc_2.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/b/1/b1c72505146bb989/dma_auto_pc_1_sim_netlist.v to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_2/dma_auto_pc_2_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_2/dma_auto_pc_2_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/b/1/b1c72505146bb989/dma_auto_pc_1_sim_netlist.vhdl to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_2/dma_auto_pc_2_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_2/dma_auto_pc_2_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/b/1/b1c72505146bb989/dma_auto_pc_1_stub.v to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_2/dma_auto_pc_2_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_2/dma_auto_pc_2_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/b/1/b1c72505146bb989/dma_auto_pc_1_stub.vhdl to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_2/dma_auto_pc_2_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_2/dma_auto_pc_2_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP dma_auto_pc_2, cache-ID = b1c72505146bb989; cache size = 13.750 MB.
+export_ip_user_files -of_objects [get_files C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/dma.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/dma.bd]
+launch_runs dma_data_anchor_0_0_synth_1 -jobs 4
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dma_data_anchor_0_0
+[Mon Nov 25 16:14:52 2024] Launched dma_data_anchor_0_0_synth_1...
+Run output will be captured here: C:/Projects/ERN24004/Projects/ADC/ADC.runs/dma_data_anchor_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/dma.bd] -directory C:/Projects/ERN24004/Projects/ADC/ADC.ip_user_files/sim_scripts -ip_user_files_dir C:/Projects/ERN24004/Projects/ADC/ADC.ip_user_files -ipstatic_source_dir C:/Projects/ERN24004/Projects/ADC/ADC.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Projects/ERN24004/Projects/ADC/ADC.cache/compile_simlib/modelsim} {questa=C:/Projects/ERN24004/Projects/ADC/ADC.cache/compile_simlib/questa} {riviera=C:/Projects/ERN24004/Projects/ADC/ADC.cache/compile_simlib/riviera} {activehdl=C:/Projects/ERN24004/Projects/ADC/ADC.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+ipx::edit_ip_in_project -upgrade true -name data_anchor_v1_0_project -directory C:/Projects/ERN24004/Projects/ADC/ADC.tmp/data_anchor_v1_0_project c:/Projects/ERN24004/Projects/ADC/ip_repo/anchor/data_anchor_1_0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0' already exists; ignoring attempt to add it again.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0' already exists; ignoring attempt to add it again.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl_1_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0' already exists; ignoring attempt to add it again.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl_1_0' already exists; ignoring attempt to add it again.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl_1_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl_1_0' already exists; ignoring attempt to add it again.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl_1_0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+update_compile_order -fileset sources_1
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 5 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+WARNING: [IP_Flow 19-11889] HDL Parameter 'C_M_AXIS_TDATA_WIDTH (C M AXIS TDATA WIDTH)': Order is obsolete with XGUI version >= 2.0
+WARNING: [IP_Flow 19-11889] HDL Parameter 'C_M_AXIS_START_COUNT (C M AXIS START COUNT)': Order is obsolete with XGUI version >= 2.0
+WARNING: [IP_Flow 19-11770] Clock interface 'M_AXIS_CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-2181] Payment is not required for this core.
+WARNING: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project
+update_ip_catalog -rebuild -repo_path c:/Projects/ERN24004/Projects/ADC/ip_repo
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv spicer.local:user:data_anchor:1.0 [get_ips  dma_data_anchor_0_0] -log ip_upgrade.log
+Upgrading 'C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/dma.bd'
+INFO: [IP_Flow 19-3422] Upgraded dma_data_anchor_0_0 (data_anchor_v1.0 1.0) from revision 4 to revision 5
+Wrote  : <C:\Projects\ERN24004\Projects\ADC\ADC.srcs\sources_1\bd\dma\dma.bd> 
+Wrote  : <C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/ui/bd_87aee958.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Projects/ERN24004/Projects/ADC/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips dma_data_anchor_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/dma.bd]
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/processing_system7_0/Data' to master interface '/ps7_0_axi_periph/M02_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/processing_system7_0/Data' to master interface '/ps7_0_axi_periph/M03_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /ps7_0_axi_periph/xbar/M02_AXI'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /ps7_0_axi_periph/xbar/M03_AXI'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressed -of_object /axi_mem_intercon/S02_AXI'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressable -of_object /axi_mem_intercon/S02_AXI'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressing -of_object /axi_mem_intercon/S02_AXI'
+Wrote  : <C:\Projects\ERN24004\Projects\ADC\ADC.srcs\sources_1\bd\dma\dma.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m01_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m01_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m01_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m01_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_AWID'(6) to pin: '/axi_mem_intercon/M01_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_WID'(6) to pin: '/axi_mem_intercon/M01_AXI_wid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_ARID'(6) to pin: '/axi_mem_intercon/M01_AXI_arid'(2) - Only lower order bits will be connected.
+Verilog Output written to : c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m01_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m01_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m01_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m01_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_AWID'(6) to pin: '/axi_mem_intercon/M01_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_WID'(6) to pin: '/axi_mem_intercon/M01_AXI_wid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_ARID'(6) to pin: '/axi_mem_intercon/M01_AXI_arid'(2) - Only lower order bits will be connected.
+Verilog Output written to : c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/sim/dma.v
+Verilog Output written to : c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/hdl/dma_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block data_anchor_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_0/dma_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_us_0/dma_auto_us_0_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_1/dma_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_2/dma_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m01_couplers/auto_pc .
+Exporting to file c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/hw_handoff/dma.hwh
+Generated Hardware Definition File c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.hwdef
+generate_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 2472.328 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all dma_data_anchor_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dma_data_anchor_0_0
+catch { config_ip_cache -export [get_ips -all dma_auto_pc_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dma_auto_pc_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 8303ab40dec7ec38 to dir: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_0
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/8/3/8303ab40dec7ec38/dma_auto_pc_0.dcp to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_0/dma_auto_pc_0.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_0/dma_auto_pc_0.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/8/3/8303ab40dec7ec38/dma_auto_pc_0_sim_netlist.v to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_0/dma_auto_pc_0_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_0/dma_auto_pc_0_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/8/3/8303ab40dec7ec38/dma_auto_pc_0_sim_netlist.vhdl to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_0/dma_auto_pc_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_0/dma_auto_pc_0_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/8/3/8303ab40dec7ec38/dma_auto_pc_0_stub.v to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_0/dma_auto_pc_0_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_0/dma_auto_pc_0_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/8/3/8303ab40dec7ec38/dma_auto_pc_0_stub.vhdl to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_0/dma_auto_pc_0_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_0/dma_auto_pc_0_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP dma_auto_pc_0, cache-ID = 8303ab40dec7ec38; cache size = 13.791 MB.
+catch { config_ip_cache -export [get_ips -all dma_auto_us_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dma_auto_us_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry f171da39e8932f68 to dir: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_us_0
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/f/1/f171da39e8932f68/dma_auto_us_0.dcp to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_us_0/dma_auto_us_0.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_us_0/dma_auto_us_0.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/f/1/f171da39e8932f68/dma_auto_us_0_sim_netlist.v to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_us_0/dma_auto_us_0_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_us_0/dma_auto_us_0_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/f/1/f171da39e8932f68/dma_auto_us_0_sim_netlist.vhdl to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_us_0/dma_auto_us_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_us_0/dma_auto_us_0_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/f/1/f171da39e8932f68/dma_auto_us_0_stub.v to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_us_0/dma_auto_us_0_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_us_0/dma_auto_us_0_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/f/1/f171da39e8932f68/dma_auto_us_0_stub.vhdl to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_us_0/dma_auto_us_0_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_us_0/dma_auto_us_0_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP dma_auto_us_0, cache-ID = f171da39e8932f68; cache size = 13.791 MB.
+catch { config_ip_cache -export [get_ips -all dma_auto_pc_1] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dma_auto_pc_1
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry b1c72505146bb989 to dir: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/b/1/b1c72505146bb989/dma_auto_pc_1.dcp to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_1/dma_auto_pc_1.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_1/dma_auto_pc_1.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/b/1/b1c72505146bb989/dma_auto_pc_1_sim_netlist.v to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_1/dma_auto_pc_1_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_1/dma_auto_pc_1_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/b/1/b1c72505146bb989/dma_auto_pc_1_sim_netlist.vhdl to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_1/dma_auto_pc_1_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_1/dma_auto_pc_1_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/b/1/b1c72505146bb989/dma_auto_pc_1_stub.v to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_1/dma_auto_pc_1_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_1/dma_auto_pc_1_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/b/1/b1c72505146bb989/dma_auto_pc_1_stub.vhdl to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_1/dma_auto_pc_1_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_1/dma_auto_pc_1_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP dma_auto_pc_1, cache-ID = b1c72505146bb989; cache size = 13.791 MB.
+catch { config_ip_cache -export [get_ips -all dma_auto_pc_2] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dma_auto_pc_2
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry b1c72505146bb989 to dir: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_2
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/b/1/b1c72505146bb989/dma_auto_pc_1.dcp to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_2/dma_auto_pc_2.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_2/dma_auto_pc_2.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/b/1/b1c72505146bb989/dma_auto_pc_1_sim_netlist.v to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_2/dma_auto_pc_2_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_2/dma_auto_pc_2_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/b/1/b1c72505146bb989/dma_auto_pc_1_sim_netlist.vhdl to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_2/dma_auto_pc_2_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_2/dma_auto_pc_2_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/b/1/b1c72505146bb989/dma_auto_pc_1_stub.v to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_2/dma_auto_pc_2_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_2/dma_auto_pc_2_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/b/1/b1c72505146bb989/dma_auto_pc_1_stub.vhdl to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_2/dma_auto_pc_2_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_2/dma_auto_pc_2_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP dma_auto_pc_2, cache-ID = b1c72505146bb989; cache size = 13.791 MB.
+export_ip_user_files -of_objects [get_files C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/dma.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/dma.bd]
+launch_runs dma_data_anchor_0_0_synth_1 -jobs 4
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dma_data_anchor_0_0
+[Mon Nov 25 16:45:04 2024] Launched dma_data_anchor_0_0_synth_1...
+Run output will be captured here: C:/Projects/ERN24004/Projects/ADC/ADC.runs/dma_data_anchor_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/dma.bd] -directory C:/Projects/ERN24004/Projects/ADC/ADC.ip_user_files/sim_scripts -ip_user_files_dir C:/Projects/ERN24004/Projects/ADC/ADC.ip_user_files -ipstatic_source_dir C:/Projects/ERN24004/Projects/ADC/ADC.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Projects/ERN24004/Projects/ADC/ADC.cache/compile_simlib/modelsim} {questa=C:/Projects/ERN24004/Projects/ADC/ADC.cache/compile_simlib/questa} {riviera=C:/Projects/ERN24004/Projects/ADC/ADC.cache/compile_simlib/riviera} {activehdl=C:/Projects/ERN24004/Projects/ADC/ADC.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Projects/ERN24004/Projects/ADC/ADC.srcs/utils_1/imports/synth_1/dma_wrapper.dcp with file C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/dma_wrapper.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Nov 25 16:46:00 2024] Launched synth_1...
+Run output will be captured here: C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/runme.log
+[Mon Nov 25 16:46:00 2024] Launched impl_1...
+Run output will be captured here: C:/Projects/ERN24004/Projects/ADC/ADC.runs/impl_1/runme.log

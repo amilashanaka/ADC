@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
-//Date        : Mon Nov 25 13:54:23 2024
+//Date        : Mon Nov 25 15:59:15 2024
 //Host        : DonGun running 64-bit major release  (build 9200)
 //Command     : generate_target dma.bd
 //Design      : dma
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "dma,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=dma,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=28,numReposBlks=16,numNonXlnxBlks=5,numHierBlks=12,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=15,da_clkrst_cnt=6,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "dma.hwdef" *) 
+(* CORE_GENERATION_INFO = "dma,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=dma,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=28,numReposBlks=16,numNonXlnxBlks=5,numHierBlks=12,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=16,da_clkrst_cnt=6,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "dma.hwdef" *) 
 module dma
    (DDR_addr,
     DDR_ba,
@@ -643,30 +643,30 @@ module dma
         .dout_rdy(decimation_filter_1_dout_rdy),
         .en(filter_ctrl_0_f2),
         .reset_n(rst_ps7_0_50M_peripheral_aresetn));
-  dma_filter_ctrl_0_2 filter_ctrl_0
+  dma_filter_ctrl_0_3 filter_ctrl_0
        (.f1(filter_ctrl_0_f1),
         .f2(filter_ctrl_0_f2),
-        .s00_axi_aclk(processing_system7_0_FCLK_CLK0),
-        .s00_axi_araddr(ps7_0_axi_periph_M01_AXI_ARADDR[3:0]),
-        .s00_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
-        .s00_axi_arprot(ps7_0_axi_periph_M01_AXI_ARPROT),
-        .s00_axi_arready(ps7_0_axi_periph_M01_AXI_ARREADY),
-        .s00_axi_arvalid(ps7_0_axi_periph_M01_AXI_ARVALID),
-        .s00_axi_awaddr(ps7_0_axi_periph_M01_AXI_AWADDR[3:0]),
-        .s00_axi_awprot(ps7_0_axi_periph_M01_AXI_AWPROT),
-        .s00_axi_awready(ps7_0_axi_periph_M01_AXI_AWREADY),
-        .s00_axi_awvalid(ps7_0_axi_periph_M01_AXI_AWVALID),
-        .s00_axi_bready(ps7_0_axi_periph_M01_AXI_BREADY),
-        .s00_axi_bresp(ps7_0_axi_periph_M01_AXI_BRESP),
-        .s00_axi_bvalid(ps7_0_axi_periph_M01_AXI_BVALID),
-        .s00_axi_rdata(ps7_0_axi_periph_M01_AXI_RDATA),
-        .s00_axi_rready(ps7_0_axi_periph_M01_AXI_RREADY),
-        .s00_axi_rresp(ps7_0_axi_periph_M01_AXI_RRESP),
-        .s00_axi_rvalid(ps7_0_axi_periph_M01_AXI_RVALID),
-        .s00_axi_wdata(ps7_0_axi_periph_M01_AXI_WDATA),
-        .s00_axi_wready(ps7_0_axi_periph_M01_AXI_WREADY),
-        .s00_axi_wstrb(ps7_0_axi_periph_M01_AXI_WSTRB),
-        .s00_axi_wvalid(ps7_0_axi_periph_M01_AXI_WVALID));
+        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
+        .s_axi_araddr(ps7_0_axi_periph_M01_AXI_ARADDR[3:0]),
+        .s_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
+        .s_axi_arprot(ps7_0_axi_periph_M01_AXI_ARPROT),
+        .s_axi_arready(ps7_0_axi_periph_M01_AXI_ARREADY),
+        .s_axi_arvalid(ps7_0_axi_periph_M01_AXI_ARVALID),
+        .s_axi_awaddr(ps7_0_axi_periph_M01_AXI_AWADDR[3:0]),
+        .s_axi_awprot(ps7_0_axi_periph_M01_AXI_AWPROT),
+        .s_axi_awready(ps7_0_axi_periph_M01_AXI_AWREADY),
+        .s_axi_awvalid(ps7_0_axi_periph_M01_AXI_AWVALID),
+        .s_axi_bready(ps7_0_axi_periph_M01_AXI_BREADY),
+        .s_axi_bresp(ps7_0_axi_periph_M01_AXI_BRESP),
+        .s_axi_bvalid(ps7_0_axi_periph_M01_AXI_BVALID),
+        .s_axi_rdata(ps7_0_axi_periph_M01_AXI_RDATA),
+        .s_axi_rready(ps7_0_axi_periph_M01_AXI_RREADY),
+        .s_axi_rresp(ps7_0_axi_periph_M01_AXI_RRESP),
+        .s_axi_rvalid(ps7_0_axi_periph_M01_AXI_RVALID),
+        .s_axi_wdata(ps7_0_axi_periph_M01_AXI_WDATA),
+        .s_axi_wready(ps7_0_axi_periph_M01_AXI_WREADY),
+        .s_axi_wstrb(ps7_0_axi_periph_M01_AXI_WSTRB),
+        .s_axi_wvalid(ps7_0_axi_periph_M01_AXI_WVALID));
   dma_processing_system7_0_0 processing_system7_0
        (.DDR_Addr(DDR_addr[14:0]),
         .DDR_BankAddr(DDR_ba[2:0]),

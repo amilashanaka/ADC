@@ -48,7 +48,7 @@
 
 
 // IP VLNV: spicer.local:user:decimation_filter:1.0
-// IP Revision: 10
+// IP Revision: 11
 
 `timescale 1ns/1ps
 

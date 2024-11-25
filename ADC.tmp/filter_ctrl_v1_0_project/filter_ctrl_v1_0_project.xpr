@@ -7,7 +7,7 @@
 <Project Product="Vivado" Version="7" Minor="67" Path="c:/projects/ern24004/projects/adc/adc.tmp/filter_ctrl_v1_0_project/filter_ctrl_v1_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="df69616af1c341e885a54fbd96439e96"/>
+    <Option Name="Id" Val="976eb1b648b7461bac35df4e9ad4e7b8"/>
     <Option Name="Part" Val="xc7z007sclg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -47,6 +47,7 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl_1_0"/>
@@ -105,7 +106,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0/hdl/filter_ctrl_slave_lite_v1_0_S00_AXI.v">
+      <File Path="$PPRDIR/../../../../../../Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0/hdl/filter_ctrl_slave_lite_v1_0_S_AXI.v">
         <FileInfo>
           <Attr Name="Library" Val=""/>
           <Attr Name="AutoDisabled" Val="1"/>

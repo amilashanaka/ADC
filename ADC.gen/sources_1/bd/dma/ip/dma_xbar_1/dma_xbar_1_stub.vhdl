@@ -2,10 +2,10 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
--- Date        : Mon Nov 25 13:29:52 2024
+-- Date        : Mon Nov 25 15:43:57 2024
 -- Host        : DonGun running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_xbar_1/dma_xbar_1_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top dma_xbar_1 -prefix
+--               dma_xbar_1_ dma_xbar_1_stub.vhdl
 -- Design      : dma_xbar_1
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z007sclg400-1

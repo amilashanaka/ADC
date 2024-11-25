@@ -1,0 +1,365 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.2 (64-bit)
+# SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+# IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+# SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+# Start of session at: Mon Nov 25 15:59:24 2024
+# Process ID: 28112
+# Current directory: C:/Projects/ERN24004/Projects/ADC/ADC.runs/dma_filter_ctrl_0_3_synth_1
+# Command line: vivado.exe -log dma_filter_ctrl_0_3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dma_filter_ctrl_0_3.tcl
+# Log file: C:/Projects/ERN24004/Projects/ADC/ADC.runs/dma_filter_ctrl_0_3_synth_1/dma_filter_ctrl_0_3.vds
+# Journal file: C:/Projects/ERN24004/Projects/ADC/ADC.runs/dma_filter_ctrl_0_3_synth_1\vivado.jou
+# Running On        :DonGun
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :13th Gen Intel(R) Core(TM) i7-13700K
+# CPU Frequency     :3418 MHz
+# CPU Physical cores:16
+# CPU Logical cores :24
+# Host memory       :34124 MB
+# Swap memory       :2147 MB
+# Total Virtual     :36272 MB
+# Available Virtual :17719 MB
+#-----------------------------------------------------------
+source dma_filter_ctrl_0_3.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 690.984 ; gain = 241.996
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0' already exists; ignoring attempt to add it again.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0' already exists; ignoring attempt to add it again.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl_1_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0' already exists; ignoring attempt to add it again.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl_1_0' already exists; ignoring attempt to add it again.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl_1_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl_1_0' already exists; ignoring attempt to add it again.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl_1_0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dma_filter_ctrl_0_3
+Command: synth_design -top dma_filter_ctrl_0_3 -part xc7z007sclg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Device 21-403] Loading part xc7z007sclg400-1
+INFO: [Device 21-9227] Part: xc7z007sclg400-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24460
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1560.477 ; gain = 445.961
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'S_AXI_AWREADY', assumed default net type 'wire' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/7c65/hdl/filter_ctrl.v:60]
+INFO: [Synth 8-11241] undeclared symbol 'S_AXI_WREADY', assumed default net type 'wire' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/7c65/hdl/filter_ctrl.v:61]
+INFO: [Synth 8-11241] undeclared symbol 'S_AXI_BRESP', assumed default net type 'wire' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/7c65/hdl/filter_ctrl.v:62]
+INFO: [Synth 8-11241] undeclared symbol 'S_AXI_BVALID', assumed default net type 'wire' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/7c65/hdl/filter_ctrl.v:63]
+INFO: [Synth 8-11241] undeclared symbol 'S_AXI_ARREADY', assumed default net type 'wire' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/7c65/hdl/filter_ctrl.v:64]
+INFO: [Synth 8-11241] undeclared symbol 'S_AXI_RDATA', assumed default net type 'wire' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/7c65/hdl/filter_ctrl.v:65]
+INFO: [Synth 8-11241] undeclared symbol 'S_AXI_RRESP', assumed default net type 'wire' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/7c65/hdl/filter_ctrl.v:66]
+INFO: [Synth 8-11241] undeclared symbol 'S_AXI_RVALID', assumed default net type 'wire' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/7c65/hdl/filter_ctrl.v:67]
+INFO: [Synth 8-6157] synthesizing module 'dma_filter_ctrl_0_3' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_filter_ctrl_0_3/synth/dma_filter_ctrl_0_3.v:53]
+INFO: [Synth 8-6157] synthesizing module 'filter_ctrl' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/7c65/hdl/filter_ctrl.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'filter_ctrl' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/7c65/hdl/filter_ctrl.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'dma_filter_ctrl_0_3' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_filter_ctrl_0_3/synth/dma_filter_ctrl_0_3.v:53]
+WARNING: [Synth 8-6014] Unused sequential element axi_bvalid_reg was removed.  [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/7c65/hdl/filter_ctrl.v:63]
+WARNING: [Synth 8-6014] Unused sequential element axi_bresp_reg was removed.  [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/7c65/hdl/filter_ctrl.v:62]
+WARNING: [Synth 8-6014] Unused sequential element axi_arready_reg was removed.  [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/7c65/hdl/filter_ctrl.v:64]
+WARNING: [Synth 8-6014] Unused sequential element axi_rvalid_reg was removed.  [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/7c65/hdl/filter_ctrl.v:67]
+WARNING: [Synth 8-6014] Unused sequential element axi_rresp_reg was removed.  [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/7c65/hdl/filter_ctrl.v:66]
+WARNING: [Synth 8-6014] Unused sequential element axi_rdata_reg was removed.  [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/7c65/hdl/filter_ctrl.v:65]
+WARNING: [Synth 8-6014] Unused sequential element axi_araddr_reg was removed.  [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/7c65/hdl/filter_ctrl.v:121]
+WARNING: [Synth 8-3848] Net s_axi_awready in module/entity filter_ctrl does not have driver. [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/7c65/hdl/filter_ctrl.v:26]
+WARNING: [Synth 8-3848] Net s_axi_wready in module/entity filter_ctrl does not have driver. [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/7c65/hdl/filter_ctrl.v:30]
+WARNING: [Synth 8-3848] Net s_axi_bresp in module/entity filter_ctrl does not have driver. [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/7c65/hdl/filter_ctrl.v:31]
+WARNING: [Synth 8-3848] Net s_axi_bvalid in module/entity filter_ctrl does not have driver. [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/7c65/hdl/filter_ctrl.v:32]
+WARNING: [Synth 8-3848] Net s_axi_arready in module/entity filter_ctrl does not have driver. [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/7c65/hdl/filter_ctrl.v:37]
+WARNING: [Synth 8-3848] Net s_axi_rdata in module/entity filter_ctrl does not have driver. [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/7c65/hdl/filter_ctrl.v:38]
+WARNING: [Synth 8-3848] Net s_axi_rresp in module/entity filter_ctrl does not have driver. [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/7c65/hdl/filter_ctrl.v:39]
+WARNING: [Synth 8-3848] Net s_axi_rvalid in module/entity filter_ctrl does not have driver. [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/7c65/hdl/filter_ctrl.v:40]
+WARNING: [Synth 8-7129] Port s_axi_awready in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wready in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_bresp[1] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_bresp[0] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_bvalid in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arready in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[31] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[30] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[29] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[28] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[27] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[26] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[25] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[24] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[23] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[22] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[21] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[20] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[19] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[18] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[17] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[16] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[15] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[14] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[13] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[12] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[11] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[10] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[9] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[8] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[7] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[6] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[5] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[4] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[3] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[2] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[1] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[0] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rresp[1] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rresp[0] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rvalid in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[2] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[1] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[0] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[3] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[2] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[1] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[0] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wvalid in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_bready in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_araddr[3] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_araddr[2] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_araddr[1] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_araddr[0] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[2] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[1] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[0] in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arvalid in module filter_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rready in module filter_ctrl is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1676.047 ; gain = 561.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1676.047 ; gain = 561.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1676.047 ; gain = 561.531
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1676.047 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1765.164 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1765.395 ; gain = 0.230
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1765.395 ; gain = 650.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z007sclg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1765.395 ; gain = 650.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1765.395 ; gain = 650.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1765.395 ; gain = 650.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 66 (col length:40)
+BRAMs: 100 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port s_axi_awready in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wready in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_bresp[1] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_bresp[0] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_bvalid in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arready in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[31] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[30] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[29] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[28] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[27] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[26] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[25] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[24] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[23] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[22] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[21] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[20] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[19] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[18] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[17] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[16] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[15] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[14] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[13] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[12] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[11] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[10] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[9] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[8] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[7] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[6] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[5] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[4] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[3] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[2] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[1] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[0] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rresp[1] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rresp[0] in module dma_filter_ctrl_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rvalid in module dma_filter_ctrl_0_3 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1765.395 ; gain = 650.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1765.395 ; gain = 650.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1765.395 ; gain = 650.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1765.395 ; gain = 650.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1765.395 ; gain = 650.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1765.395 ; gain = 650.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1765.395 ; gain = 650.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1765.395 ; gain = 650.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1765.395 ; gain = 650.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1765.395 ; gain = 650.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT3 |     3|
+|2     |LUT5 |     1|
+|3     |LUT6 |     2|
+|4     |FDRE |     8|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1765.395 ; gain = 650.879
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 60 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1765.395 ; gain = 561.531
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1765.395 ; gain = 650.879
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1765.395 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1765.395 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 3edb3aa1
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 128 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 1765.395 ; gain = 1050.535
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1765.395 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Projects/ERN24004/Projects/ADC/ADC.runs/dma_filter_ctrl_0_3_synth_1/dma_filter_ctrl_0_3.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP dma_filter_ctrl_0_3, cache-ID = 4a8c333d1408d067
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1765.395 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Projects/ERN24004/Projects/ADC/ADC.runs/dma_filter_ctrl_0_3_synth_1/dma_filter_ctrl_0_3.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file dma_filter_ctrl_0_3_utilization_synth.rpt -pb dma_filter_ctrl_0_3_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 25 16:00:02 2024...

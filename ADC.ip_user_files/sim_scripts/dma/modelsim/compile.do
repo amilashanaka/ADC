@@ -156,21 +156,20 @@ vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../ADC.gen/sources_1/b
 "../../../../ADC.gen/sources_1/bd/dma/ipshared/1d2d/src/ad1_spi.v" \
 "../../../../ADC.gen/sources_1/bd/dma/ipshared/1d2d/hdl/PmodAD1_v1_0.v" \
 "../../../bd/dma/ip/dma_PmodAD1_0_1/sim/dma_PmodAD1_0_1.v" \
-"../../../bd/dma/ipshared/4648/hdl/decimation_filter.v" \
+"../../../bd/dma/ipshared/2501/hdl/decimation_filter.v" \
 "../../../bd/dma/ip/dma_decimation_filter_0_0/sim/dma_decimation_filter_0_0.v" \
 "../../../bd/dma/ipshared/4af1/hdl/data_anchor_master_stream_v1_0_M_AXIS.v" \
 "../../../bd/dma/ipshared/4af1/hdl/data_anchor.v" \
 "../../../bd/dma/ip/dma_data_anchor_0_0/sim/dma_data_anchor_0_0.v" \
 "../../../bd/dma/ip/dma_decimation_filter_1_0/sim/dma_decimation_filter_1_0.v" \
-"../../../bd/dma/ipshared/8cdd/hdl/filter_ctrl_slave_lite_v1_0_S00_AXI.v" \
-"../../../bd/dma/ipshared/8cdd/hdl/filter_ctrl.v" \
-"../../../bd/dma/ip/dma_filter_ctrl_0_2/sim/dma_filter_ctrl_0_2.v" \
 
 vlog -work xlconcat_v2_1_6  -incr -mfcu  "+incdir+../../../../ADC.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../ADC.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../ADC.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../../ADC.gen/sources_1/bd/dma/ipshared/6120/hdl/xlconcat_v2_1_vl_rfs.v" \
 
 vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../ADC.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../ADC.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../ADC.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../bd/dma/ip/dma_xlconcat_0_0/sim/dma_xlconcat_0_0.v" \
+"../../../bd/dma/ipshared/7c65/hdl/filter_ctrl.v" \
+"../../../bd/dma/ip/dma_filter_ctrl_0_3/sim/dma_filter_ctrl_0_3.v" \
 
 vlog -work axi_protocol_converter_v2_1_32  -incr -mfcu  "+incdir+../../../../ADC.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../ADC.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../ADC.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../../ADC.gen/sources_1/bd/dma/ipshared/d59d/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \

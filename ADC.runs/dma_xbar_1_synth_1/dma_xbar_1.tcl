@@ -74,6 +74,7 @@ set_property board_part digilentinc.com:cora-z7-07s:part0:1.1 [current_project]
 set_property ip_repo_paths {
   c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0
   c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0
+  c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0
   c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl_1_0
   c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0
   c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl_1_0

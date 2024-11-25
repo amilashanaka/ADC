@@ -43,8 +43,8 @@
       "decimation_filter_0": "",
       "data_anchor_0": "",
       "decimation_filter_1": "",
-      "filter_ctrl_0": "",
-      "xlconcat_0": ""
+      "xlconcat_0": "",
+      "filter_ctrl_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -2863,19 +2863,19 @@
         "xci_path": "ip\\dma_decimation_filter_1_0\\dma_decimation_filter_1_0.xci",
         "inst_hier_path": "decimation_filter_1"
       },
-      "filter_ctrl_0": {
-        "vlnv": "spicer.local:user:filter_ctrl:1.0",
-        "ip_revision": "3",
-        "xci_name": "dma_filter_ctrl_0_2",
-        "xci_path": "ip\\dma_filter_ctrl_0_2\\dma_filter_ctrl_0_2.xci",
-        "inst_hier_path": "filter_ctrl_0"
-      },
       "xlconcat_0": {
         "vlnv": "xilinx.com:ip:xlconcat:2.1",
         "ip_revision": "6",
         "xci_name": "dma_xlconcat_0_0",
         "xci_path": "ip\\dma_xlconcat_0_0\\dma_xlconcat_0_0.xci",
         "inst_hier_path": "xlconcat_0"
+      },
+      "filter_ctrl_0": {
+        "vlnv": "spicer.local:user:filter_ctrl:1.0",
+        "ip_revision": "3",
+        "xci_name": "dma_filter_ctrl_0_3",
+        "xci_path": "ip\\dma_filter_ctrl_0_3\\dma_filter_ctrl_0_3.xci",
+        "inst_hier_path": "filter_ctrl_0"
       }
     },
     "interface_nets": {
@@ -2948,7 +2948,7 @@
       "ps7_0_axi_periph_M01_AXI": {
         "interface_ports": [
           "ps7_0_axi_periph/M01_AXI",
-          "filter_ctrl_0/S00_AXI"
+          "filter_ctrl_0/S_AXI"
         ]
       }
     },
@@ -3038,9 +3038,9 @@
           "ps7_0_axi_periph/M01_ACLK",
           "ps7_0_axi_periph/M02_ACLK",
           "ps7_0_axi_periph/M03_ACLK",
-          "filter_ctrl_0/s00_axi_aclk",
           "decimation_filter_0/clk",
-          "decimation_filter_1/clk"
+          "decimation_filter_1/clk",
+          "filter_ctrl_0/s_axi_aclk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -3068,9 +3068,9 @@
           "ps7_0_axi_periph/M01_ARESETN",
           "ps7_0_axi_periph/M02_ARESETN",
           "ps7_0_axi_periph/M03_ARESETN",
-          "filter_ctrl_0/s00_axi_aresetn",
           "decimation_filter_0/reset_n",
-          "decimation_filter_1/reset_n"
+          "decimation_filter_1/reset_n",
+          "filter_ctrl_0/s_axi_aresetn"
         ]
       },
       "xlconcat_0_dout": {
@@ -3090,12 +3090,12 @@
                 "offset": "0x40400000",
                 "range": "64K"
               },
-              "SEG_filter_ctrl_0_S00_AXI_reg": {
-                "address_block": "/filter_ctrl_0/S00_AXI/S00_AXI_reg",
-                "offset": "0x43C20000",
+              "SEG_filter_ctrl_0_S_AXI_reg": {
+                "address_block": "/filter_ctrl_0/S_AXI/S_AXI_reg",
+                "offset": "0x43C00000",
                 "range": "64K",
-                "offset_base_param": "C_S00_AXI_BASEADDR",
-                "offset_high_param": "C_S00_AXI_HIGHADDR"
+                "offset_base_param": "C_S_AXI_BASEADDR",
+                "offset_high_param": "C_S_AXI_HIGHADDR"
               }
             }
           }

@@ -1,0 +1,171 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "dma_PmodAD1_0_1",
+    "cell_name": "PmodAD1_0",
+    "component_reference": "digilentinc.com:IP:PmodAD1:1.0",
+    "ip_revision": "35",
+    "gen_directory": "../../../../../../ADC.gen/sources_1/bd/dma/ip/dma_PmodAD1_0_1",
+    "parameters": {
+      "component_parameters": {
+        "C_S00_AXI_DATA_WIDTH": [ { "value": "32", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
+        "C_S00_AXI_ADDR_WIDTH": [ { "value": "4", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
+        "Component_Name": [ { "value": "dma_PmodAD1_0_1", "resolve_type": "user", "usage": "all" } ],
+        "AD1_CLOCKS_PER_BIT": [ { "value": "20", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "AD1_CLOCKS_BEFORE_DATA": [ { "value": "60", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "AD1_CLOCKS_AFTER_DATA": [ { "value": "500", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "AD1_CLOCKS_BETWEEN_TRANSACTIONS": [ { "value": "400", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "USE_BOARD_FLOW": [ { "value": "true", "value_src": "user", "resolve_type": "user", "format": "bool", "usage": "all" } ],
+        "PMOD": [ { "value": "ja", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
+        "AXI_LITE_SAMPLE_BASEADDR": [ { "value": "0xFFFFFFFF", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
+        "AXI_LITE_SAMPLE_HIGHADDR": [ { "value": "0x00000000", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
+        "INCLUDE_DEBUG_INTERFACE": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ]
+      },
+      "model_parameters": {
+        "C_S00_AXI_DATA_WIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "C_S00_AXI_ADDR_WIDTH": [ { "value": "4", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "AD1_CLOCKS_PER_BIT": [ { "value": "20", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "AD1_CLOCKS_BEFORE_DATA": [ { "value": "60", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "AD1_CLOCKS_AFTER_DATA": [ { "value": "500", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "AD1_CLOCKS_BETWEEN_TRANSACTIONS": [ { "value": "400", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "INCLUDE_DEBUG_INTERFACE": [ { "value": "false", "resolve_type": "generated", "format": "bool", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "zynq" } ],
+        "BASE_BOARD_PART": [ { "value": "digilentinc.com:cora-z7-07s:part0:1.1" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xc7z007s" } ],
+        "NEXTGEN_VERSAL": [ { "value": "0" } ],
+        "PACKAGE": [ { "value": "clg400" } ],
+        "PREFHDL": [ { "value": "VERILOG" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
+        "SPEEDGRADE": [ { "value": "-1" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "35" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../ADC.gen/sources_1/bd/dma/ip/dma_PmodAD1_0_1" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2024.1.2" } ],
+        "SYNTHESISFLOW": [ { "value": "OUT_OF_CONTEXT" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "clk": [ { "direction": "in" } ],
+        "reset_n": [ { "direction": "in" } ],
+        "dout_rdy": [ { "direction": "out" } ],
+        "Pmod_out_pin10_i": [ { "direction": "in" } ],
+        "Pmod_out_pin10_o": [ { "direction": "out" } ],
+        "Pmod_out_pin10_t": [ { "direction": "out" } ],
+        "Pmod_out_pin1_i": [ { "direction": "in" } ],
+        "Pmod_out_pin1_o": [ { "direction": "out" } ],
+        "Pmod_out_pin1_t": [ { "direction": "out" } ],
+        "Pmod_out_pin2_i": [ { "direction": "in" } ],
+        "Pmod_out_pin2_o": [ { "direction": "out" } ],
+        "Pmod_out_pin2_t": [ { "direction": "out" } ],
+        "Pmod_out_pin3_i": [ { "direction": "in" } ],
+        "Pmod_out_pin3_o": [ { "direction": "out" } ],
+        "Pmod_out_pin3_t": [ { "direction": "out" } ],
+        "Pmod_out_pin4_i": [ { "direction": "in" } ],
+        "Pmod_out_pin4_o": [ { "direction": "out" } ],
+        "Pmod_out_pin4_t": [ { "direction": "out" } ],
+        "Pmod_out_pin7_i": [ { "direction": "in" } ],
+        "Pmod_out_pin7_o": [ { "direction": "out" } ],
+        "Pmod_out_pin7_t": [ { "direction": "out" } ],
+        "Pmod_out_pin8_i": [ { "direction": "in" } ],
+        "Pmod_out_pin8_o": [ { "direction": "out" } ],
+        "Pmod_out_pin8_t": [ { "direction": "out" } ],
+        "Pmod_out_pin9_i": [ { "direction": "in" } ],
+        "Pmod_out_pin9_o": [ { "direction": "out" } ],
+        "Pmod_out_pin9_t": [ { "direction": "out" } ],
+        "data": [ { "direction": "out", "size_left": "31", "size_right": "0" } ]
+      },
+      "interfaces": {
+        "Pmod_out": {
+          "vlnv": "digilentinc.com:interface:pmod:1.0",
+          "abstraction_type": "digilentinc.com:interface:pmod_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "BOARD.ASSOCIATED_PARAM": [ { "value": "PMOD", "value_src": "constant", "value_permission": "bd", "usage": "all" } ]
+          },
+          "port_maps": {
+            "PIN1_O": [ { "physical_name": "Pmod_out_pin1_o" } ],
+            "PIN7_I": [ { "physical_name": "Pmod_out_pin7_i" } ],
+            "PIN2_O": [ { "physical_name": "Pmod_out_pin2_o" } ],
+            "PIN8_I": [ { "physical_name": "Pmod_out_pin8_i" } ],
+            "PIN3_O": [ { "physical_name": "Pmod_out_pin3_o" } ],
+            "PIN9_I": [ { "physical_name": "Pmod_out_pin9_i" } ],
+            "PIN10_O": [ { "physical_name": "Pmod_out_pin10_o" } ],
+            "PIN4_O": [ { "physical_name": "Pmod_out_pin4_o" } ],
+            "PIN3_I": [ { "physical_name": "Pmod_out_pin3_i" } ],
+            "PIN4_I": [ { "physical_name": "Pmod_out_pin4_i" } ],
+            "PIN1_I": [ { "physical_name": "Pmod_out_pin1_i" } ],
+            "PIN2_I": [ { "physical_name": "Pmod_out_pin2_i" } ],
+            "PIN10_T": [ { "physical_name": "Pmod_out_pin10_t" } ],
+            "PIN8_T": [ { "physical_name": "Pmod_out_pin8_t" } ],
+            "PIN9_T": [ { "physical_name": "Pmod_out_pin9_t" } ],
+            "PIN4_T": [ { "physical_name": "Pmod_out_pin4_t" } ],
+            "PIN9_O": [ { "physical_name": "Pmod_out_pin9_o" } ],
+            "PIN10_I": [ { "physical_name": "Pmod_out_pin10_i" } ],
+            "PIN7_T": [ { "physical_name": "Pmod_out_pin7_t" } ],
+            "PIN1_T": [ { "physical_name": "Pmod_out_pin1_t" } ],
+            "PIN2_T": [ { "physical_name": "Pmod_out_pin2_t" } ],
+            "PIN7_O": [ { "physical_name": "Pmod_out_pin7_o" } ],
+            "PIN3_T": [ { "physical_name": "Pmod_out_pin3_t" } ],
+            "PIN8_O": [ { "physical_name": "Pmod_out_pin8_o" } ]
+          }
+        },
+        "reset_n": {
+          "vlnv": "xilinx.com:signal:reset:1.0",
+          "abstraction_type": "xilinx.com:signal:reset_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "POLARITY": [ { "value": "ACTIVE_LOW", "value_src": "constant_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "RST": [ { "physical_name": "reset_n" } ]
+          }
+        },
+        "clk": {
+          "vlnv": "xilinx.com:signal:clock:1.0",
+          "abstraction_type": "xilinx.com:signal:clock_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "FREQ_HZ": [ { "value": "50000000", "value_src": "user_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "FREQ_TOLERANCE_HZ": [ { "value": "0", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "PHASE": [ { "value": "0.0", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
+            "CLK_DOMAIN": [ { "value": "dma_processing_system7_0_0_FCLK_CLK0", "value_src": "default_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_BUSIF": [ { "value": "", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_PORT": [ { "value": "", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_RESET": [ { "value": "", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "CLK": [ { "physical_name": "clk" } ]
+          }
+        }
+      },
+      "memory_maps": {
+        "AXI_LITE_SAMPLE": {
+          "address_blocks": {
+            "Reg0": {
+              "base_address": "0",
+              "range": "4096",
+              "parameters": {
+                "OFFSET_BASE_PARAM": [ { "value": "AXI_LITE_SAMPLE_BASEADDR" } ],
+                "OFFSET_HIGH_PARAM": [ { "value": "AXI_LITE_SAMPLE_HIGHADDR" } ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

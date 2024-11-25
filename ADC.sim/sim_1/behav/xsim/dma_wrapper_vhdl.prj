@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../DMA.ip_user_files/bd/dma/ip/dma_rst_ps7_0_50M_0/sim/dma_rst_ps7_0_50M_0.vhd" \
+"../../../../DMA.ip_user_files/bd/dma/ip/dma_axi_dma_0_1/sim/dma_axi_dma_0_1.vhd" \
+
+# Do not sort compile order
+nosort

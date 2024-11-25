@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.2 (64-bit)
+# SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+# IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+# SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+# Start of session at: Mon Nov 25 11:20:42 2024
+# Process ID: 18684
+# Current directory: C:/Projects/ERN24004/Projects/ADC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22096 C:\Projects\ERN24004\Projects\ADC\ADC.xpr
+# Log file: C:/Projects/ERN24004/Projects/ADC/vivado.log
+# Journal file: C:/Projects/ERN24004/Projects/ADC\vivado.jou
+# Running On        :DonGun
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :13th Gen Intel(R) Core(TM) i7-13700K
+# CPU Frequency     :3418 MHz
+# CPU Physical cores:16
+# CPU Logical cores :24
+# Host memory       :34124 MB
+# Swap memory       :2147 MB
+# Total Virtual     :36272 MB
+# Available Virtual :25153 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Projects/ERN24004/Projects/ADC/ADC.xpr
+open_bd_design {C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/dma.bd}
+update_compile_order -fileset sources_1

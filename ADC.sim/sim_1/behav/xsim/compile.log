@@ -1,0 +1,30 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/ERN24004/Projects/DMA/DMA.ip_user_files/bd/dma/ip/dma_processing_system7_0_0/sim/dma_processing_system7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dma_processing_system7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/ERN24004/Projects/DMA/DMA.ip_user_files/bd/dma/ip/dma_xbar_0/sim/dma_xbar_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dma_xbar_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/ERN24004/Projects/DMA/DMA.ip_user_files/bd/dma/ip/dma_axis_data_fifo_0_0/sim/dma_axis_data_fifo_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dma_axis_data_fifo_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/ERN24004/Projects/DMA/DMA.ip_user_files/bd/dma/ip/dma_auto_pc_0/sim/dma_auto_pc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dma_auto_pc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/ERN24004/Projects/DMA/DMA.ip_user_files/bd/dma/ip/dma_auto_pc_1/sim/dma_auto_pc_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dma_auto_pc_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/ERN24004/Projects/DMA/DMA.ip_user_files/bd/dma/ip/dma_auto_pc_2/sim/dma_auto_pc_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dma_auto_pc_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/ERN24004/Projects/DMA/DMA.ip_user_files/bd/dma/sim/dma.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dma
+INFO: [VRFC 10-311] analyzing module dma_axi_mem_intercon_0
+INFO: [VRFC 10-311] analyzing module dma_ps7_0_axi_periph_0
+INFO: [VRFC 10-311] analyzing module m00_couplers_imp_1EA4IN8
+INFO: [VRFC 10-311] analyzing module m01_couplers_imp_T14D7L
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_345CV4
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_7T634U
+INFO: [VRFC 10-311] analyzing module s01_couplers_imp_1HQQ1GB
+INFO: [VRFC 10-311] analyzing module s02_couplers_imp_YJE1P1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/ERN24004/Projects/DMA/DMA.gen/sources_1/bd/dma/hdl/dma_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dma_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/ERN24004/Projects/DMA/DMA.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Projects/ERN24004/Projects/DMA/DMA.ip_user_files/bd/dma/ip/dma_rst_ps7_0_50M_0/sim/dma_rst_ps7_0_50M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dma_rst_ps7_0_50M_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Projects/ERN24004/Projects/DMA/DMA.ip_user_files/bd/dma/ip/dma_axi_dma_0_1/sim/dma_axi_dma_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dma_axi_dma_0_1'

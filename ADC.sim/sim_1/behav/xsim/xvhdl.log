@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Projects/ERN24004/Projects/DMA/DMA.ip_user_files/bd/dma/ip/dma_rst_ps7_0_50M_0/sim/dma_rst_ps7_0_50M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dma_rst_ps7_0_50M_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Projects/ERN24004/Projects/DMA/DMA.ip_user_files/bd/dma/ip/dma_axi_dma_0_1/sim/dma_axi_dma_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dma_axi_dma_0_1'

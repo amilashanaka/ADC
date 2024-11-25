@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.2 (64-bit)
+# SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+# IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+# SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+# Start of session at: Fri Nov 22 15:53:39 2024
+# Process ID: 12620
+# Current directory: C:/Projects/ERN24004/Projects/ADC/ADC.runs/dma_decimation_filter_1_0_synth_1
+# Command line: vivado.exe -log dma_decimation_filter_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dma_decimation_filter_1_0.tcl
+# Log file: C:/Projects/ERN24004/Projects/ADC/ADC.runs/dma_decimation_filter_1_0_synth_1/dma_decimation_filter_1_0.vds
+# Journal file: C:/Projects/ERN24004/Projects/ADC/ADC.runs/dma_decimation_filter_1_0_synth_1\vivado.jou
+# Running On        :DonGun
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :13th Gen Intel(R) Core(TM) i7-13700K
+# CPU Frequency     :3418 MHz
+# CPU Physical cores:16
+# CPU Logical cores :24
+# Host memory       :34124 MB
+# Swap memory       :2147 MB
+# Total Virtual     :36272 MB
+# Available Virtual :14300 MB
+#-----------------------------------------------------------
+source dma_decimation_filter_1_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 691.590 ; gain = 238.285
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dma_decimation_filter_1_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 3b474c6d6daf9b5e to dir: C:/Projects/ERN24004/Projects/ADC/ADC.runs/dma_decimation_filter_1_0_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/3/b/3b474c6d6daf9b5e/dma_decimation_filter_0_0.dcp to C:/Projects/ERN24004/Projects/ADC/ADC.runs/dma_decimation_filter_1_0_synth_1/dma_decimation_filter_1_0.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/3/b/3b474c6d6daf9b5e/dma_decimation_filter_0_0_sim_netlist.v to C:/Projects/ERN24004/Projects/ADC/ADC.runs/dma_decimation_filter_1_0_synth_1/dma_decimation_filter_1_0_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/3/b/3b474c6d6daf9b5e/dma_decimation_filter_0_0_sim_netlist.vhdl to C:/Projects/ERN24004/Projects/ADC/ADC.runs/dma_decimation_filter_1_0_synth_1/dma_decimation_filter_1_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/3/b/3b474c6d6daf9b5e/dma_decimation_filter_0_0_stub.v to C:/Projects/ERN24004/Projects/ADC/ADC.runs/dma_decimation_filter_1_0_synth_1/dma_decimation_filter_1_0_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/3/b/3b474c6d6daf9b5e/dma_decimation_filter_0_0_stub.vhdl to C:/Projects/ERN24004/Projects/ADC/ADC.runs/dma_decimation_filter_1_0_synth_1/dma_decimation_filter_1_0_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP dma_decimation_filter_1_0, cache-ID = 3b474c6d6daf9b5e.
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 22 15:53:57 2024...

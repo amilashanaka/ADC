@@ -63,7 +63,11 @@ module filter_ctrl #(
       .S_AXI_RDATA(s00_axi_rdata),
       .S_AXI_RRESP(s00_axi_rresp),
       .S_AXI_RVALID(s00_axi_rvalid),
-      .S_AXI_RREADY(s00_axi_rready)
+      .S_AXI_RREADY(s00_axi_rready),
+      
+        // Connect f1 and f2 to top-level signals
+    .f1(f1_signal),
+    .f2(f2_signal)
   );
 
   // Add user logic here

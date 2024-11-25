@@ -38,40 +38,99 @@ module filter_ctrl #(
     output wire s00_axi_rvalid,
     input wire s00_axi_rready
 );
-  // Instantiation of Axi Bus Interface S00_AXI
-  filter_ctrl_slave_lite_v1_0_S00_AXI #(
-      .C_S_AXI_DATA_WIDTH(C_S00_AXI_DATA_WIDTH),
-      .C_S_AXI_ADDR_WIDTH(C_S00_AXI_ADDR_WIDTH)
-  ) filter_ctrl_slave_lite_v1_0_S00_AXI_inst (
-      .S_AXI_ACLK(s00_axi_aclk),
-      .S_AXI_ARESETN(s00_axi_aresetn),
-      .S_AXI_AWADDR(s00_axi_awaddr),
-      .S_AXI_AWPROT(s00_axi_awprot),
-      .S_AXI_AWVALID(s00_axi_awvalid),
-      .S_AXI_AWREADY(s00_axi_awready),
-      .S_AXI_WDATA(s00_axi_wdata),
-      .S_AXI_WSTRB(s00_axi_wstrb),
-      .S_AXI_WVALID(s00_axi_wvalid),
-      .S_AXI_WREADY(s00_axi_wready),
-      .S_AXI_BRESP(s00_axi_bresp),
-      .S_AXI_BVALID(s00_axi_bvalid),
-      .S_AXI_BREADY(s00_axi_bready),
-      .S_AXI_ARADDR(s00_axi_araddr),
-      .S_AXI_ARPROT(s00_axi_arprot),
-      .S_AXI_ARVALID(s00_axi_arvalid),
-      .S_AXI_ARREADY(s00_axi_arready),
-      .S_AXI_RDATA(s00_axi_rdata),
-      .S_AXI_RRESP(s00_axi_rresp),
-      .S_AXI_RVALID(s00_axi_rvalid),
-      .S_AXI_RREADY(s00_axi_rready),
-      
-        // Connect f1 and f2 to top-level signals
-    .f1(f1_signal),
-    .f2(f2_signal)
-  );
+  
+// AXI4LITE signals
+reg [C_S_AXI_ADDR_WIDTH-1:0] axi_awaddr;
+reg axi_awready;
+reg axi_wready;
+reg [1:0] axi_bresp;
+reg axi_bvalid;
+reg [C_S_AXI_ADDR_WIDTH-1:0] axi_araddr;
+reg axi_arready;
+reg [C_S_AXI_DATA_WIDTH-1:0] axi_rdata;
+reg [1:0] axi_rresp;
+reg axi_rvalid;
 
-  // Add user logic here
+// User-defined registers
+reg [C_S_AXI_DATA_WIDTH-1:0] reg_f1_f2;
 
-  // User logic ends
+assign S_AXI_AWREADY = axi_awready;
+assign S_AXI_WREADY = axi_wready;
+assign S_AXI_BRESP = axi_bresp;
+assign S_AXI_BVALID = axi_bvalid;
+assign S_AXI_ARREADY = axi_arready;
+assign S_AXI_RDATA = axi_rdata;
+assign S_AXI_RRESP = axi_rresp;
+assign S_AXI_RVALID = axi_rvalid;
+
+// Control outputs
+assign f1 = reg_f1_f2[0];
+assign f2 = reg_f1_f2[1];
+
+// Implement write logic
+always @(posedge S_AXI_ACLK) begin
+    if (!S_AXI_ARESETN) begin
+        axi_awready <= 0;
+        axi_wready <= 0;
+        axi_bvalid <= 0;
+        axi_bresp <= 2'b00;
+        reg_f1_f2 <= 0;
+    end else begin
+        // Write address ready
+        if (S_AXI_AWVALID && !axi_awready) begin
+            axi_awready <= 1;
+            axi_awaddr <= S_AXI_AWADDR;
+        end else begin
+            axi_awready <= 0;
+        end
+
+        // Write data ready
+        if (S_AXI_WVALID && !axi_wready) begin
+            axi_wready <= 1;
+        end else begin
+            axi_wready <= 0;
+        end
+
+        // Write operation
+        if (axi_awready && S_AXI_AWVALID && axi_wready && S_AXI_WVALID) begin
+            case (axi_awaddr)
+                4'h0: reg_f1_f2 <= S_AXI_WDATA;
+                default: reg_f1_f2 <= reg_f1_f2;
+            endcase
+            axi_bvalid <= 1;
+            axi_bresp <= 2'b00; // OKAY response
+        end else if (S_AXI_BREADY && axi_bvalid) begin
+            axi_bvalid <= 0;
+        end
+    end
+end
+
+// Implement read logic
+always @(posedge S_AXI_ACLK) begin
+    if (!S_AXI_ARESETN) begin
+        axi_arready <= 0;
+        axi_rvalid <= 0;
+        axi_rresp <= 2'b00;
+        axi_rdata <= 0;
+    end else begin
+        if (S_AXI_ARVALID && !axi_arready) begin
+            axi_arready <= 1;
+            axi_araddr <= S_AXI_ARADDR;
+        end else begin
+            axi_arready <= 0;
+        end
+
+        if (axi_arready && S_AXI_ARVALID) begin
+            axi_rvalid <= 1;
+            axi_rresp <= 2'b00; // OKAY response
+            case (axi_araddr)
+                4'h0: axi_rdata <= reg_f1_f2;
+                default: axi_rdata <= 0;
+            endcase
+        end else if (axi_rvalid && S_AXI_RREADY) begin
+            axi_rvalid <= 0;
+        end
+    end
+end
 
 endmodule

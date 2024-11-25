@@ -7,7 +7,7 @@
 <Project Product="Vivado" Version="7" Minor="67" Path="c:/projects/ern24004/projects/adc/adc.tmp/filter_ctrl_v1_0_project/filter_ctrl_v1_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="b914560a72df4b44a8b014c05af78a5f"/>
+    <Option Name="Id" Val="df69616af1c341e885a54fbd96439e96"/>
     <Option Name="Part" Val="xc7z007sclg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -97,7 +97,7 @@
   <FileSets Version="1" Minor="32">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../../../../../../Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0/hdl/filter_ctrl_slave_lite_v1_0_S00_AXI.v">
+      <File Path="$PPRDIR/../../../../../../Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0/hdl/filter_ctrl.v">
         <FileInfo>
           <Attr Name="Library" Val=""/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -105,9 +105,10 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0/hdl/filter_ctrl.v">
+      <File Path="$PPRDIR/../../../../../../Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0/hdl/filter_ctrl_slave_lite_v1_0_S00_AXI.v">
         <FileInfo>
           <Attr Name="Library" Val=""/>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>

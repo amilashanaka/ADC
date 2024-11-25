@@ -56,7 +56,6 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "dma_decimation_filter_0_0_synth_1" START { ROLLUP_AUTO }
-set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z007sclg400-1
@@ -71,7 +70,15 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:cora-z7-07s:part0:1.1 [current_project]
-set_property ip_repo_paths c:/Projects/ERN24004/Projects/ADC/ip_repo [current_project]
+set_property ip_repo_paths {
+  c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0
+  c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0
+  c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl_1_0
+  c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0
+  c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl_1_0
+  c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl_1_0
+  c:/Projects/ERN24004/Projects/ADC/ip_repo
+} [current_project]
 update_ip_catalog
 set_property ip_output_repo c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]

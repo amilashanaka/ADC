@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
-// Date        : Fri Nov 22 15:48:22 2024
+// Date        : Mon Nov 25 13:29:52 2024
 // Host        : DonGun running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_xbar_1/dma_xbar_1_stub.v
@@ -22,7 +22,7 @@ module dma_xbar_1(aclk, aresetn, s_axi_awaddr, s_axi_awprot,
   m_axi_awprot, m_axi_awvalid, m_axi_awready, m_axi_wdata, m_axi_wstrb, m_axi_wvalid, 
   m_axi_wready, m_axi_bresp, m_axi_bvalid, m_axi_bready, m_axi_araddr, m_axi_arprot, 
   m_axi_arvalid, m_axi_arready, m_axi_rdata, m_axi_rresp, m_axi_rvalid, m_axi_rready)
-/* synthesis syn_black_box black_box_pad_pin="aresetn,s_axi_awaddr[31:0],s_axi_awprot[2:0],s_axi_awvalid[0:0],s_axi_awready[0:0],s_axi_wdata[31:0],s_axi_wstrb[3:0],s_axi_wvalid[0:0],s_axi_wready[0:0],s_axi_bresp[1:0],s_axi_bvalid[0:0],s_axi_bready[0:0],s_axi_araddr[31:0],s_axi_arprot[2:0],s_axi_arvalid[0:0],s_axi_arready[0:0],s_axi_rdata[31:0],s_axi_rresp[1:0],s_axi_rvalid[0:0],s_axi_rready[0:0],m_axi_awaddr[95:0],m_axi_awprot[8:0],m_axi_awvalid[2:0],m_axi_awready[2:0],m_axi_wdata[95:0],m_axi_wstrb[11:0],m_axi_wvalid[2:0],m_axi_wready[2:0],m_axi_bresp[5:0],m_axi_bvalid[2:0],m_axi_bready[2:0],m_axi_araddr[95:0],m_axi_arprot[8:0],m_axi_arvalid[2:0],m_axi_arready[2:0],m_axi_rdata[95:0],m_axi_rresp[5:0],m_axi_rvalid[2:0],m_axi_rready[2:0]" */
+/* synthesis syn_black_box black_box_pad_pin="aresetn,s_axi_awaddr[31:0],s_axi_awprot[2:0],s_axi_awvalid[0:0],s_axi_awready[0:0],s_axi_wdata[31:0],s_axi_wstrb[3:0],s_axi_wvalid[0:0],s_axi_wready[0:0],s_axi_bresp[1:0],s_axi_bvalid[0:0],s_axi_bready[0:0],s_axi_araddr[31:0],s_axi_arprot[2:0],s_axi_arvalid[0:0],s_axi_arready[0:0],s_axi_rdata[31:0],s_axi_rresp[1:0],s_axi_rvalid[0:0],s_axi_rready[0:0],m_axi_awaddr[127:0],m_axi_awprot[11:0],m_axi_awvalid[3:0],m_axi_awready[3:0],m_axi_wdata[127:0],m_axi_wstrb[15:0],m_axi_wvalid[3:0],m_axi_wready[3:0],m_axi_bresp[7:0],m_axi_bvalid[3:0],m_axi_bready[3:0],m_axi_araddr[127:0],m_axi_arprot[11:0],m_axi_arvalid[3:0],m_axi_arready[3:0],m_axi_rdata[127:0],m_axi_rresp[7:0],m_axi_rvalid[3:0],m_axi_rready[3:0]" */
 /* synthesis syn_force_seq_prim="aclk" */;
   input aclk /* synthesis syn_isclock = 1 */;
   input aresetn;
@@ -45,23 +45,23 @@ module dma_xbar_1(aclk, aresetn, s_axi_awaddr, s_axi_awprot,
   output [1:0]s_axi_rresp;
   output [0:0]s_axi_rvalid;
   input [0:0]s_axi_rready;
-  output [95:0]m_axi_awaddr;
-  output [8:0]m_axi_awprot;
-  output [2:0]m_axi_awvalid;
-  input [2:0]m_axi_awready;
-  output [95:0]m_axi_wdata;
-  output [11:0]m_axi_wstrb;
-  output [2:0]m_axi_wvalid;
-  input [2:0]m_axi_wready;
-  input [5:0]m_axi_bresp;
-  input [2:0]m_axi_bvalid;
-  output [2:0]m_axi_bready;
-  output [95:0]m_axi_araddr;
-  output [8:0]m_axi_arprot;
-  output [2:0]m_axi_arvalid;
-  input [2:0]m_axi_arready;
-  input [95:0]m_axi_rdata;
-  input [5:0]m_axi_rresp;
-  input [2:0]m_axi_rvalid;
-  output [2:0]m_axi_rready;
+  output [127:0]m_axi_awaddr;
+  output [11:0]m_axi_awprot;
+  output [3:0]m_axi_awvalid;
+  input [3:0]m_axi_awready;
+  output [127:0]m_axi_wdata;
+  output [15:0]m_axi_wstrb;
+  output [3:0]m_axi_wvalid;
+  input [3:0]m_axi_wready;
+  input [7:0]m_axi_bresp;
+  input [3:0]m_axi_bvalid;
+  output [3:0]m_axi_bready;
+  output [127:0]m_axi_araddr;
+  output [11:0]m_axi_arprot;
+  output [3:0]m_axi_arvalid;
+  input [3:0]m_axi_arready;
+  input [127:0]m_axi_rdata;
+  input [7:0]m_axi_rresp;
+  input [3:0]m_axi_rvalid;
+  output [3:0]m_axi_rready;
 endmodule

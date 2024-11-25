@@ -48,7 +48,7 @@
 
 
 // IP VLNV: spicer.local:user:decimation_filter:1.0
-// IP Revision: 7
+// IP Revision: 9
 
 (* X_CORE_INFO = "decimation_filter,Vivado 2024.1.2" *)
 (* CHECK_LICENSE_TYPE = "dma_decimation_filter_1_0,decimation_filter,{}" *)
@@ -60,27 +60,7 @@ module dma_decimation_filter_1_0 (
   data_out,
   din_rdy,
   dout_rdy,
-  s_axi_aclk,
-  s_axi_aresetn,
-  s_axi_awaddr,
-  s_axi_awprot,
-  s_axi_awvalid,
-  s_axi_awready,
-  s_axi_wdata,
-  s_axi_wstrb,
-  s_axi_wvalid,
-  s_axi_wready,
-  s_axi_bresp,
-  s_axi_bvalid,
-  s_axi_bready,
-  s_axi_araddr,
-  s_axi_arprot,
-  s_axi_arvalid,
-  s_axi_arready,
-  s_axi_rdata,
-  s_axi_rresp,
-  s_axi_rvalid,
-  s_axi_rready
+  en
 );
 
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 50000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN dma_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
@@ -93,52 +73,7 @@ input wire [31 : 0] data_in;
 output wire [31 : 0] data_out;
 input wire din_rdy;
 output wire dout_rdy;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXI_CLK, ASSOCIATED_BUSIF S_AXI, ASSOCIATED_RESET s_axi_aresetn, FREQ_HZ 50000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN dma_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
-(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 S_AXI_CLK CLK" *)
-input wire s_axi_aclk;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXI_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
-(* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 S_AXI_RST RST" *)
-input wire s_axi_aresetn;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWADDR" *)
-input wire [3 : 0] s_axi_awaddr;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWPROT" *)
-input wire [2 : 0] s_axi_awprot;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWVALID" *)
-input wire s_axi_awvalid;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWREADY" *)
-output wire s_axi_awready;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI WDATA" *)
-input wire [31 : 0] s_axi_wdata;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI WSTRB" *)
-input wire [3 : 0] s_axi_wstrb;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI WVALID" *)
-input wire s_axi_wvalid;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI WREADY" *)
-output wire s_axi_wready;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI BRESP" *)
-output wire [1 : 0] s_axi_bresp;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI BVALID" *)
-output wire s_axi_bvalid;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI BREADY" *)
-input wire s_axi_bready;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARADDR" *)
-input wire [3 : 0] s_axi_araddr;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARPROT" *)
-input wire [2 : 0] s_axi_arprot;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARVALID" *)
-input wire s_axi_arvalid;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARREADY" *)
-output wire s_axi_arready;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI RDATA" *)
-output wire [31 : 0] s_axi_rdata;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI RRESP" *)
-output wire [1 : 0] s_axi_rresp;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI RVALID" *)
-output wire s_axi_rvalid;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXI, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 4, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 50000000, ID_WIDTH 0, ADDR_WIDTH 4, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN dma_processing_system7_0_0_F\
-CLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI RREADY" *)
-input wire s_axi_rready;
+input wire en;
 
   decimation_filter #(
     .C_S_AXI_DATA_WIDTH(32),  // Width of S_AXI data bus
@@ -150,26 +85,6 @@ input wire s_axi_rready;
     .data_out(data_out),
     .din_rdy(din_rdy),
     .dout_rdy(dout_rdy),
-    .s_axi_aclk(s_axi_aclk),
-    .s_axi_aresetn(s_axi_aresetn),
-    .s_axi_awaddr(s_axi_awaddr),
-    .s_axi_awprot(s_axi_awprot),
-    .s_axi_awvalid(s_axi_awvalid),
-    .s_axi_awready(s_axi_awready),
-    .s_axi_wdata(s_axi_wdata),
-    .s_axi_wstrb(s_axi_wstrb),
-    .s_axi_wvalid(s_axi_wvalid),
-    .s_axi_wready(s_axi_wready),
-    .s_axi_bresp(s_axi_bresp),
-    .s_axi_bvalid(s_axi_bvalid),
-    .s_axi_bready(s_axi_bready),
-    .s_axi_araddr(s_axi_araddr),
-    .s_axi_arprot(s_axi_arprot),
-    .s_axi_arvalid(s_axi_arvalid),
-    .s_axi_arready(s_axi_arready),
-    .s_axi_rdata(s_axi_rdata),
-    .s_axi_rresp(s_axi_rresp),
-    .s_axi_rvalid(s_axi_rvalid),
-    .s_axi_rready(s_axi_rready)
+    .en(en)
   );
 endmodule

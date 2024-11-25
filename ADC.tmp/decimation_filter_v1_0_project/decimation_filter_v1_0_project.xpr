@@ -7,7 +7,7 @@
 <Project Product="Vivado" Version="7" Minor="67" Path="c:/projects/ern24004/projects/adc/adc.tmp/decimation_filter_v1_0_project/decimation_filter_v1_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="fe355763d4e94a2ab971e7fef0718c5e"/>
+    <Option Name="Id" Val="07be11ae334c42a68665d8557ed909de"/>
     <Option Name="Part" Val="xc7z007sclg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -47,6 +47,12 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl_1_0"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl_1_0"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl_1_0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../Projects/ERN24004/Projects/ADC/ip_repo"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPDefaultOutputPath" Val="$PGENDIR/sources_1"/>
@@ -91,14 +97,6 @@
   <FileSets Version="1" Minor="32">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../../../../../../Projects/ERN24004/Projects/ADC/ip_repo/decim_filter/decimation_filter_1_0/hdl/decimation_filter_slave_lite_v1_0_S_AXI.v">
-        <FileInfo>
-          <Attr Name="Library" Val=""/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PPRDIR/../../../../../../Projects/ERN24004/Projects/ADC/ip_repo/decim_filter/decimation_filter_1_0/hdl/decimation_filter.v">
         <FileInfo>
           <Attr Name="Library" Val=""/>

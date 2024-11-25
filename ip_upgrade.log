@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
-| Date         : Fri Nov 22 15:52:36 2024
+| Date         : Mon Nov 25 13:25:19 2024
 | Host         : DonGun running 64-bit major release  (build 9200)
 | Command      : upgrade_ip
 | Device       : xc7z007sclg400-1
@@ -12,7 +12,7 @@ Upgrade Log for IP 'dma_decimation_filter_1_0'
 1. Summary
 ----------
 
-SUCCESS in the upgrade of dma_decimation_filter_1_0 (spicer.local:user:decimation_filter:1.0) from (Rev. 6) to (Rev. 7)
+SUCCESS in the update of dma_decimation_filter_1_0 (spicer.local:user:decimation_filter:1.0 (Rev. 9)) to current project options.
 
 
 
@@ -22,7 +22,7 @@ SUCCESS in the upgrade of dma_decimation_filter_1_0 (spicer.local:user:decimatio
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
-| Date         : Fri Nov 22 15:52:36 2024
+| Date         : Mon Nov 25 13:25:19 2024
 | Host         : DonGun running 64-bit major release  (build 9200)
 | Command      : upgrade_ip
 | Device       : xc7z007sclg400-1
@@ -33,5 +33,47 @@ Upgrade Log for IP 'dma_decimation_filter_0_0'
 1. Summary
 ----------
 
-SUCCESS in the upgrade of dma_decimation_filter_0_0 (spicer.local:user:decimation_filter:1.0) from (Rev. 6) to (Rev. 7)
+SUCCESS in the update of dma_decimation_filter_0_0 (spicer.local:user:decimation_filter:1.0 (Rev. 9)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
+| Date         : Mon Nov 25 13:25:04 2024
+| Host         : DonGun running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'dma_decimation_filter_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of dma_decimation_filter_1_0 (spicer.local:user:decimation_filter:1.0) from (Rev. 8) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
+| Date         : Mon Nov 25 13:25:04 2024
+| Host         : DonGun running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'dma_decimation_filter_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of dma_decimation_filter_0_0 (spicer.local:user:decimation_filter:1.0) from (Rev. 8) to (Rev. 9)
 

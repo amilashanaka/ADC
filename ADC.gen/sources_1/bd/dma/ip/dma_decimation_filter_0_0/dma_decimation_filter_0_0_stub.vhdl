@@ -2,7 +2,7 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
--- Date        : Mon Nov 25 13:29:47 2024
+-- Date        : Mon Nov 25 13:55:13 2024
 -- Host        : DonGun running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub -rename_top dma_decimation_filter_0_0 -prefix
 --               dma_decimation_filter_0_0_ dma_decimation_filter_1_0_stub.vhdl

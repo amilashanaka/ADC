@@ -1,6 +1,182 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
+| Date         : Mon Nov 25 13:51:02 2024
+| Host         : DonGun running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'dma_decimation_filter_1_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of dma_decimation_filter_1_0 (spicer.local:user:decimation_filter:1.0) from (Rev. 10) to (Rev. 11)
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Addressing Information
+-------------------------
+
+Detected addressing differences while upgrading 'dma_decimation_filter_1_0'. These changes may impact your design.
+
+
+-Upgrade has removed address block 'S_AXI/S_AXI_reg'
+
+
+3. Customization warnings
+-------------------------
+
+Parameter 'C_S_AXI_BASEADDR' is no longer present on the upgraded IP 'dma_decimation_filter_1_0', and cannot be set to '0xFFFFFFFF'
+
+Parameter 'C_S_AXI_HIGHADDR' is no longer present on the upgraded IP 'dma_decimation_filter_1_0', and cannot be set to '0x00000000'
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv spicer.local:user:decimation_filter:1.0 -user_name dma_decimation_filter_1_0
+set_property -dict "\
+  CONFIG.C_S_AXI_ADDR_WIDTH {4} \
+  CONFIG.C_S_AXI_DATA_WIDTH {32} \
+  CONFIG.Component_Name {dma_decimation_filter_1_0} \
+  CONFIG.DESIM {10} \
+  CONFIG.clk.ASSOCIATED_BUSIF {} \
+  CONFIG.clk.ASSOCIATED_PORT {} \
+  CONFIG.clk.ASSOCIATED_RESET {} \
+  CONFIG.clk.CLK_DOMAIN {dma_processing_system7_0_0_FCLK_CLK0} \
+  CONFIG.clk.FREQ_HZ {50000000} \
+  CONFIG.clk.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.clk.INSERT_VIP {0} \
+  CONFIG.clk.PHASE {0.0} \
+  CONFIG.reset_n.INSERT_VIP {0} \
+  CONFIG.reset_n.POLARITY {ACTIVE_LOW} " [get_ips dma_decimation_filter_1_0]
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
+| Date         : Mon Nov 25 13:51:02 2024
+| Host         : DonGun running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'dma_decimation_filter_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of dma_decimation_filter_0_0 (spicer.local:user:decimation_filter:1.0) from (Rev. 10) to (Rev. 11)
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Addressing Information
+-------------------------
+
+Detected addressing differences while upgrading 'dma_decimation_filter_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed address block 'S_AXI/S_AXI_reg'
+
+
+3. Customization warnings
+-------------------------
+
+Parameter 'C_S_AXI_BASEADDR' is no longer present on the upgraded IP 'dma_decimation_filter_0_0', and cannot be set to '0xFFFFFFFF'
+
+Parameter 'C_S_AXI_HIGHADDR' is no longer present on the upgraded IP 'dma_decimation_filter_0_0', and cannot be set to '0x00000000'
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv spicer.local:user:decimation_filter:1.0 -user_name dma_decimation_filter_0_0
+set_property -dict "\
+  CONFIG.C_S_AXI_ADDR_WIDTH {4} \
+  CONFIG.C_S_AXI_DATA_WIDTH {32} \
+  CONFIG.Component_Name {dma_decimation_filter_0_0} \
+  CONFIG.DESIM {10} \
+  CONFIG.clk.ASSOCIATED_BUSIF {} \
+  CONFIG.clk.ASSOCIATED_PORT {} \
+  CONFIG.clk.ASSOCIATED_RESET {} \
+  CONFIG.clk.CLK_DOMAIN {dma_processing_system7_0_0_FCLK_CLK0} \
+  CONFIG.clk.FREQ_HZ {50000000} \
+  CONFIG.clk.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.clk.INSERT_VIP {0} \
+  CONFIG.clk.PHASE {0.0} \
+  CONFIG.reset_n.INSERT_VIP {0} \
+  CONFIG.reset_n.POLARITY {ACTIVE_LOW} " [get_ips dma_decimation_filter_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
+| Date         : Mon Nov 25 13:44:12 2024
+| Host         : DonGun running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'dma_decimation_filter_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of dma_decimation_filter_1_0 (spicer.local:user:decimation_filter:1.0) from (Rev. 9) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
+| Date         : Mon Nov 25 13:44:12 2024
+| Host         : DonGun running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'dma_decimation_filter_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of dma_decimation_filter_0_0 (spicer.local:user:decimation_filter:1.0) from (Rev. 9) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
 | Date         : Mon Nov 25 13:25:19 2024
 | Host         : DonGun running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

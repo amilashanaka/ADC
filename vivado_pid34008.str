@@ -323,3 +323,946 @@ selectButton(PAResourceQtoS.SystemBuilderView_OPTIMIZE_ROUTING, "System_RSB_OPTI
 selectComboBox(PAResourceQtoS.SystemBuilderView_SELECT_OR_SAVE_BD_LAYOUT, "Color Coded", 5); // fU.c (PAResourceQtoS.SystemBuilderView_SELECT_OR_SAVE_BD_LAYOUT)
 selectComboBox(PAResourceQtoS.SystemBuilderView_SELECT_OR_SAVE_BD_LAYOUT, "No Loops", 3); // fU.c (PAResourceQtoS.SystemBuilderView_SELECT_OR_SAVE_BD_LAYOUT)
 selectComboBox(PAResourceQtoS.SystemBuilderView_SELECT_OR_SAVE_BD_LAYOUT, "Default View", 0); // fU.c (PAResourceQtoS.SystemBuilderView_SELECT_OR_SAVE_BD_LAYOUT)
+// Elapsed time: 263 seconds
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // B (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// [Engine Memory]: 1,980 MB (+1116kb) [00:10:06]
+// Elapsed time: 131 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /processing_system7_0]"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /processing_system7_0]"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// HMemoryUtils.trashcanNow. Engine heap size: 2,022 MB. GUI used memory: 103 MB. Current time: 11/25/24, 1:39:51 PM GMT
+dismissDialog("Re-customize IP"); // C (Re-customize IP Progress)
+selectButton("Interrupts", "Interrupts", "Re-customize IP"); // j (Interrupts)
+expandTreeTable(PAResourceEtoH.GICTreeTablePanel_GIC_TREE_TABLE, "Fabric Interrupts ;  ; Enable PL Interrupts to PS and vice versa", 0); // V (PAResourceEtoH.GICTreeTablePanel_GIC_TREE_TABLE)
+selectTreeTable(PAResourceEtoH.GICTreeTablePanel_GIC_TREE_TABLE, "Fabric Interrupts ;  ; Enable PL Interrupts to PS and vice versa", 0, "Fabric Interrupts", 0, true); // V (PAResourceEtoH.GICTreeTablePanel_GIC_TREE_TABLE) - Node
+expandTreeTable(PAResourceEtoH.GICTreeTablePanel_GIC_TREE_TABLE, "PL-PS Interrupt Ports ; PL-PS Interrupt Ports ; PL-PS Interrupt Ports", 1); // V (PAResourceEtoH.GICTreeTablePanel_GIC_TREE_TABLE)
+selectTreeTable(PAResourceEtoH.GICTreeTablePanel_GIC_TREE_TABLE, "IRQ_F2P[15:0] ; [91:84], [68:61] ; Enables 16-bit shared interrupt port from the PL. MSB is assigned the highest Interrupt ID of 91", 2, "IRQ_F2P[15:0]", 0, false); // V (PAResourceEtoH.GICTreeTablePanel_GIC_TREE_TABLE)
+selectTreeTable(PAResourceEtoH.GICTreeTablePanel_GIC_TREE_TABLE, "IRQ_F2P[15:0] ; [91:84], [68:61] ; Enables 16-bit shared interrupt port from the PL. MSB is assigned the highest Interrupt ID of 91", 2, "IRQ_F2P[15:0]", 0, false); // V (PAResourceEtoH.GICTreeTablePanel_GIC_TREE_TABLE)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Re-customize IP"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Re-customize IP"); // m (dialog0)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list \   CONFIG.PCW_IRQ_F2P_INTR {1} \   CONFIG.PCW_USE_FABRIC_INTERRUPT {1} \ ] [get_bd_cells processing_system7_0] 
+// Tcl Message: endgroup 
+// Elapsed Time for: 'L.f': 11m:54s
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B (PAResourceQtoS.SystemBuilderView_ADD_IP, System_RSB_ADD_IP)
+// Elapsed Time for: 'L.f': 11m:56s
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "conca"); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Concat", 0, "Concat", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Concat", 0); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Concat", 0, "Concat", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0 
+// Tcl Message: endgroup 
+// Elapsed Time for: 'L.f': 12m:02s
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins xlconcat_0/dout] [get_bd_pins processing_system7_0/IRQ_F2P] 
+// Elapsed Time for: 'L.f': 12m:04s
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins xlconcat_0/In0] [get_bd_pins axi_dma_0/mm2s_introut] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins xlconcat_0/In1] [get_bd_pins axi_dma_0/s2mm_introut] 
+// Elapsed time: 16 seconds
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // B (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectButton(PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN, "save_rsb_design"); // B (PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN, save_rsb_design)
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <C:\Projects\ERN24004\Projects\ADC\ADC.srcs\sources_1\bd\dma\dma.bd>  Wrote  : <C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/ui/bd_87aee958.ui>  
+// Elapsed Time for: 'L.f': 12m:22s
+// Elapsed Time for: 'L.f': 12m:24s
+// Elapsed time: 18 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /data_anchor_0]"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /data_anchor_0]"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// Elapsed time: 16 seconds
+dismissDialog("Re-customize IP"); // m (dialog1)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /decimation_filter_1]"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /decimation_filter_1]"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+dismissDialog("Re-customize IP"); // m (dialog2)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /decimation_filter_1]"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 573, 500, 1234, 830, false, false, false, true, false); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /decimation_filter_1]"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // am (PAResourceQtoS.SelectMenu_HIGHLIGHT, Highlight)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // am (PAResourceQtoS.SelectMenu_HIGHLIGHT, Highlight)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // am (PAResourceQtoS.SystemBuilderView_ORIENTATION, Orientation)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // am (PAResourceQtoS.SystemBuilderView_PINNING, Pinning)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // am (PAResourceQtoS.SystemBuilderView_ORIENTATION, Orientation)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // am (PAResourceQtoS.SystemBuilderView_PINNING, Pinning)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // am (PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, Expand/Collapse)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // am (PAResourceQtoS.SystemBuilderView_PINNING, Pinning)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // am (PAResourceQtoS.SystemBuilderView_ORIENTATION, Orientation)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ap (PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, edit_in_ip_packager_menu)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+selectButton(RDIResource.BaseDialog_OK, "OK", "Edit in IP Packager"); // a (RDIResource.BaseDialog_OK)
+selectButton("OptionPane.button", "OK", "Confirm Overwrite"); // JButton (OptionPane.button)
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1096 ms.
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name decimation_filter_v1_0_project -directory C:/Projects/ERN24004/Projects/ADC/ADC.tmp/decimation_filter_v1_0_project c:/Projects/ERN24004/Projects/ADC/ip_repo/decim_filter/decimation_filter_1_0/component.xml 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// 'h' command handler elapsed time: 4 seconds
+// [GUI Memory]: 209 MB (+7964kb) [00:13:42]
+dismissDialog("Edit in IP Packager"); // bj (Edit in IP Packager Progress)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,077 MB. GUI used memory: 136 MB. Current time: 11/25/24, 1:41:31 PM GMT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decimation_filter (decimation_filter.v)]", 1, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decimation_filter (decimation_filter.v)]", 1, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("decimation_filter.v", 179, 390); // ac (decimation_filter.v)
+selectCodeEditor("decimation_filter.v", 179, 390, false, false, false, false, true); // ac (decimation_filter.v) - Double Click
+selectCodeEditor("decimation_filter.v", 313, 215); // ac (decimation_filter.v)
+selectCodeEditor("decimation_filter.v", 313, 215, false, false, false, false, true); // ac (decimation_filter.v) - Double Click
+// [Engine Memory]: 2,080 MB (+579kb) [00:14:05]
+// Elapsed time: 24 seconds
+selectCodeEditor("decimation_filter.v", 319, 108); // ac (decimation_filter.v)
+// Elapsed time: 42 seconds
+selectCodeEditor("decimation_filter.v", 171, 128); // ac (decimation_filter.v)
+selectCodeEditor("decimation_filter.v", 171, 128, false, false, false, false, true); // ac (decimation_filter.v) - Double Click
+typeControlKey((HResource) null, "decimation_filter.v", 'c'); // ac (decimation_filter.v)
+selectCodeEditor("decimation_filter.v", 259, 134); // ac (decimation_filter.v)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01m:36s
+// Elapsed Time for: 'L.f': 01m:38s
+selectCodeEditor("decimation_filter.v", 308, 351); // ac (decimation_filter.v)
+selectCodeEditor("decimation_filter.v", 308, 351, false, false, false, false, true); // ac (decimation_filter.v) - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("decimation_filter.v", 164, 77); // ac (decimation_filter.v)
+selectCodeEditor("decimation_filter.v", 164, 77, false, false, false, false, true); // ac (decimation_filter.v) - Double Click
+typeControlKey((HResource) null, "decimation_filter.v", 'c'); // ac (decimation_filter.v)
+selectCodeEditor("decimation_filter.v", 23, 346); // ac (decimation_filter.v)
+selectCodeEditor("decimation_filter.v", 271, 330); // ac (decimation_filter.v)
+selectCodeEditor("decimation_filter.v", 271, 330, false, false, false, false, true); // ac (decimation_filter.v) - Double Click
+selectCodeEditor("decimation_filter.v", 301, 331); // ac (decimation_filter.v)
+selectCodeEditor("decimation_filter.v", 301, 331, false, false, false, false, true); // ac (decimation_filter.v) - Double Click
+selectCodeEditor("decimation_filter.v", 326, 326); // ac (decimation_filter.v)
+selectCodeEditor("decimation_filter.v", 323, 330, false, false, false, false, true); // ac (decimation_filter.v) - Double Click
+typeControlKey((HResource) null, "decimation_filter.v", 'v'); // ac (decimation_filter.v)
+selectCodeEditor("decimation_filter.v", 645, 330); // ac (decimation_filter.v)
+selectCodeEditor("decimation_filter.v", 467, 347); // ac (decimation_filter.v)
+selectCodeEditor("decimation_filter.v", 467, 347, false, false, false, false, true); // ac (decimation_filter.v) - Double Click
+typeControlKey((HResource) null, "decimation_filter.v", 'v'); // ac (decimation_filter.v)
+selectCodeEditor("decimation_filter.v", 682, 320); // ac (decimation_filter.v)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (RDIResourceCommand.RDICommands_SAVE_FILE)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 02m:14s
+// Elapsed Time for: 'L.f': 02m:16s
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - decimation_filter", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Compatibility", 1); // S (PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // S (PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization Parameters", 3); // S (PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST)
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from Customization Parameters Wizard"); // g (PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT)
+// TclEventType: PACKAGER_COMPONENT_RESET
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::merge_project_changes hdl_parameters [ipx::current_core] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // S (PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 10 [ipx::current_core] 
+// Tcl Message: ipx::update_source_project_archive -component [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::check_integrity [ipx::current_core] 
+// Tcl Message: INFO: [IP_Flow 19-2181] Payment is not required for this core. 
+// Tcl Message: INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed. 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+selectButton("OptionPane.button", "Yes", "Close Project"); // JButton (OptionPane.button)
+// Tcl Message: ipx::move_temp_component_back -component [ipx::current_core] 
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,094 MB. GUI used memory: 136 MB. Current time: 11/25/24, 1:44:02 PM GMT
+// Tcl Message: close_project 
+dismissDialog("Package IP"); // bj (Package IP Progress)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: IP_LOCK_CHANGE
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/Projects/ERN24004/Projects/ADC/ip_repo 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo' 
+// Elapsed Time for: 'L.f': 15m:57s
+// Elapsed Time for: 'L.f': 15m:58s
+selectButton(PAResourceQtoS.SystemTab_REPORT_IP_STATUS, "Report IP Status"); // g (PAResourceQtoS.SystemTab_REPORT_IP_STATUS)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_IP_STATUS
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+selectButton(RDIResource.BaseDialog_OK, "OK", "Upgrade IP"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Upgrade IP"); // P.b (dialog4)
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: upgrade_ip [get_ips  {dma_decimation_filter_0_0 dma_decimation_filter_1_0}] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/dma.bd' 
+// Tcl Message: INFO: [IP_Flow 19-3422] Upgraded dma_decimation_filter_0_0 (decimation_filter_v1.0 1.0) from revision 9 to revision 10 INFO: [IP_Flow 19-3422] Upgraded dma_decimation_filter_1_0 (decimation_filter_v1.0 1.0) from revision 9 to revision 10 
+// Tcl Message: Wrote  : <C:\Projects\ERN24004\Projects\ADC\ADC.srcs\sources_1\bd\dma\dma.bd>  Wrote  : <C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/ui/bd_87aee958.ui>  
+// Tcl Message: INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Projects/ERN24004/Projects/ADC/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips {dma_decimation_filter_0_0 dma_decimation_filter_1_0}] -no_script -sync -force -quiet 
+selectButton("OptionPane.button", "OK", "Upgrade IP"); // JButton (OptionPane.button)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate", "Generate Output Products"); // a (PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY)
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: generate_target all [get_files  C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/dma.bd] 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: Wrote  : <C:\Projects\ERN24004\Projects\ADC\ADC.srcs\sources_1\bd\dma\dma.bd>  
+// Tcl Message: Verilog Output written to : c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v 
+// Tcl Message: Verilog Output written to : c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/sim/dma.v Verilog Output written to : c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/hdl/dma_wrapper.v 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,198 MB. GUI used memory: 138 MB. Current time: 11/25/24, 1:44:31 PM GMT
+// [Engine Memory]: 2,227 MB (+45599kb) [00:16:50]
+// Tcl Message: INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created. INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0'. A default connection has been created. INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP2'. A default connection has been created. 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block decimation_filter_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block decimation_filter_1 . INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc . 
+// Tcl Message: INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created. INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created. INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_us . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m01_couplers/auto_pc . 
+// Tcl Message: Exporting to file c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/hw_handoff/dma.hwh Generated Hardware Definition File c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.hwdef 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 2517.117 ; gain = 101.836 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all dma_decimation_filter_0_0] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dma_decimation_filter_0_0 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all dma_decimation_filter_1_0] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dma_decimation_filter_1_0 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: catch { config_ip_cache -export [get_ips -all dma_auto_pc_0] } 
+// TclEventType: OOC_IP_CACHE_USED
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: catch { config_ip_cache -export [get_ips -all dma_auto_us_0] } 
+// TclEventType: OOC_IP_CACHE_USED
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: OOC_IP_CACHE_USED
+// Tcl Message: catch { config_ip_cache -export [get_ips -all dma_auto_pc_1] } 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: catch { config_ip_cache -export [get_ips -all dma_auto_pc_2] } 
+// TclEventType: OOC_IP_CACHE_USED
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/dma.bd] -no_script -sync -force -quiet 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/dma.bd] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs dma_decimation_filter_0_0_synth_1 dma_decimation_filter_1_0_synth_1 dma_processing_system7_0_0_synth_1 -jobs 4 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dma_decimation_filter_0_0 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dma_decimation_filter_1_0 
+// Tcl Message: [Mon Nov 25 13:44:45 2024] Launched dma_decimation_filter_0_0_synth_1, dma_decimation_filter_1_0_synth_1, dma_processing_system7_0_0_synth_1... Run output will be captured here: dma_decimation_filter_0_0_synth_1: C:/Projects/ERN24004/Projects/ADC/ADC.runs/dma_decimation_filter_0_0_synth_1/runme.log dma_decimation_filter_1_0_synth_1: C:/Projects/ERN24004/Projects/ADC/ADC.runs/dma_decimation_filter_1_0_synth_1/runme.log dma_processing_system7_0_0_synth_1: C:/Projects/ERN24004/Projects/ADC/ADC.runs/dma_processing_system7_0_0_synth_1/runme.log 
+// Tcl Message: export_simulation -of_objects [get_files C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/dma.bd] -directory C:/Projects/ERN24004/Projects/ADC/ADC.ip_user_files/sim_scripts -ip_user_files_dir C:/Projects/ERN24004/Projects/ADC/ADC.ip_user_files -ipstatic_source_dir C:/Projects/ERN24004/Projects/ADC/ADC.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Projects/ERN24004/Projects/ADC/ADC.cache/compile_simlib/modelsim} {questa=C:/Projects/ERN24004/Projects/ADC/ADC.cache/compile_simlib/questa} {riviera=C:/Projects/ERN24004/Projects/ADC/ADC.cache/compile_simlib/riviera} {activehdl=C:/Projects/ERN24004/Projects/ADC/ADC.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,231 MB. GUI used memory: 142 MB. Current time: 11/25/24, 1:44:45 PM GMT
+// TclEventType: PROJECT_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Elapsed Time for: 'W.b': 35s
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 45 seconds
+selectButton("OptionPane.button", "OK", "Generate Output Products"); // JButton (OptionPane.button)
+// Elapsed Time for: 'L.f': 16m:54s
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // g (RDIResource.BaseReportTab_RERUN)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,256 MB. GUI used memory: 143 MB. Current time: 11/25/24, 1:45:41 PM GMT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 72 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 21, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// [GUI Memory]: 222 MB (+2731kb) [00:18:29]
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Projects/ERN24004/Projects/ADC/ADC.srcs/utils_1/imports/synth_1/dma_wrapper.dcp with file C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/dma_wrapper.dcp 
+dismissDialog("Resetting Runs"); // bj (Resetting Runs Progress)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Mon Nov 25 13:46:16 2024] Launched synth_1... Run output will be captured here: C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/runme.log [Mon Nov 25 13:46:16 2024] Launched impl_1... Run output will be captured here: C:/Projects/ERN24004/Projects/ADC/ADC.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 90 seconds
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // B (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 56 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /decimation_filter_1]"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /decimation_filter_1]"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// Elapsed time: 16 seconds
+selectCheckBox(PAResourceEtoH.HACGCIPSymbol_SHOW_DISABLED_PORTS, "Show disabled ports", true); // f (PAResourceEtoH.HACGCIPSymbol_SHOW_DISABLED_PORTS): TRUE
+selectCheckBox(PAResourceEtoH.HACGCIPSymbol_SHOW_DISABLED_PORTS, "Show disabled ports", false); // f (PAResourceEtoH.HACGCIPSymbol_SHOW_DISABLED_PORTS): FALSE
+dismissDialog("Re-customize IP"); // m (dialog6)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 413, 304, 1234, 583, false, false, false, true, false); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /decimation_filter_1]"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ap (PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, edit_in_ip_packager_menu)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+selectButton(RDIResource.BaseDialog_OK, "OK", "Edit in IP Packager"); // a (RDIResource.BaseDialog_OK)
+selectButton("OptionPane.button", "OK", "Confirm Overwrite"); // JButton (OptionPane.button)
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name decimation_filter_v1_0_project -directory C:/Projects/ERN24004/Projects/ADC/ADC.tmp/decimation_filter_v1_0_project c:/Projects/ERN24004/Projects/ADC/ip_repo/decim_filter/decimation_filter_1_0/component.xml 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// 'h' command handler elapsed time: 4 seconds
+dismissDialog("Edit in IP Packager"); // bj (Edit in IP Packager Progress)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 242 MB (+8680kb) [00:21:49]
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Addressing and Memory", 5); // S (PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST)
+selectTable(PAResourceItoN.MemoryMapFacetTable_MEMORY_MAP, "S_AXI ;  ; ", 0, (String) null, 2); // s (PAResourceItoN.MemoryMapFacetTable_MEMORY_MAP)
+selectTable(PAResourceAtoD.AddressBlockFacetTable_ADDRESS_BLOCKS, "S_AXI_reg ;  ;  ; 0 ; 4096 ;  ; 32 ; register", 0, "S_AXI_reg", 0); // s (PAResourceAtoD.AddressBlockFacetTable_ADDRESS_BLOCKS)
+selectTable(PAResourceAtoD.AddressBlockFacetTable_ADDRESS_BLOCKS, "S_AXI_reg ;  ;  ; 0 ; 4096 ;  ; 32 ; register", 0, "S_AXI_reg", 0); // s (PAResourceAtoD.AddressBlockFacetTable_ADDRESS_BLOCKS)
+selectTreeTable(PAResourceAtoD.AddressBlockParameterFacetTable_ADDRESS_BLOCK_PARAMETER_FACET_TABLE, "OFFSET_BASE_PARAM ;  ;  ; C_S_AXI_BASEADDR ; default ; ", 0, "OFFSET_BASE_PARAM", 0, false); // w (PAResourceAtoD.AddressBlockParameterFacetTable_ADDRESS_BLOCK_PARAMETER_FACET_TABLE)
+selectTreeTable(PAResourceAtoD.AddressBlockParameterFacetTable_ADDRESS_BLOCK_PARAMETER_FACET_TABLE, "OFFSET_BASE_PARAM ;  ;  ; C_S_AXI_BASEADDR ; default ; ", 0, "OFFSET_BASE_PARAM", 0, false, false, false, false, true, false); // w (PAResourceAtoD.AddressBlockParameterFacetTable_ADDRESS_BLOCK_PARAMETER_FACET_TABLE) - Popup Trigger
+selectMenuItem(PAResourceQtoS.RefreshPackagerTableAction_REFRESH_ALL_ROWS_IN_TABLE, "Refresh Table"); // ap (PAResourceQtoS.RefreshPackagerTableAction_REFRESH_ALL_ROWS_IN_TABLE)
+selectTreeTableHeader(PAResourceAtoD.AddressBlockParameterFacetTable_ADDRESS_BLOCK_PARAMETER_FACET_TABLE, "Description", 1); // w (PAResourceAtoD.AddressBlockParameterFacetTable_ADDRESS_BLOCK_PARAMETER_FACET_TABLE)
+selectTreeTableHeader(PAResourceAtoD.AddressBlockParameterFacetTable_ADDRESS_BLOCK_PARAMETER_FACET_TABLE, "Value Source", 4); // w (PAResourceAtoD.AddressBlockParameterFacetTable_ADDRESS_BLOCK_PARAMETER_FACET_TABLE)
+selectTable(PAResourceItoN.MemoryMapFacetTable_MEMORY_MAP, "S_AXI ;  ; ", 0, "S_AXI", 0); // s (PAResourceItoN.MemoryMapFacetTable_MEMORY_MAP)
+selectTable(PAResourceItoN.MemoryMapFacetTable_MEMORY_MAP, "S_AXI ;  ; ", 0, "S_AXI", 0, false, false, false, true, false); // s (PAResourceItoN.MemoryMapFacetTable_MEMORY_MAP) - Popup Trigger
+selectTable(PAResourceItoN.MemoryMapFacetTable_MEMORY_MAP, "S_AXI ;  ; ", 0, "S_AXI", 0, false, false, false, true, false); // s (PAResourceItoN.MemoryMapFacetTable_MEMORY_MAP) - Popup Trigger
+selectMenuItem(PAResourceItoN.MemoryMapFacetTable_REMOVE_MEMORY_MAP, "Remove Memory Map"); // ap (PAResourceItoN.MemoryMapFacetTable_REMOVE_MEMORY_MAP)
+// TclEventType: PACKAGER_OBJECT_DELETE
+// Tcl Message: ipx::remove_memory_map S_AXI [ipx::current_core] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // S (PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization Parameters", 3); // S (PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST)
+selectTreeTable(PAResourceOtoP.ParameterFacetTable_PARAMETER_FACET_TABLE, "C_S_AXI_DATA_WIDTH ; Width of S_AXI data bus ; C S AXI DATA WIDTH ; 32 ; 0 ; long ; default ; 32 ;  ; ", 1, "C_S_AXI_DATA_WIDTH", 0, false); // w (PAResourceOtoP.ParameterFacetTable_PARAMETER_FACET_TABLE)
+selectTreeTable(PAResourceOtoP.ParameterFacetTable_PARAMETER_FACET_TABLE, "C_S_AXI_ADDR_WIDTH ; Width of S_AXI address bus ; C S AXI ADDR WIDTH ; 4 ; 0 ; long ; default ;  ;  ; ", 2, "C_S_AXI_ADDR_WIDTH", 0, false, false, false, false, true, false); // w (PAResourceOtoP.ParameterFacetTable_PARAMETER_FACET_TABLE) - Popup Trigger
+selectMenuItem(PAResourceOtoP.ParameterFacetTable_REMOVE_PARAMETER, "Remove Parameter"); // ap (PAResourceOtoP.ParameterFacetTable_REMOVE_PARAMETER)
+// TclEventType: PACKAGER_OBJECT_DELETE
+// Tcl Message: ipx::remove_user_parameter C_S_AXI_DATA_WIDTH [ipx::current_core] 
+// Tcl Message: ipx::remove_user_parameter C_S_AXI_ADDR_WIDTH [ipx::current_core] 
+// Tcl Message: ipx::remove_user_parameter C_S_AXI_BASEADDR [ipx::current_core] 
+// Tcl Message: ipx::remove_user_parameter C_S_AXI_HIGHADDR [ipx::current_core] 
+expandTreeTable(PAResourceOtoP.ParameterFacetTable_PARAMETER_FACET_TABLE, "Hidden Parameters ;  ;  ;  ;  ;  ;  ;  ;  ; ", 1); // w (PAResourceOtoP.ParameterFacetTable_PARAMETER_FACET_TABLE)
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectTreeTable(PAResourceOtoP.ParameterFacetTable_PARAMETER_FACET_TABLE, "DESIM ;  ; Desim ; 10 ; 0 ; long ; default ;  ;  ; ", 2, "DESIM", 0, false); // w (PAResourceOtoP.ParameterFacetTable_PARAMETER_FACET_TABLE)
+selectTreeTable(PAResourceOtoP.ParameterFacetTable_PARAMETER_FACET_TABLE, "DESIM ;  ; Desim ; 10 ; 0 ; long ; default ;  ;  ; ", 2, "DESIM", 0, false, false, false, false, true, false); // w (PAResourceOtoP.ParameterFacetTable_PARAMETER_FACET_TABLE) - Popup Trigger
+selectTreeTable(PAResourceOtoP.ParameterFacetTable_PARAMETER_FACET_TABLE, "DESIM ;  ; Desim ; 10 ; 0 ; long ; default ;  ;  ; ", 2, "DESIM", 0, false); // w (PAResourceOtoP.ParameterFacetTable_PARAMETER_FACET_TABLE)
+selectTreeTable(PAResourceOtoP.ParameterFacetTable_PARAMETER_FACET_TABLE, "DESIM ;  ; Desim ; 10 ; 0 ; long ; default ;  ;  ; ", 2, "DESIM", 0, false); // w (PAResourceOtoP.ParameterFacetTable_PARAMETER_FACET_TABLE)
+selectTreeTable(PAResourceOtoP.ParameterFacetTable_PARAMETER_FACET_TABLE, "DESIM ;  ; Desim ; 10 ; 0 ; long ; default ;  ;  ; ", 2, "DESIM", 0, false); // w (PAResourceOtoP.ParameterFacetTable_PARAMETER_FACET_TABLE)
+expandTreeTable(PAResourceOtoP.ParameterFacetTable_PARAMETER_FACET_TABLE, "DESIM ;  ; Desim ; 10 ; 0 ; long ; default ;  ;  ; ", 2); // w (PAResourceOtoP.ParameterFacetTable_PARAMETER_FACET_TABLE)
+selectTreeTable(PAResourceOtoP.ParameterFacetTable_PARAMETER_FACET_TABLE, "DESIM ;  ; Desim ; 10 ; 0 ; long ; default ;  ;  ; ", 2, "DESIM", 0, false, false, false, false, false, true); // w (PAResourceOtoP.ParameterFacetTable_PARAMETER_FACET_TABLE) - Double Click
+selectCheckBox(PAResourceEtoH.EditParameterDialog_VISIBLE_IN_CUSTOMIZATION_GUI, "Visible in Customization GUI", true); // f (PAResourceEtoH.EditParameterDialog_VISIBLE_IN_CUSTOMIZATION_GUI): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK", "Edit IP Parameter"); // a (RDIResource.BaseDialog_OK)
+// TclEventType: IPGUI_UPDATE_GUI_ELEMENT
+// Tcl Message: ipgui::add_param -name {DESIM} -component [ipx::current_core] -display_name {Desim} -show_label {true} -show_range {true} -widget {} 
+dismissDialog("Edit IP Parameter"); // K (dialog8)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // S (PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // S (PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Compatibility", 1); // S (PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // S (PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 11 [ipx::current_core] 
+// Tcl Message: ipx::update_source_project_archive -component [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::check_integrity [ipx::current_core] 
+// Tcl Message: INFO: [IP_Flow 19-2181] Payment is not required for this core. 
+// Tcl Message: INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed. 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes", "Close Project"); // JButton (OptionPane.button)
+// Tcl Message: ipx::move_temp_component_back -component [ipx::current_core] 
+// TclEventType: PROJECT_CLOSE
+// Tcl Message: close_project 
+dismissDialog("Edit IP Parameter"); // K (dialog8)
+dismissDialog("Package IP"); // bj (Package IP Progress)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,266 MB. GUI used memory: 154 MB. Current time: 11/25/24, 1:50:53 PM GMT
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/Projects/ERN24004/Projects/ADC/ip_repo 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo' 
+// Elapsed Time for: 'L.f': 22m:48s
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // g (RDIResource.BaseReportTab_RERUN)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// Elapsed Time for: 'L.f': 22m:52s
+selectButton(RDIResource.BaseDialog_OK, "OK", "Upgrade IP"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Upgrade IP"); // P.b (dialog9)
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// Tcl Message: upgrade_ip [get_ips  {dma_decimation_filter_0_0 dma_decimation_filter_1_0}] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/dma.bd' 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-3422] Upgraded dma_decimation_filter_0_0 (decimation_filter_v1.0 1.0) from revision 10 to revision 11 
+// Tcl Message: INFO: [IP_Flow 19-3422] Upgraded dma_decimation_filter_1_0 (decimation_filter_v1.0 1.0) from revision 10 to revision 11 
+// Tcl Message: Wrote  : <C:\Projects\ERN24004\Projects\ADC\ADC.srcs\sources_1\bd\dma\dma.bd>  Wrote  : <C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/ui/bd_87aee958.ui>  
+// Tcl Message: INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Projects/ERN24004/Projects/ADC/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips {dma_decimation_filter_0_0 dma_decimation_filter_1_0}] -no_script -sync -force -quiet 
+selectButton("OptionPane.button", "OK", "Upgrade IP"); // JButton (OptionPane.button)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate", "Generate Output Products"); // a (PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY)
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: generate_target all [get_files  C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/dma.bd] 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT

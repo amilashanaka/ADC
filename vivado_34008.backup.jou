@@ -1,0 +1,104 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.2 (64-bit)
+# SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+# IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+# SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+# Start of session at: Mon Nov 25 13:27:33 2024
+# Process ID: 34008
+# Current directory: C:/Projects/ERN24004/Projects/ADC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32760 C:\Projects\ERN24004\Projects\ADC\ADC.xpr
+# Log file: C:/Projects/ERN24004/Projects/ADC/vivado.log
+# Journal file: C:/Projects/ERN24004/Projects/ADC\vivado.jou
+# Running On        :DonGun
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :13th Gen Intel(R) Core(TM) i7-13700K
+# CPU Frequency     :3418 MHz
+# CPU Physical cores:16
+# CPU Logical cores :24
+# Host memory       :34124 MB
+# Swap memory       :2147 MB
+# Total Virtual     :36272 MB
+# Available Virtual :18599 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Projects/ERN24004/Projects/ADC/ADC.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/dma.bd}
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+regenerate_bd_layout -routing
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout -routing
+regenerate_bd_layout
+startgroup
+set_property -dict [list \
+  CONFIG.PCW_IRQ_F2P_INTR {1} \
+  CONFIG.PCW_USE_FABRIC_INTERRUPT {1} \
+] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0
+endgroup
+connect_bd_net [get_bd_pins xlconcat_0/dout] [get_bd_pins processing_system7_0/IRQ_F2P]
+connect_bd_net [get_bd_pins xlconcat_0/In0] [get_bd_pins axi_dma_0/mm2s_introut]
+connect_bd_net [get_bd_pins xlconcat_0/In1] [get_bd_pins axi_dma_0/s2mm_introut]
+regenerate_bd_layout
+save_bd_design
+ipx::edit_ip_in_project -upgrade true -name decimation_filter_v1_0_project -directory C:/Projects/ERN24004/Projects/ADC/ADC.tmp/decimation_filter_v1_0_project c:/Projects/ERN24004/Projects/ADC/ip_repo/decim_filter/decimation_filter_1_0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 10 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project
+update_ip_catalog -rebuild -repo_path c:/Projects/ERN24004/Projects/ADC/ip_repo
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {dma_decimation_filter_0_0 dma_decimation_filter_1_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {dma_decimation_filter_0_0 dma_decimation_filter_1_0}] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/dma.bd]
+catch { config_ip_cache -export [get_ips -all dma_decimation_filter_0_0] }
+catch { config_ip_cache -export [get_ips -all dma_decimation_filter_1_0] }
+catch { config_ip_cache -export [get_ips -all dma_auto_pc_0] }
+catch { config_ip_cache -export [get_ips -all dma_auto_us_0] }
+catch { config_ip_cache -export [get_ips -all dma_auto_pc_1] }
+catch { config_ip_cache -export [get_ips -all dma_auto_pc_2] }
+export_ip_user_files -of_objects [get_files C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/dma.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/dma.bd]
+launch_runs dma_decimation_filter_0_0_synth_1 dma_decimation_filter_1_0_synth_1 dma_processing_system7_0_0_synth_1 -jobs 4
+wait_on_run dma_decimation_filter_0_0_synth_1
+wait_on_run dma_decimation_filter_1_0_synth_1
+wait_on_run dma_processing_system7_0_0_synth_1
+export_simulation -of_objects [get_files C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/dma.bd] -directory C:/Projects/ERN24004/Projects/ADC/ADC.ip_user_files/sim_scripts -ip_user_files_dir C:/Projects/ERN24004/Projects/ADC/ADC.ip_user_files -ipstatic_source_dir C:/Projects/ERN24004/Projects/ADC/ADC.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Projects/ERN24004/Projects/ADC/ADC.cache/compile_simlib/modelsim} {questa=C:/Projects/ERN24004/Projects/ADC/ADC.cache/compile_simlib/questa} {riviera=C:/Projects/ERN24004/Projects/ADC/ADC.cache/compile_simlib/riviera} {activehdl=C:/Projects/ERN24004/Projects/ADC/ADC.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+regenerate_bd_layout
+ipx::edit_ip_in_project -upgrade true -name decimation_filter_v1_0_project -directory C:/Projects/ERN24004/Projects/ADC/ADC.tmp/decimation_filter_v1_0_project c:/Projects/ERN24004/Projects/ADC/ip_repo/decim_filter/decimation_filter_1_0/component.xml
+update_compile_order -fileset sources_1
+ipx::remove_memory_map S_AXI [ipx::current_core]
+ipx::remove_user_parameter C_S_AXI_DATA_WIDTH [ipx::current_core]
+ipx::remove_user_parameter C_S_AXI_ADDR_WIDTH [ipx::current_core]
+ipx::remove_user_parameter C_S_AXI_BASEADDR [ipx::current_core]
+ipx::remove_user_parameter C_S_AXI_HIGHADDR [ipx::current_core]
+ipgui::add_param -name {DESIM} -component [ipx::current_core] -display_name {Desim} -show_label {true} -show_range {true} -widget {}
+set_property core_revision 11 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project
+update_ip_catalog -rebuild -repo_path c:/Projects/ERN24004/Projects/ADC/ip_repo
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {dma_decimation_filter_0_0 dma_decimation_filter_1_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {dma_decimation_filter_0_0 dma_decimation_filter_1_0}] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/dma.bd]

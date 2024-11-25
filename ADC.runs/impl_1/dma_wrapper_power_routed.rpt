@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
-| Date             : Mon Nov 25 13:32:11 2024
+| Date             : Mon Nov 25 13:57:28 2024
 | Host             : DonGun running 64-bit major release  (build 9200)
 | Command          : report_power -file dma_wrapper_power_routed.rpt -pb dma_wrapper_power_summary_routed.pb -rpx dma_wrapper_power_routed.rpx
 | Design           : dma_wrapper
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.385        |
+| Total On-Chip Power (W)  | 1.386        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 1.267        |
@@ -53,19 +53,19 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.007 |        3 |       --- |             --- |
-| Slice Logic              |     0.001 |     8576 |       --- |             --- |
-|   LUT as Logic           |     0.001 |     2906 |     14400 |           20.18 |
+| Slice Logic              |     0.001 |     8580 |       --- |             --- |
+|   LUT as Logic           |     0.001 |     2913 |     14400 |           20.23 |
 |   CARRY4                 |    <0.001 |      109 |      4400 |            2.48 |
-|   Register               |    <0.001 |     3978 |     28800 |           13.81 |
+|   Register               |    <0.001 |     3980 |     28800 |           13.82 |
 |   LUT as Shift Register  |    <0.001 |      183 |      6000 |            3.05 |
 |   LUT as Distributed RAM |    <0.001 |       28 |      6000 |            0.47 |
 |   Others                 |     0.000 |      499 |       --- |             --- |
-| Signals                  |     0.002 |     6169 |       --- |             --- |
+| Signals                  |     0.002 |     6178 |       --- |             --- |
 | Block RAM                |    <0.001 |      2.5 |        50 |            5.00 |
 | I/O                      |     0.001 |        8 |       100 |            8.00 |
 | PS7                      |     1.255 |        1 |       --- |             --- |
 | Static Power             |     0.118 |          |           |                 |
-| Total                    |     1.385 |          |           |                 |
+| Total                    |     1.386 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 

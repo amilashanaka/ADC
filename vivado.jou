@@ -3,10 +3,10 @@
 # SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
 # IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
 # SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
-# Start of session at: Mon Nov 25 13:27:33 2024
-# Process ID: 34008
+# Start of session at: Mon Nov 25 13:53:18 2024
+# Process ID: 30228
 # Current directory: C:/Projects/ERN24004/Projects/ADC
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32760 C:\Projects\ERN24004\Projects\ADC\ADC.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32776 C:\Projects\ERN24004\Projects\ADC\ADC.xpr
 # Log file: C:/Projects/ERN24004/Projects/ADC/vivado.log
 # Journal file: C:/Projects/ERN24004/Projects/ADC\vivado.jou
 # Running On        :DonGun
@@ -19,16 +19,14 @@
 # Host memory       :34124 MB
 # Swap memory       :2147 MB
 # Total Virtual     :36272 MB
-# Available Virtual :18599 MB
+# Available Virtual :14311 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Projects/ERN24004/Projects/ADC/ADC.xpr
 update_compile_order -fileset sources_1
 open_bd_design {C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/dma.bd}
+regenerate_bd_layout
+reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 4
 wait_on_run impl_1
-regenerate_bd_layout -routing
 regenerate_bd_layout
-regenerate_bd_layout
-regenerate_bd_layout
-regenerate_bd_layout -routing

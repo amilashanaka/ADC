@@ -3,10 +3,10 @@
 # SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
 # IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
 # SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
-# Start of session at: Mon Nov 25 13:27:33 2024
-# Process ID: 34008
+# Start of session at: Mon Nov 25 13:53:18 2024
+# Process ID: 30228
 # Current directory: C:/Projects/ERN24004/Projects/ADC
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32760 C:\Projects\ERN24004\Projects\ADC\ADC.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32776 C:\Projects\ERN24004\Projects\ADC\ADC.xpr
 # Log file: C:/Projects/ERN24004/Projects/ADC/vivado.log
 # Journal file: C:/Projects/ERN24004/Projects/ADC\vivado.jou
 # Running On        :DonGun
@@ -19,7 +19,7 @@
 # Host memory       :34124 MB
 # Swap memory       :2147 MB
 # Total Virtual     :36272 MB
-# Available Virtual :18599 MB
+# Available Virtual :14311 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Projects/ERN24004/Projects/ADC/ADC.xpr
@@ -50,7 +50,7 @@ WARNING: [IP_Flow 19-2207] Repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo
 WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl_1_0'. The path is contained within another repository.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
-open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1835.051 ; gain = 586.238
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1855.379 ; gain = 605.871
 update_compile_order -fileset sources_1
 open_bd_design {C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/dma.bd}
 Reading block design file <C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/dma.bd>...
@@ -71,7 +71,11 @@ Adding component instance block -- spicer.local:user:decimation_filter:1.0 - dec
 Adding component instance block -- spicer.local:user:data_anchor:1.0 - data_anchor_0
 Adding component instance block -- spicer.local:user:decimation_filter:1.0 - decimation_filter_1
 Adding component instance block -- spicer.local:user:filter_ctrl:1.0 - filter_ctrl_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
 Successfully read diagram <dma> from block design file <C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/dma.bd>
+regenerate_bd_layout
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Projects/ERN24004/Projects/ADC/ADC.srcs/utils_1/imports/synth_1/dma_wrapper.dcp with file C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/dma_wrapper.dcp
 launch_runs impl_1 -to_step write_bitstream -jobs 4
 INFO: [BD 41-1662] The design 'dma.bd' is already validated. Therefore parameter propagation will not be re-run.
 Wrote  : <C:/Projects/ERN24004/Projects/ADC/ADC.srcs/sources_1/bd/dma/ui/bd_87aee958.ui> 
@@ -98,7 +102,6 @@ WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0
 WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_WID'(6) to pin: '/axi_mem_intercon/M01_AXI_wid'(2) - Only lower order bits will be connected.
 Verilog Output written to : c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/sim/dma.v
 Verilog Output written to : c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/hdl/dma_wrapper.v
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
 WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_0/dma_auto_pc_0_ooc.xdc'
 INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
 WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_us_0/dma_auto_us_0_ooc.xdc'
@@ -111,7 +114,6 @@ WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Projects/ERN
 INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m01_couplers/auto_pc .
 INFO: [BD 41-1029] Generation completed for the IP Integrator block decimation_filter_0 .
 INFO: [BD 41-1029] Generation completed for the IP Integrator block decimation_filter_1 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block filter_ctrl_0 .
 Exporting to file c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/hw_handoff/dma.hwh
 Generated Hardware Definition File c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.hwdef
 INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
@@ -121,8 +123,6 @@ INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP 
 INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dma_auto_us_0
 INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dma_decimation_filter_0_0
 INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dma_decimation_filter_1_0
-INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dma_filter_ctrl_0_2
-INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP dma_xbar_1
 INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dma_auto_pc_0
 INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 8303ab40dec7ec38 to dir: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_0
@@ -136,7 +136,7 @@ INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Project
 INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_0/dma_auto_pc_0_stub.v
 INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/8/3/8303ab40dec7ec38/dma_auto_pc_0_stub.vhdl to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_0/dma_auto_pc_0_stub.vhdl.
 INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_0/dma_auto_pc_0_stub.vhdl
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP dma_auto_pc_0, cache-ID = 8303ab40dec7ec38; cache size = 9.006 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP dma_auto_pc_0, cache-ID = 8303ab40dec7ec38; cache size = 10.499 MB.
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dma_auto_pc_1
 INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry b1c72505146bb989 to dir: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_1
 INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/b/1/b1c72505146bb989/dma_auto_pc_1.dcp to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_1/dma_auto_pc_1.dcp.
@@ -149,7 +149,7 @@ INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Project
 INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_1/dma_auto_pc_1_stub.v
 INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/b/1/b1c72505146bb989/dma_auto_pc_1_stub.vhdl to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_1/dma_auto_pc_1_stub.vhdl.
 INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_1/dma_auto_pc_1_stub.vhdl
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP dma_auto_pc_1, cache-ID = b1c72505146bb989; cache size = 9.006 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP dma_auto_pc_1, cache-ID = b1c72505146bb989; cache size = 10.499 MB.
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dma_auto_pc_2
 INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry b1c72505146bb989 to dir: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_2
 INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/b/1/b1c72505146bb989/dma_auto_pc_1.dcp to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_2/dma_auto_pc_2.dcp.
@@ -162,7 +162,7 @@ INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Project
 INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_2/dma_auto_pc_2_stub.v
 INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/b/1/b1c72505146bb989/dma_auto_pc_1_stub.vhdl to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_2/dma_auto_pc_2_stub.vhdl.
 INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_2/dma_auto_pc_2_stub.vhdl
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP dma_auto_pc_2, cache-ID = b1c72505146bb989; cache size = 9.006 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP dma_auto_pc_2, cache-ID = b1c72505146bb989; cache size = 10.499 MB.
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dma_auto_us_0
 INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry f171da39e8932f68 to dir: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_us_0
 INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/f/1/f171da39e8932f68/dma_auto_us_0.dcp to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_us_0/dma_auto_us_0.dcp.
@@ -175,23 +175,15 @@ INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Project
 INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_us_0/dma_auto_us_0_stub.v
 INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Projects/ERN24004/Projects/ADC/ADC.cache/ip/2024.1.2/f/1/f171da39e8932f68/dma_auto_us_0_stub.vhdl to c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_us_0/dma_auto_us_0_stub.vhdl.
 INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_us_0/dma_auto_us_0_stub.vhdl
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP dma_auto_us_0, cache-ID = f171da39e8932f68; cache size = 9.006 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP dma_auto_us_0, cache-ID = f171da39e8932f68; cache size = 10.499 MB.
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dma_decimation_filter_0_0
-INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dma_filter_ctrl_0_2
-INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dma_xbar_1
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dma_decimation_filter_1_0
-[Mon Nov 25 13:28:57 2024] Launched dma_xbar_1_synth_1, dma_filter_ctrl_0_2_synth_1, dma_decimation_filter_1_0_synth_1, dma_decimation_filter_0_0_synth_1, synth_1...
+[Mon Nov 25 13:54:32 2024] Launched dma_decimation_filter_1_0_synth_1, dma_decimation_filter_0_0_synth_1, synth_1...
 Run output will be captured here:
-dma_xbar_1_synth_1: C:/Projects/ERN24004/Projects/ADC/ADC.runs/dma_xbar_1_synth_1/runme.log
-dma_filter_ctrl_0_2_synth_1: C:/Projects/ERN24004/Projects/ADC/ADC.runs/dma_filter_ctrl_0_2_synth_1/runme.log
 dma_decimation_filter_1_0_synth_1: C:/Projects/ERN24004/Projects/ADC/ADC.runs/dma_decimation_filter_1_0_synth_1/runme.log
 dma_decimation_filter_0_0_synth_1: C:/Projects/ERN24004/Projects/ADC/ADC.runs/dma_decimation_filter_0_0_synth_1/runme.log
 synth_1: C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/runme.log
-[Mon Nov 25 13:28:57 2024] Launched impl_1...
+[Mon Nov 25 13:54:32 2024] Launched impl_1...
 Run output will be captured here: C:/Projects/ERN24004/Projects/ADC/ADC.runs/impl_1/runme.log
-launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:24 . Memory (MB): peak = 2267.203 ; gain = 235.820
-regenerate_bd_layout -routing
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 2465.219 ; gain = 299.234
 regenerate_bd_layout
-regenerate_bd_layout
-regenerate_bd_layout
-regenerate_bd_layout -routing

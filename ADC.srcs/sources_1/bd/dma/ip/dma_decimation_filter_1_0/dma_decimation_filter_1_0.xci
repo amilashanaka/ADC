@@ -4,19 +4,17 @@
     "xci_name": "dma_decimation_filter_1_0",
     "cell_name": "decimation_filter_1",
     "component_reference": "spicer.local:user:decimation_filter:1.0",
-    "ip_revision": "9",
+    "ip_revision": "11",
     "gen_directory": "../../../../../../ADC.gen/sources_1/bd/dma/ip/dma_decimation_filter_1_0",
     "parameters": {
       "component_parameters": {
-        "C_S_AXI_DATA_WIDTH": [ { "value": "32", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
-        "C_S_AXI_ADDR_WIDTH": [ { "value": "4", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
-        "C_S_AXI_BASEADDR": [ { "value": "0xFFFFFFFF", "resolve_type": "user", "format": "bitString", "enabled": false, "usage": "all" } ],
-        "C_S_AXI_HIGHADDR": [ { "value": "0x00000000", "resolve_type": "user", "format": "bitString", "enabled": false, "usage": "all" } ],
-        "Component_Name": [ { "value": "dma_decimation_filter_1_0", "resolve_type": "user", "usage": "all" } ]
+        "Component_Name": [ { "value": "dma_decimation_filter_1_0", "resolve_type": "user", "usage": "all" } ],
+        "DESIM": [ { "value": "10", "resolve_type": "user", "format": "long", "usage": "all" } ]
       },
       "model_parameters": {
         "C_S_AXI_DATA_WIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "C_S_AXI_ADDR_WIDTH": [ { "value": "4", "resolve_type": "generated", "format": "long", "usage": "all" } ]
+        "C_S_AXI_ADDR_WIDTH": [ { "value": "4", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "DESIM": [ { "value": "10", "resolve_type": "generated", "format": "long", "usage": "all" } ]
       },
       "project_parameters": {
         "ARCHITECTURE": [ { "value": "zynq" } ],
@@ -34,7 +32,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "9" } ],
+        "IPREVISION": [ { "value": "11" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../ADC.gen/sources_1/bd/dma/ip/dma_decimation_filter_1_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
@@ -82,21 +80,6 @@
           },
           "port_maps": {
             "CLK": [ { "physical_name": "clk" } ]
-          }
-        }
-      },
-      "memory_maps": {
-        "S_AXI": {
-          "address_blocks": {
-            "S_AXI_reg": {
-              "base_address": "0",
-              "range": "4096",
-              "usage": "register",
-              "parameters": {
-                "OFFSET_BASE_PARAM": [ { "value": "C_S_AXI_BASEADDR" } ],
-                "OFFSET_HIGH_PARAM": [ { "value": "C_S_AXI_HIGHADDR" } ]
-              }
-            }
           }
         }
       }

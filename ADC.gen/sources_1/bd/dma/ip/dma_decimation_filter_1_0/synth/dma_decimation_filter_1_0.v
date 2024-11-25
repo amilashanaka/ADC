@@ -48,7 +48,7 @@
 
 
 // IP VLNV: spicer.local:user:decimation_filter:1.0
-// IP Revision: 9
+// IP Revision: 11
 
 (* X_CORE_INFO = "decimation_filter,Vivado 2024.1.2" *)
 (* CHECK_LICENSE_TYPE = "dma_decimation_filter_1_0,decimation_filter,{}" *)
@@ -77,7 +77,8 @@ input wire en;
 
   decimation_filter #(
     .C_S_AXI_DATA_WIDTH(32),  // Width of S_AXI data bus
-    .C_S_AXI_ADDR_WIDTH(4)  // Width of S_AXI address bus
+    .C_S_AXI_ADDR_WIDTH(4),  // Width of S_AXI address bus
+    .DESIM(10)
   ) inst (
     .clk(clk),
     .reset_n(reset_n),

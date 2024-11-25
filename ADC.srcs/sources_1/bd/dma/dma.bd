@@ -43,7 +43,8 @@
       "decimation_filter_0": "",
       "data_anchor_0": "",
       "decimation_filter_1": "",
-      "filter_ctrl_0": ""
+      "filter_ctrl_0": "",
+      "xlconcat_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -511,6 +512,9 @@
           },
           "PCW_I2C_RESET_ENABLE": {
             "value": "0"
+          },
+          "PCW_IRQ_F2P_INTR": {
+            "value": "1"
           },
           "PCW_IRQ_F2P_MODE": {
             "value": "DIRECT"
@@ -1300,6 +1304,9 @@
           },
           "PCW_USE_CROSS_TRIGGER": {
             "value": "0"
+          },
+          "PCW_USE_FABRIC_INTERRUPT": {
+            "value": "1"
           },
           "PCW_USE_M_AXI_GP0": {
             "value": "1"
@@ -2837,7 +2844,7 @@
       },
       "decimation_filter_0": {
         "vlnv": "spicer.local:user:decimation_filter:1.0",
-        "ip_revision": "9",
+        "ip_revision": "11",
         "xci_name": "dma_decimation_filter_0_0",
         "xci_path": "ip\\dma_decimation_filter_0_0\\dma_decimation_filter_0_0.xci",
         "inst_hier_path": "decimation_filter_0"
@@ -2851,7 +2858,7 @@
       },
       "decimation_filter_1": {
         "vlnv": "spicer.local:user:decimation_filter:1.0",
-        "ip_revision": "9",
+        "ip_revision": "11",
         "xci_name": "dma_decimation_filter_1_0",
         "xci_path": "ip\\dma_decimation_filter_1_0\\dma_decimation_filter_1_0.xci",
         "inst_hier_path": "decimation_filter_1"
@@ -2862,6 +2869,13 @@
         "xci_name": "dma_filter_ctrl_0_2",
         "xci_path": "ip\\dma_filter_ctrl_0_2\\dma_filter_ctrl_0_2.xci",
         "inst_hier_path": "filter_ctrl_0"
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "ip_revision": "6",
+        "xci_name": "dma_xlconcat_0_0",
+        "xci_path": "ip\\dma_xlconcat_0_0\\dma_xlconcat_0_0.xci",
+        "inst_hier_path": "xlconcat_0"
       }
     },
     "interface_nets": {
@@ -2949,6 +2963,18 @@
         "ports": [
           "PmodAD1_0/dout_rdy",
           "decimation_filter_0/din_rdy"
+        ]
+      },
+      "axi_dma_0_mm2s_introut": {
+        "ports": [
+          "axi_dma_0/mm2s_introut",
+          "xlconcat_0/In0"
+        ]
+      },
+      "axi_dma_0_s2mm_introut": {
+        "ports": [
+          "axi_dma_0/s2mm_introut",
+          "xlconcat_0/In1"
         ]
       },
       "decimation_filter_0_data_out": {
@@ -3045,6 +3071,12 @@
           "filter_ctrl_0/s00_axi_aresetn",
           "decimation_filter_0/reset_n",
           "decimation_filter_1/reset_n"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "processing_system7_0/IRQ_F2P"
         ]
       }
     },

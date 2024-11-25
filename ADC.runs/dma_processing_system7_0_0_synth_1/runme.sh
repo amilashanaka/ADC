@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Projects/ERN24004/Projects/DMA/DMA.runs/dma_processing_system7_0_0_synth_1'
+HD_PWD='C:/Projects/ERN24004/Projects/ADC/ADC.runs/dma_processing_system7_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

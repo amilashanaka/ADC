@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
-| Date         : Thu Nov 14 15:02:59 2024
+| Date         : Mon Nov 25 13:45:34 2024
 | Host         : DonGun running 64-bit major release  (build 9200)
 | Command      : report_utilization -file dma_processing_system7_0_0_utilization_synth.rpt -pb dma_processing_system7_0_0_utilization_synth.pb
 | Design       : dma_processing_system7_0_0

@@ -57,4 +57,7 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_decimat
 # IP: bd/dma/ip/dma_filter_ctrl_0_2/dma_filter_ctrl_0_2.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_filter_ctrl_0_2 || ORIG_REF_NAME==dma_filter_ctrl_0_2} -quiet] -quiet
 
+# IP: bd/dma/ip/dma_xlconcat_0_0/dma_xlconcat_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_xlconcat_0_0 || ORIG_REF_NAME==dma_xlconcat_0_0} -quiet] -quiet
+
 # XDC: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/dma_ooc.xdc

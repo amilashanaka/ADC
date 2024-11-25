@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
-//Date        : Mon Nov 25 13:28:47 2024
+//Date        : Mon Nov 25 13:54:23 2024
 //Host        : DonGun running 64-bit major release  (build 9200)
 //Command     : generate_target dma.bd
 //Design      : dma
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "dma,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=dma,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=27,numReposBlks=15,numNonXlnxBlks=5,numHierBlks=12,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=15,da_clkrst_cnt=6,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "dma.hwdef" *) 
+(* CORE_GENERATION_INFO = "dma,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=dma,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=28,numReposBlks=16,numNonXlnxBlks=5,numHierBlks=12,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=15,da_clkrst_cnt=6,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "dma.hwdef" *) 
 module dma
    (DDR_addr,
     DDR_ba,
@@ -158,6 +158,8 @@ module dma
   wire axi_dma_0_M_AXI_S2MM_WREADY;
   wire [3:0]axi_dma_0_M_AXI_S2MM_WSTRB;
   wire axi_dma_0_M_AXI_S2MM_WVALID;
+  wire axi_dma_0_mm2s_introut;
+  wire axi_dma_0_s2mm_introut;
   wire [31:0]axi_mem_intercon_M00_AXI_ARADDR;
   wire [1:0]axi_mem_intercon_M00_AXI_ARBURST;
   wire [3:0]axi_mem_intercon_M00_AXI_ARCACHE;
@@ -346,6 +348,7 @@ module dma
   wire [3:0]ps7_0_axi_periph_M01_AXI_WSTRB;
   wire ps7_0_axi_periph_M01_AXI_WVALID;
   wire [0:0]rst_ps7_0_50M_peripheral_aresetn;
+  wire [1:0]xlconcat_0_dout;
 
   assign PmodAD1_0_Pmod_out_PIN10_I = ja_pin10_i;
   assign PmodAD1_0_Pmod_out_PIN1_I = ja_pin1_i;
@@ -434,6 +437,8 @@ module dma
         .m_axi_s2mm_wstrb(axi_dma_0_M_AXI_S2MM_WSTRB),
         .m_axi_s2mm_wvalid(axi_dma_0_M_AXI_S2MM_WVALID),
         .m_axis_mm2s_tready(1'b1),
+        .mm2s_introut(axi_dma_0_mm2s_introut),
+        .s2mm_introut(axi_dma_0_s2mm_introut),
         .s_axi_lite_aclk(processing_system7_0_FCLK_CLK0),
         .s_axi_lite_araddr(ps7_0_axi_periph_M00_AXI_ARADDR[9:0]),
         .s_axi_lite_arready(ps7_0_axi_periph_M00_AXI_ARREADY),
@@ -682,6 +687,7 @@ module dma
         .DDR_WEB(DDR_we_n),
         .FCLK_CLK0(processing_system7_0_FCLK_CLK0),
         .FCLK_RESET0_N(processing_system7_0_FCLK_RESET0_N),
+        .IRQ_F2P(xlconcat_0_dout),
         .MIO(FIXED_IO_mio[53:0]),
         .M_AXI_GP0_ACLK(processing_system7_0_FCLK_CLK0),
         .M_AXI_GP0_ARADDR(processing_system7_0_M_AXI_GP0_ARADDR),
@@ -917,6 +923,10 @@ module dma
         .mb_debug_sys_rst(1'b0),
         .peripheral_aresetn(rst_ps7_0_50M_peripheral_aresetn),
         .slowest_sync_clk(processing_system7_0_FCLK_CLK0));
+  dma_xlconcat_0_0 xlconcat_0
+       (.In0(axi_dma_0_mm2s_introut),
+        .In1(axi_dma_0_s2mm_introut),
+        .dout(xlconcat_0_dout));
 endmodule
 
 module dma_axi_mem_intercon_0

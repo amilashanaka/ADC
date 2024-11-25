@@ -8,12 +8,12 @@
   **** SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
   **** IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
   **** SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
-  **** Start of session at: Mon Nov 25 13:30:10 2024
+  **** Start of session at: Mon Nov 25 13:55:39 2024
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source dma_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 691.344 ; gain = 237.855
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 691.984 ; gain = 237.957
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0'. The path is contained within another repository.
 WARNING: [IP_Flow 19-2207] Repository 'c:/Projects/ERN24004/Projects/ADC/ip_repo/filter_ctrl/filter_ctrl_1_0' already exists; ignoring attempt to add it again.
@@ -34,223 +34,257 @@ Command: synth_design -top dma_wrapper -part xc7z007sclg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
-[libprotobuf ERROR C:\protobuf-3.21.12\protobuf\src\google\protobuf\wire_format_lite.cc:618] String field 'HDMetricDBGroup.name' contains invalid UTF-8 data when parsing a protocol buffer. Use the 'bytes' type if you intend to send raw bytes. 
 INFO: [Device 21-403] Loading part xc7z007sclg400-1
 INFO: [Device 21-9227] Part: xc7z007sclg400-1 does not have CEAM library.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 32476
+INFO: [Synth 8-7075] Helper process launched with PID 33752
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 1588.391 ; gain = 447.750
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1588.793 ; gain = 447.578
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'dma_wrapper' [C:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/hdl/dma_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'dma' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:13]
-INFO: [Synth 8-6157] synthesizing module 'dma_PmodAD1_0_1' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-31948-DonGun/realtime/dma_PmodAD1_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dma_PmodAD1_0_1' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-31948-DonGun/realtime/dma_PmodAD1_0_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'dma_axi_dma_0_1' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-31948-DonGun/realtime/dma_axi_dma_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dma_axi_dma_0_1' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-31948-DonGun/realtime/dma_axi_dma_0_1_stub.v:6]
-WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'dma_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:403]
-WARNING: [Synth 8-7071] port 'm_axis_mm2s_tdata' of module 'dma_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:403]
-WARNING: [Synth 8-7071] port 'm_axis_mm2s_tkeep' of module 'dma_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:403]
-WARNING: [Synth 8-7071] port 'm_axis_mm2s_tvalid' of module 'dma_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:403]
-WARNING: [Synth 8-7071] port 'm_axis_mm2s_tlast' of module 'dma_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:403]
-WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'dma_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:403]
-WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'dma_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:403]
-WARNING: [Synth 8-7071] port 's2mm_introut' of module 'dma_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:403]
-WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'dma_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:403]
-WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'dma_axi_dma_0_1' has 64 connections declared, but only 55 given [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:403]
-INFO: [Synth 8-6157] synthesizing module 'dma_axi_mem_intercon_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:922]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1EA4IN8' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:3038]
-INFO: [Synth 8-6157] synthesizing module 'dma_auto_pc_1' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-31948-DonGun/realtime/dma_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dma_auto_pc_1' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-31948-DonGun/realtime/dma_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1EA4IN8' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:3038]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_T14D7L' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:3443]
-INFO: [Synth 8-6157] synthesizing module 'dma_auto_pc_2' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-31948-DonGun/realtime/dma_auto_pc_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dma_auto_pc_2' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-31948-DonGun/realtime/dma_auto_pc_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_T14D7L' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:3443]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_7T634U' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4591]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_7T634U' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4591]
-INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1HQQ1GB' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4695]
-INFO: [Synth 8-6157] synthesizing module 'dma_auto_us_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-31948-DonGun/realtime/dma_auto_us_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dma_auto_us_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-31948-DonGun/realtime/dma_auto_us_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'dma_auto_us_0' is unconnected for instance 'auto_us' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4846]
-WARNING: [Synth 8-7023] instance 'auto_us' of module 'dma_auto_us_0' has 40 connections declared, but only 39 given [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4846]
-INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1HQQ1GB' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4695]
-INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_YJE1P1' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4888]
-INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_YJE1P1' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4888]
-INFO: [Synth 8-6157] synthesizing module 'dma_xbar_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-31948-DonGun/realtime/dma_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dma_xbar_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-31948-DonGun/realtime/dma_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dma_axi_mem_intercon_0' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:922]
-WARNING: [Synth 8-7071] port 'S02_AXI_arready' of module 'dma_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:459]
-WARNING: [Synth 8-7071] port 'S02_AXI_awready' of module 'dma_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:459]
-WARNING: [Synth 8-7071] port 'S02_AXI_bid' of module 'dma_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:459]
-WARNING: [Synth 8-7071] port 'S02_AXI_bresp' of module 'dma_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:459]
-WARNING: [Synth 8-7071] port 'S02_AXI_bvalid' of module 'dma_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:459]
-WARNING: [Synth 8-7071] port 'S02_AXI_rdata' of module 'dma_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:459]
-WARNING: [Synth 8-7071] port 'S02_AXI_rid' of module 'dma_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:459]
-WARNING: [Synth 8-7071] port 'S02_AXI_rlast' of module 'dma_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:459]
-WARNING: [Synth 8-7071] port 'S02_AXI_rresp' of module 'dma_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:459]
-WARNING: [Synth 8-7071] port 'S02_AXI_rvalid' of module 'dma_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:459]
-WARNING: [Synth 8-7071] port 'S02_AXI_wready' of module 'dma_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:459]
-WARNING: [Synth 8-7023] instance 'axi_mem_intercon' of module 'dma_axi_mem_intercon_0' has 154 connections declared, but only 143 given [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:459]
-INFO: [Synth 8-6157] synthesizing module 'dma_axis_data_fifo_0_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-31948-DonGun/realtime/dma_axis_data_fifo_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dma_axis_data_fifo_0_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-31948-DonGun/realtime/dma_axis_data_fifo_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axis_tstrb' of module 'dma_axis_data_fifo_0_0' is unconnected for instance 'axis_data_fifo_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:603]
-WARNING: [Synth 8-7023] instance 'axis_data_fifo_0' of module 'dma_axis_data_fifo_0_0' has 12 connections declared, but only 11 given [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:603]
-INFO: [Synth 8-6157] synthesizing module 'dma_data_anchor_0_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-31948-DonGun/realtime/dma_data_anchor_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dma_data_anchor_0_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-31948-DonGun/realtime/dma_data_anchor_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'dma_decimation_filter_0_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-31948-DonGun/realtime/dma_decimation_filter_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dma_decimation_filter_0_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-31948-DonGun/realtime/dma_decimation_filter_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'dma_decimation_filter_1_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-31948-DonGun/realtime/dma_decimation_filter_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dma_decimation_filter_1_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-31948-DonGun/realtime/dma_decimation_filter_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'dma_filter_ctrl_0_2' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-31948-DonGun/realtime/dma_filter_ctrl_0_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dma_filter_ctrl_0_2' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-31948-DonGun/realtime/dma_filter_ctrl_0_2_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'dma_processing_system7_0_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-31948-DonGun/realtime/dma_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dma_processing_system7_0_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-31948-DonGun/realtime/dma_processing_system7_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:665]
-WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:665]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:665]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:665]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:665]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:665]
-WARNING: [Synth 8-7071] port 'S_AXI_HP2_RCOUNT' of module 'dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:665]
-WARNING: [Synth 8-7071] port 'S_AXI_HP2_WCOUNT' of module 'dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:665]
-WARNING: [Synth 8-7071] port 'S_AXI_HP2_RACOUNT' of module 'dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:665]
-WARNING: [Synth 8-7071] port 'S_AXI_HP2_WACOUNT' of module 'dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:665]
-WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'dma_processing_system7_0_0' has 155 connections declared, but only 145 given [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:665]
-INFO: [Synth 8-6157] synthesizing module 'dma_ps7_0_axi_periph_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:2072]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_18ZVPSQ' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:2913]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_18ZVPSQ' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:2913]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_ZFY31B' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:3848]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_ZFY31B' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:3848]
-INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_1HYH0CX' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:3994]
-INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1HYH0CX' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:3994]
-INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_8UGEJ8' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4140]
-INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_8UGEJ8' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4140]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_345CV4' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4286]
-INFO: [Synth 8-6157] synthesizing module 'dma_auto_pc_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-31948-DonGun/realtime/dma_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dma_auto_pc_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-31948-DonGun/realtime/dma_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_345CV4' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4286]
-INFO: [Synth 8-6157] synthesizing module 'dma_xbar_1' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-31948-DonGun/realtime/dma_xbar_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dma_xbar_1' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-31948-DonGun/realtime/dma_xbar_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dma_ps7_0_axi_periph_0' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:2072]
-WARNING: [Synth 8-7071] port 'M02_AXI_araddr' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:811]
-WARNING: [Synth 8-7071] port 'M02_AXI_arprot' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:811]
-WARNING: [Synth 8-7071] port 'M02_AXI_arvalid' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:811]
-WARNING: [Synth 8-7071] port 'M02_AXI_awaddr' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:811]
-WARNING: [Synth 8-7071] port 'M02_AXI_awprot' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:811]
-WARNING: [Synth 8-7071] port 'M02_AXI_awvalid' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:811]
-WARNING: [Synth 8-7071] port 'M02_AXI_bready' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:811]
-WARNING: [Synth 8-7071] port 'M02_AXI_rready' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:811]
-WARNING: [Synth 8-7071] port 'M02_AXI_wdata' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:811]
-WARNING: [Synth 8-7071] port 'M02_AXI_wstrb' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:811]
-WARNING: [Synth 8-7071] port 'M02_AXI_wvalid' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:811]
-WARNING: [Synth 8-7071] port 'M03_AXI_araddr' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:811]
-WARNING: [Synth 8-7071] port 'M03_AXI_arprot' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:811]
-WARNING: [Synth 8-7071] port 'M03_AXI_arvalid' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:811]
-WARNING: [Synth 8-7071] port 'M03_AXI_awaddr' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:811]
-WARNING: [Synth 8-7071] port 'M03_AXI_awprot' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:811]
-WARNING: [Synth 8-7071] port 'M03_AXI_awvalid' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:811]
-WARNING: [Synth 8-7071] port 'M03_AXI_bready' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:811]
-WARNING: [Synth 8-7071] port 'M03_AXI_rready' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:811]
-WARNING: [Synth 8-7071] port 'M03_AXI_wdata' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:811]
-WARNING: [Synth 8-7071] port 'M03_AXI_wstrb' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:811]
-WARNING: [Synth 8-7071] port 'M03_AXI_wvalid' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:811]
-WARNING: [Synth 8-7023] instance 'ps7_0_axi_periph' of module 'dma_ps7_0_axi_periph_0' has 123 connections declared, but only 101 given [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:811]
-INFO: [Synth 8-6157] synthesizing module 'dma_rst_ps7_0_50M_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-31948-DonGun/realtime/dma_rst_ps7_0_50M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dma_rst_ps7_0_50M_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-31948-DonGun/realtime/dma_rst_ps7_0_50M_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'dma_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:913]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'dma_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:913]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'dma_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:913]
-WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'dma_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:913]
-WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'dma_rst_ps7_0_50M_0' has 10 connections declared, but only 6 given [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:913]
+INFO: [Synth 8-6157] synthesizing module 'dma_PmodAD1_0_1' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-37336-DonGun/realtime/dma_PmodAD1_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dma_PmodAD1_0_1' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-37336-DonGun/realtime/dma_PmodAD1_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dma_axi_dma_0_1' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-37336-DonGun/realtime/dma_axi_dma_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dma_axi_dma_0_1' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-37336-DonGun/realtime/dma_axi_dma_0_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'dma_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:406]
+WARNING: [Synth 8-7071] port 'm_axis_mm2s_tdata' of module 'dma_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:406]
+WARNING: [Synth 8-7071] port 'm_axis_mm2s_tkeep' of module 'dma_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:406]
+WARNING: [Synth 8-7071] port 'm_axis_mm2s_tvalid' of module 'dma_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:406]
+WARNING: [Synth 8-7071] port 'm_axis_mm2s_tlast' of module 'dma_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:406]
+WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'dma_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:406]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'dma_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:406]
+WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'dma_axi_dma_0_1' has 64 connections declared, but only 57 given [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:406]
+INFO: [Synth 8-6157] synthesizing module 'dma_axi_mem_intercon_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:932]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1EA4IN8' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:3048]
+INFO: [Synth 8-6157] synthesizing module 'dma_auto_pc_1' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-37336-DonGun/realtime/dma_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dma_auto_pc_1' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-37336-DonGun/realtime/dma_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1EA4IN8' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:3048]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_T14D7L' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:3453]
+INFO: [Synth 8-6157] synthesizing module 'dma_auto_pc_2' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-37336-DonGun/realtime/dma_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dma_auto_pc_2' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-37336-DonGun/realtime/dma_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_T14D7L' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:3453]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_7T634U' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4601]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_7T634U' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4601]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1HQQ1GB' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4705]
+INFO: [Synth 8-6157] synthesizing module 'dma_auto_us_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-37336-DonGun/realtime/dma_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dma_auto_us_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-37336-DonGun/realtime/dma_auto_us_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'dma_auto_us_0' is unconnected for instance 'auto_us' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4856]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'dma_auto_us_0' has 40 connections declared, but only 39 given [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4856]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1HQQ1GB' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4705]
+INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_YJE1P1' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4898]
+INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_YJE1P1' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4898]
+INFO: [Synth 8-6157] synthesizing module 'dma_xbar_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-37336-DonGun/realtime/dma_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dma_xbar_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-37336-DonGun/realtime/dma_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dma_axi_mem_intercon_0' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:932]
+WARNING: [Synth 8-7071] port 'S02_AXI_arready' of module 'dma_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:464]
+WARNING: [Synth 8-7071] port 'S02_AXI_awready' of module 'dma_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:464]
+WARNING: [Synth 8-7071] port 'S02_AXI_bid' of module 'dma_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:464]
+WARNING: [Synth 8-7071] port 'S02_AXI_bresp' of module 'dma_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:464]
+WARNING: [Synth 8-7071] port 'S02_AXI_bvalid' of module 'dma_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:464]
+WARNING: [Synth 8-7071] port 'S02_AXI_rdata' of module 'dma_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:464]
+WARNING: [Synth 8-7071] port 'S02_AXI_rid' of module 'dma_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:464]
+WARNING: [Synth 8-7071] port 'S02_AXI_rlast' of module 'dma_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:464]
+WARNING: [Synth 8-7071] port 'S02_AXI_rresp' of module 'dma_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:464]
+WARNING: [Synth 8-7071] port 'S02_AXI_rvalid' of module 'dma_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:464]
+WARNING: [Synth 8-7071] port 'S02_AXI_wready' of module 'dma_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:464]
+WARNING: [Synth 8-7023] instance 'axi_mem_intercon' of module 'dma_axi_mem_intercon_0' has 154 connections declared, but only 143 given [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:464]
+INFO: [Synth 8-6157] synthesizing module 'dma_axis_data_fifo_0_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-37336-DonGun/realtime/dma_axis_data_fifo_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dma_axis_data_fifo_0_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-37336-DonGun/realtime/dma_axis_data_fifo_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axis_tstrb' of module 'dma_axis_data_fifo_0_0' is unconnected for instance 'axis_data_fifo_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:608]
+WARNING: [Synth 8-7023] instance 'axis_data_fifo_0' of module 'dma_axis_data_fifo_0_0' has 12 connections declared, but only 11 given [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:608]
+INFO: [Synth 8-6157] synthesizing module 'dma_data_anchor_0_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-37336-DonGun/realtime/dma_data_anchor_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dma_data_anchor_0_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-37336-DonGun/realtime/dma_data_anchor_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dma_decimation_filter_0_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-37336-DonGun/realtime/dma_decimation_filter_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dma_decimation_filter_0_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-37336-DonGun/realtime/dma_decimation_filter_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dma_decimation_filter_1_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-37336-DonGun/realtime/dma_decimation_filter_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dma_decimation_filter_1_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-37336-DonGun/realtime/dma_decimation_filter_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dma_filter_ctrl_0_2' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-37336-DonGun/realtime/dma_filter_ctrl_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dma_filter_ctrl_0_2' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-37336-DonGun/realtime/dma_filter_ctrl_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dma_processing_system7_0_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-37336-DonGun/realtime/dma_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dma_processing_system7_0_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-37336-DonGun/realtime/dma_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:670]
+WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:670]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:670]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:670]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:670]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:670]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_RCOUNT' of module 'dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:670]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_WCOUNT' of module 'dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:670]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_RACOUNT' of module 'dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:670]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_WACOUNT' of module 'dma_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:670]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'dma_processing_system7_0_0' has 156 connections declared, but only 146 given [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:670]
+INFO: [Synth 8-6157] synthesizing module 'dma_ps7_0_axi_periph_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:2082]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_18ZVPSQ' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:2923]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_18ZVPSQ' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:2923]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_ZFY31B' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:3858]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_ZFY31B' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:3858]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_1HYH0CX' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4004]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1HYH0CX' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4004]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_8UGEJ8' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4150]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_8UGEJ8' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4150]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_345CV4' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4296]
+INFO: [Synth 8-6157] synthesizing module 'dma_auto_pc_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-37336-DonGun/realtime/dma_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dma_auto_pc_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-37336-DonGun/realtime/dma_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_345CV4' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:4296]
+INFO: [Synth 8-6157] synthesizing module 'dma_xbar_1' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-37336-DonGun/realtime/dma_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dma_xbar_1' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-37336-DonGun/realtime/dma_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dma_ps7_0_axi_periph_0' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:2082]
+WARNING: [Synth 8-7071] port 'M02_AXI_araddr' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:817]
+WARNING: [Synth 8-7071] port 'M02_AXI_arprot' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:817]
+WARNING: [Synth 8-7071] port 'M02_AXI_arvalid' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:817]
+WARNING: [Synth 8-7071] port 'M02_AXI_awaddr' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:817]
+WARNING: [Synth 8-7071] port 'M02_AXI_awprot' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:817]
+WARNING: [Synth 8-7071] port 'M02_AXI_awvalid' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:817]
+WARNING: [Synth 8-7071] port 'M02_AXI_bready' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:817]
+WARNING: [Synth 8-7071] port 'M02_AXI_rready' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:817]
+WARNING: [Synth 8-7071] port 'M02_AXI_wdata' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:817]
+WARNING: [Synth 8-7071] port 'M02_AXI_wstrb' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:817]
+WARNING: [Synth 8-7071] port 'M02_AXI_wvalid' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:817]
+WARNING: [Synth 8-7071] port 'M03_AXI_araddr' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:817]
+WARNING: [Synth 8-7071] port 'M03_AXI_arprot' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:817]
+WARNING: [Synth 8-7071] port 'M03_AXI_arvalid' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:817]
+WARNING: [Synth 8-7071] port 'M03_AXI_awaddr' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:817]
+WARNING: [Synth 8-7071] port 'M03_AXI_awprot' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:817]
+WARNING: [Synth 8-7071] port 'M03_AXI_awvalid' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:817]
+WARNING: [Synth 8-7071] port 'M03_AXI_bready' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:817]
+WARNING: [Synth 8-7071] port 'M03_AXI_rready' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:817]
+WARNING: [Synth 8-7071] port 'M03_AXI_wdata' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:817]
+WARNING: [Synth 8-7071] port 'M03_AXI_wstrb' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:817]
+WARNING: [Synth 8-7071] port 'M03_AXI_wvalid' of module 'dma_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:817]
+WARNING: [Synth 8-7023] instance 'ps7_0_axi_periph' of module 'dma_ps7_0_axi_periph_0' has 123 connections declared, but only 101 given [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:817]
+INFO: [Synth 8-6157] synthesizing module 'dma_rst_ps7_0_50M_0' [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-37336-DonGun/realtime/dma_rst_ps7_0_50M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dma_rst_ps7_0_50M_0' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/.Xil/Vivado-37336-DonGun/realtime/dma_rst_ps7_0_50M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'dma_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:919]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'dma_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:919]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'dma_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:919]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'dma_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:919]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'dma_rst_ps7_0_50M_0' has 10 connections declared, but only 6 given [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:919]
+INFO: [Synth 8-6157] synthesizing module 'dma_xlconcat_0_0' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_xlconcat_0_0/synth/dma_xlconcat_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_6_xlconcat' [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/6120/hdl/xlconcat_v2_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_6_xlconcat' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ipshared/6120/hdl/xlconcat_v2_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'dma_xlconcat_0_0' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_xlconcat_0_0/synth/dma_xlconcat_0_0.v:53]
 INFO: [Synth 8-6155] done synthesizing module 'dma' (0#1) [c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/synth/dma.v:13]
 INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:78209]
 INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:78209]
 INFO: [Synth 8-6155] done synthesizing module 'dma_wrapper' (0#1) [C:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/hdl/dma_wrapper.v:13]
-WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_345CV4 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_345CV4 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ACLK in module m03_couplers_imp_8UGEJ8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ARESETN in module m03_couplers_imp_8UGEJ8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ACLK in module m03_couplers_imp_8UGEJ8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ARESETN in module m03_couplers_imp_8UGEJ8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ACLK in module m02_couplers_imp_1HYH0CX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ARESETN in module m02_couplers_imp_1HYH0CX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ACLK in module m02_couplers_imp_1HYH0CX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ARESETN in module m02_couplers_imp_1HYH0CX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ACLK in module m01_couplers_imp_ZFY31B is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ARESETN in module m01_couplers_imp_ZFY31B is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ACLK in module m01_couplers_imp_ZFY31B is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ARESETN in module m01_couplers_imp_ZFY31B is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_18ZVPSQ is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_18ZVPSQ is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_18ZVPSQ is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_18ZVPSQ is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M00_ACLK in module dma_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M00_ARESETN in module dma_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_ACLK in module dma_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_ARESETN in module dma_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M02_ACLK in module dma_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M02_ARESETN in module dma_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M03_ACLK in module dma_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M03_ARESETN in module dma_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S00_ACLK in module dma_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S00_ARESETN in module dma_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ACLK in module s02_couplers_imp_YJE1P1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ARESETN in module s02_couplers_imp_YJE1P1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ACLK in module s02_couplers_imp_YJE1P1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ARESETN in module s02_couplers_imp_YJE1P1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ACLK in module s01_couplers_imp_1HQQ1GB is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ARESETN in module s01_couplers_imp_1HQQ1GB is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_7T634U is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_7T634U is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ACLK in module s00_couplers_imp_7T634U is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ARESETN in module s00_couplers_imp_7T634U is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ACLK in module m01_couplers_imp_T14D7L is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ARESETN in module m01_couplers_imp_T14D7L is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_AXI_bid[5] in module m01_couplers_imp_T14D7L is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_AXI_bid[4] in module m01_couplers_imp_T14D7L is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_AXI_bid[3] in module m01_couplers_imp_T14D7L is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_AXI_bid[2] in module m01_couplers_imp_T14D7L is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_AXI_rid[5] in module m01_couplers_imp_T14D7L is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_AXI_rid[4] in module m01_couplers_imp_T14D7L is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_AXI_rid[3] in module m01_couplers_imp_T14D7L is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_AXI_rid[2] in module m01_couplers_imp_T14D7L is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_1EA4IN8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_1EA4IN8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_AXI_bid[5] in module m00_couplers_imp_1EA4IN8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_AXI_bid[4] in module m00_couplers_imp_1EA4IN8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_AXI_bid[3] in module m00_couplers_imp_1EA4IN8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_AXI_bid[2] in module m00_couplers_imp_1EA4IN8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_AXI_rid[5] in module m00_couplers_imp_1EA4IN8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_AXI_rid[4] in module m00_couplers_imp_1EA4IN8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_AXI_rid[3] in module m00_couplers_imp_1EA4IN8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_AXI_rid[2] in module m00_couplers_imp_1EA4IN8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M00_ACLK in module dma_axi_mem_intercon_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M00_ARESETN in module dma_axi_mem_intercon_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_ACLK in module dma_axi_mem_intercon_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_ARESETN in module dma_axi_mem_intercon_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S00_ACLK in module dma_axi_mem_intercon_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S00_ARESETN in module dma_axi_mem_intercon_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S01_ACLK in module dma_axi_mem_intercon_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S01_ARESETN in module dma_axi_mem_intercon_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S02_ACLK in module dma_axi_mem_intercon_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S02_ARESETN in module dma_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In2[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In3[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In96[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In97[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In98[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In99[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1713.695 ; gain = 573.055
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1715.113 ; gain = 573.898
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1713.695 ; gain = 573.055
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1715.113 ; gain = 573.898
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1713.695 ; gain = 573.055
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1715.113 ; gain = 573.898
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1713.695 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1715.113 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -298,23 +332,23 @@ Parsing XDC File [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/dont_touch.
 Finished Parsing XDC File [C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1747.426 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1761.914 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 8 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 8 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1747.426 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1761.914 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1747.426 ; gain = 606.785
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1761.914 ; gain = 620.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z007sclg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1747.426 ; gain = 606.785
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1761.914 ; gain = 620.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -597,11 +631,12 @@ Applied set_property KEEP_HIERARCHY = SOFT for dma_i/decimation_filter_0. (const
 Applied set_property KEEP_HIERARCHY = SOFT for dma_i/data_anchor_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for dma_i/decimation_filter_1. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for dma_i/filter_ctrl_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dma_i/xlconcat_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1747.426 ; gain = 606.785
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1761.914 ; gain = 620.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1747.426 ; gain = 606.785
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1761.914 ; gain = 620.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -623,59 +658,26 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-7129] Port M00_ACLK in module dma_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M00_ARESETN in module dma_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_ACLK in module dma_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_ARESETN in module dma_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M02_ACLK in module dma_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M02_ARESETN in module dma_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M03_ACLK in module dma_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M03_ARESETN in module dma_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S00_ACLK in module dma_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S00_ARESETN in module dma_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M00_ACLK in module dma_axi_mem_intercon_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M00_ARESETN in module dma_axi_mem_intercon_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M00_AXI_bid[5] in module dma_axi_mem_intercon_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M00_AXI_bid[4] in module dma_axi_mem_intercon_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M00_AXI_bid[3] in module dma_axi_mem_intercon_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M00_AXI_bid[2] in module dma_axi_mem_intercon_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M00_AXI_rid[5] in module dma_axi_mem_intercon_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M00_AXI_rid[4] in module dma_axi_mem_intercon_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M00_AXI_rid[3] in module dma_axi_mem_intercon_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M00_AXI_rid[2] in module dma_axi_mem_intercon_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_ACLK in module dma_axi_mem_intercon_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_ARESETN in module dma_axi_mem_intercon_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_bid[5] in module dma_axi_mem_intercon_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_bid[4] in module dma_axi_mem_intercon_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_bid[3] in module dma_axi_mem_intercon_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_bid[2] in module dma_axi_mem_intercon_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_rid[5] in module dma_axi_mem_intercon_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_rid[4] in module dma_axi_mem_intercon_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_rid[3] in module dma_axi_mem_intercon_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_rid[2] in module dma_axi_mem_intercon_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S00_ACLK in module dma_axi_mem_intercon_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S00_ARESETN in module dma_axi_mem_intercon_0 is either unconnected or has no load
-INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1747.426 ; gain = 606.785
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1761.914 ; gain = 620.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1747.426 ; gain = 606.785
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1761.914 ; gain = 620.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1747.426 ; gain = 606.785
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1761.914 ; gain = 620.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1747.426 ; gain = 606.785
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1761.914 ; gain = 620.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -693,37 +695,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 1747.426 ; gain = 606.785
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1761.914 ; gain = 620.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 1747.426 ; gain = 606.785
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1761.914 ; gain = 620.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 1747.426 ; gain = 606.785
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1761.914 ; gain = 620.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 1747.426 ; gain = 606.785
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1761.914 ; gain = 620.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 1747.426 ; gain = 606.785
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1761.914 ; gain = 620.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 1747.426 ; gain = 606.785
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1761.914 ; gain = 620.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -769,28 +771,28 @@ Report Cell Usage:
 |16    |IOBUF                    |     8|
 +------+-------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 1747.426 ; gain = 606.785
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1761.914 ; gain = 620.699
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 37 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 1747.426 ; gain = 573.055
-Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 1747.426 ; gain = 606.785
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1761.914 ; gain = 573.898
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1761.914 ; gain = 620.699
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1747.426 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1761.914 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1747.426 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1761.914 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 8 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 8 instances
 
-Synth Design complete | Checksum: ca478161
+Synth Design complete | Checksum: 46684644
 INFO: [Common 17-83] Releasing license: Synthesis
-88 Infos, 179 Warnings, 0 Critical Warnings and 0 Errors encountered.
+92 Infos, 177 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1747.426 ; gain = 1004.090
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1747.426 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 1761.914 ; gain = 1017.754
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1761.914 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Projects/ERN24004/Projects/ADC/ADC.runs/synth_1/dma_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file dma_wrapper_utilization_synth.rpt -pb dma_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Nov 25 13:30:55 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 25 13:56:18 2024...

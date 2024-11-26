@@ -135,3 +135,5 @@ report_ip_status -name ip_status
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 4
 wait_on_run impl_1
+write_bd_tcl -force C:/Projects/ERN24004/Projects/ADC/pynq/dma.tcl
+file copy -force C:/Projects/ERN24004/Projects/ADC/ADC.runs/impl_1/dma_wrapper.bit C:/Projects/ERN24004/Projects/ADC/pynq/dma.bit

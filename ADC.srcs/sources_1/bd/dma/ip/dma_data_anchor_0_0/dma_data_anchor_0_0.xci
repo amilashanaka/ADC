@@ -4,7 +4,7 @@
     "xci_name": "dma_data_anchor_0_0",
     "cell_name": "data_anchor_0",
     "component_reference": "spicer.local:user:data_anchor:1.0",
-    "ip_revision": "5",
+    "ip_revision": "6",
     "gen_directory": "../../../../../../ADC.gen/sources_1/bd/dma/ip/dma_data_anchor_0_0",
     "parameters": {
       "component_parameters": {
@@ -38,7 +38,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "5" } ],
+        "IPREVISION": [ { "value": "6" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../ADC.gen/sources_1/bd/dma/ip/dma_data_anchor_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

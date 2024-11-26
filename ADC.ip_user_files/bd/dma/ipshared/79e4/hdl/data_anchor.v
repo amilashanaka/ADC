@@ -11,10 +11,6 @@ module data_anchor #(
     parameter integer C_M_AXIS_TDATA_WIDTH = 32,
     parameter integer C_M_AXIS_START_COUNT = 32
 ) (
-    // Users to add ports here
-
-    // User ports ends
-    // Do not modify the ports beyond this line
 
 
     // Ports of Axi Master Bus Interface M_AXIS
@@ -43,8 +39,8 @@ module data_anchor #(
   reg tlast;
   wire [31:0] ad1_data;
   reg [31:0] ad1_data_r;
-  wire drdy;
-
+  
+  
   localparam IDLE = 2'b00;
   localparam BUFFERING = 2'b01;
   localparam STREAMING = 2'b10;
@@ -72,7 +68,7 @@ module data_anchor #(
         end
 
         BUFFERING: begin
-          if (drdy == 1) begin
+          if (chan1_rdy == 1) begin
             if (adc_loop == ADC_MAX_COUNT) begin
 
               buffer[sample_count] <= ad1_data;

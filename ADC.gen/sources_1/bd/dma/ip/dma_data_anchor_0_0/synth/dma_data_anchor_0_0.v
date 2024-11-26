@@ -48,7 +48,7 @@
 
 
 // IP VLNV: spicer.local:user:data_anchor:1.0
-// IP Revision: 5
+// IP Revision: 6
 
 (* X_CORE_INFO = "data_anchor,Vivado 2024.1.2" *)
 (* CHECK_LICENSE_TYPE = "dma_data_anchor_0_0,data_anchor,{}" *)

@@ -2851,7 +2851,7 @@
       },
       "data_anchor_0": {
         "vlnv": "spicer.local:user:data_anchor:1.0",
-        "ip_revision": "5",
+        "ip_revision": "6",
         "xci_name": "dma_data_anchor_0_0",
         "xci_path": "ip\\dma_data_anchor_0_0\\dma_data_anchor_0_0.xci",
         "inst_hier_path": "data_anchor_0"

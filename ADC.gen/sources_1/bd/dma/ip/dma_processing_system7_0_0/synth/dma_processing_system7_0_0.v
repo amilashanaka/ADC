@@ -190,7 +190,6 @@ module dma_processing_system7_0_0 (
   S_AXI_HP2_WID,
   S_AXI_HP2_WDATA,
   S_AXI_HP2_WSTRB,
-  IRQ_F2P,
   FCLK_CLK0,
   FCLK_RESET0_N,
   MIO,
@@ -489,9 +488,6 @@ input wire [63 : 0] S_AXI_HP2_WDATA;
 M_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP2 WSTRB" *)
 input wire [7 : 0] S_AXI_HP2_WSTRB;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME IRQ_F2P, SENSITIVITY LEVEL_HIGH:LEVEL_HIGH, PortWidth 2" *)
-(* X_INTERFACE_INFO = "xilinx.com:signal:interrupt:1.0 IRQ_F2P INTERRUPT" *)
-input wire [1 : 0] IRQ_F2P;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME FCLK_CLK0, FREQ_HZ 50000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN dma_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 FCLK_CLK0 CLK" *)
 output wire FCLK_CLK0;
@@ -1175,7 +1171,7 @@ inout wire PS_PORB;
     .IRQ_P2F_SPI1(),
     .IRQ_P2F_UART1(),
     .IRQ_P2F_CAN1(),
-    .IRQ_F2P(IRQ_F2P),
+    .IRQ_F2P(2'B0),
     .Core0_nFIQ(1'B0),
     .Core0_nIRQ(1'B0),
     .Core1_nFIQ(1'B0),

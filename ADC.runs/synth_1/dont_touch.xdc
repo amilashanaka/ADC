@@ -33,6 +33,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_axis_da
 # IP: bd/dma/ip/dma_PmodAD1_0_1/dma_PmodAD1_0_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_PmodAD1_0_1 || ORIG_REF_NAME==dma_PmodAD1_0_1} -quiet] -quiet
 
+# IP: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_PmodAD1_0_1/src/pmod_bridge_0/pmod_bridge_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==pmod_bridge_0 || ORIG_REF_NAME==pmod_bridge_0} -quiet] -quiet
+
 # IP: bd/dma/ip/dma_decimation_filter_0_0/dma_decimation_filter_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_decimation_filter_0_0 || ORIG_REF_NAME==dma_decimation_filter_0_0} -quiet] -quiet
 
@@ -41,9 +44,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_data_an
 
 # IP: bd/dma/ip/dma_decimation_filter_1_0/dma_decimation_filter_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_decimation_filter_1_0 || ORIG_REF_NAME==dma_decimation_filter_1_0} -quiet] -quiet
-
-# IP: bd/dma/ip/dma_xlconcat_0_0/dma_xlconcat_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_xlconcat_0_0 || ORIG_REF_NAME==dma_xlconcat_0_0} -quiet] -quiet
 
 # IP: bd/dma/ip/dma_filter_ctrl_0_3/dma_filter_ctrl_0_3.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_filter_ctrl_0_3 || ORIG_REF_NAME==dma_filter_ctrl_0_3} -quiet] -quiet
@@ -59,5 +59,39 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_auto_pc
 
 # IP: bd/dma/ip/dma_auto_pc_2/dma_auto_pc_2.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_auto_pc_2 || ORIG_REF_NAME==dma_auto_pc_2} -quiet] -quiet
+
+# XDC: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_processing_system7_0_0/dma_processing_system7_0_0.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==dma_processing_system7_0_0 || ORIG_REF_NAME==dma_processing_system7_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_rst_ps7_0_50M_0/dma_rst_ps7_0_50M_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==dma_rst_ps7_0_50M_0 || ORIG_REF_NAME==dma_rst_ps7_0_50M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_rst_ps7_0_50M_0/dma_rst_ps7_0_50M_0.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==dma_rst_ps7_0_50M_0 || ORIG_REF_NAME==dma_rst_ps7_0_50M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_axi_dma_0_1/dma_axi_dma_0_1.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==dma_axi_dma_0_1 || ORIG_REF_NAME==dma_axi_dma_0_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_axi_dma_0_1/dma_axi_dma_0_1_clocks.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==dma_axi_dma_0_1 || ORIG_REF_NAME==dma_axi_dma_0_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_PmodAD1_0_1/src/pmod_bridge_0/pmod_bridge_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==pmod_bridge_0 || ORIG_REF_NAME==pmod_bridge_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_PmodAD1_0_1/src/pmod_bridge_0/src/pmod_concat_ooc.xdc
+
+# XDC: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_PmodAD1_0_1/dma_PmodAD1_0_1_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==dma_PmodAD1_0_1 || ORIG_REF_NAME==dma_PmodAD1_0_1} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_0/dma_auto_pc_0_ooc.xdc
+
+# XDC: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_us_0/dma_auto_us_0_clocks.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==dma_auto_us_0 || ORIG_REF_NAME==dma_auto_us_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_us_0/dma_auto_us_0_ooc.xdc
+
+# XDC: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_1/dma_auto_pc_1_ooc.xdc
+
+# XDC: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/ip/dma_auto_pc_2/dma_auto_pc_2_ooc.xdc
 
 # XDC: c:/Projects/ERN24004/Projects/ADC/ADC.gen/sources_1/bd/dma/dma_ooc.xdc

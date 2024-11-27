@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "dma_axi_dma_0_1",
-    "cell_name": "axi_dma_0",
+    "cell_name": "axi_dma",
     "component_reference": "xilinx.com:ip:axi_dma:7.1",
     "ip_revision": "33",
     "gen_directory": "../../../../../../ADC.gen/sources_1/bd/dma/ip/dma_axi_dma_0_1",
@@ -91,7 +91,7 @@
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
         "SWVERSION": [ { "value": "2024.1.2" } ],
-        "SYNTHESISFLOW": [ { "value": "OUT_OF_CONTEXT" } ]
+        "SYNTHESISFLOW": [ { "value": "GLOBAL" } ]
       }
     },
     "boundary": {

@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
-//Date        : Mon Nov 25 16:56:31 2024
+//Date        : Tue Nov 26 09:22:33 2024
 //Host        : DonGun running 64-bit major release  (build 9200)
 //Command     : generate_target dma.bd
 //Design      : dma
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "dma,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=dma,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=28,numReposBlks=16,numNonXlnxBlks=5,numHierBlks=12,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=16,da_clkrst_cnt=6,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "dma.hwdef" *) 
+(* CORE_GENERATION_INFO = "dma,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=dma,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=28,numReposBlks=16,numNonXlnxBlks=5,numHierBlks=12,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=16,da_clkrst_cnt=6,da_ps7_cnt=1,synth_mode=None}" *) (* HW_HANDOFF = "dma.hwdef" *) 
 module dma
    (DDR_addr,
     DDR_ba,

@@ -6,7 +6,7 @@
       "gen_directory": "../../../../ADC.gen/sources_1/bd/dma",
       "name": "dma",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
-      "synth_flow_mode": "Hierarchical",
+      "synth_flow_mode": "None",
       "tool_version": "2024.1.2",
       "validated": "true"
     },
@@ -37,13 +37,12 @@
           "auto_pc": ""
         }
       },
-      "axi_dma_0": "",
+      "axi_dma": "",
       "axis_data_fifo_0": "",
       "PmodAD1_0": "",
       "decimation_filter_0": "",
       "data_anchor_0": "",
       "decimation_filter_1": "",
-      "xlconcat_0": "",
       "filter_ctrl_0": ""
     },
     "interface_ports": {
@@ -512,9 +511,6 @@
           },
           "PCW_I2C_RESET_ENABLE": {
             "value": "0"
-          },
-          "PCW_IRQ_F2P_INTR": {
-            "value": "1"
           },
           "PCW_IRQ_F2P_MODE": {
             "value": "DIRECT"
@@ -1306,7 +1302,7 @@
             "value": "0"
           },
           "PCW_USE_FABRIC_INTERRUPT": {
-            "value": "1"
+            "value": "0"
           },
           "PCW_USE_M_AXI_GP0": {
             "value": "1"
@@ -2749,12 +2745,12 @@
           }
         }
       },
-      "axi_dma_0": {
+      "axi_dma": {
         "vlnv": "xilinx.com:ip:axi_dma:7.1",
         "ip_revision": "33",
         "xci_name": "dma_axi_dma_0_1",
         "xci_path": "ip\\dma_axi_dma_0_1\\dma_axi_dma_0_1.xci",
-        "inst_hier_path": "axi_dma_0",
+        "inst_hier_path": "axi_dma",
         "parameters": {
           "c_include_sg": {
             "value": "0"
@@ -2863,13 +2859,6 @@
         "xci_path": "ip\\dma_decimation_filter_1_0\\dma_decimation_filter_1_0.xci",
         "inst_hier_path": "decimation_filter_1"
       },
-      "xlconcat_0": {
-        "vlnv": "xilinx.com:ip:xlconcat:2.1",
-        "ip_revision": "6",
-        "xci_name": "dma_xlconcat_0_0",
-        "xci_path": "ip\\dma_xlconcat_0_0\\dma_xlconcat_0_0.xci",
-        "inst_hier_path": "xlconcat_0"
-      },
       "filter_ctrl_0": {
         "vlnv": "spicer.local:user:filter_ctrl:1.0",
         "ip_revision": "3",
@@ -2887,13 +2876,13 @@
       },
       "axi_dma_0_M_AXI_MM2S": {
         "interface_ports": [
-          "axi_dma_0/M_AXI_MM2S",
+          "axi_dma/M_AXI_MM2S",
           "axi_mem_intercon/S00_AXI"
         ]
       },
       "axi_dma_0_M_AXI_S2MM": {
         "interface_ports": [
-          "axi_dma_0/M_AXI_S2MM",
+          "axi_dma/M_AXI_S2MM",
           "axi_mem_intercon/S01_AXI"
         ]
       },
@@ -2912,7 +2901,7 @@
       "axis_data_fifo_0_M_AXIS": {
         "interface_ports": [
           "axis_data_fifo_0/M_AXIS",
-          "axi_dma_0/S_AXIS_S2MM"
+          "axi_dma/S_AXIS_S2MM"
         ]
       },
       "data_anchor_0_M_AXIS": {
@@ -2942,7 +2931,7 @@
       "ps7_0_axi_periph_M00_AXI": {
         "interface_ports": [
           "ps7_0_axi_periph/M00_AXI",
-          "axi_dma_0/S_AXI_LITE"
+          "axi_dma/S_AXI_LITE"
         ]
       },
       "ps7_0_axi_periph_M01_AXI": {
@@ -2963,18 +2952,6 @@
         "ports": [
           "PmodAD1_0/dout_rdy",
           "decimation_filter_0/din_rdy"
-        ]
-      },
-      "axi_dma_0_mm2s_introut": {
-        "ports": [
-          "axi_dma_0/mm2s_introut",
-          "xlconcat_0/In0"
-        ]
-      },
-      "axi_dma_0_s2mm_introut": {
-        "ports": [
-          "axi_dma_0/s2mm_introut",
-          "xlconcat_0/In1"
         ]
       },
       "decimation_filter_0_data_out": {
@@ -3029,9 +3006,9 @@
           "axi_mem_intercon/M01_ACLK",
           "axi_mem_intercon/S01_ACLK",
           "axi_mem_intercon/S02_ACLK",
-          "axi_dma_0/m_axi_mm2s_aclk",
-          "axi_dma_0/m_axi_s2mm_aclk",
-          "axi_dma_0/s_axi_lite_aclk",
+          "axi_dma/m_axi_mm2s_aclk",
+          "axi_dma/m_axi_s2mm_aclk",
+          "axi_dma/s_axi_lite_aclk",
           "axis_data_fifo_0/s_axis_aclk",
           "PmodAD1_0/clk",
           "ps7_0_axi_periph/M01_ACLK",
@@ -3061,7 +3038,7 @@
           "axi_mem_intercon/M01_ARESETN",
           "axi_mem_intercon/S01_ARESETN",
           "axi_mem_intercon/S02_ARESETN",
-          "axi_dma_0/axi_resetn",
+          "axi_dma/axi_resetn",
           "axis_data_fifo_0/s_axis_aresetn",
           "PmodAD1_0/reset_n",
           "ps7_0_axi_periph/M01_ARESETN",
@@ -3072,12 +3049,6 @@
           "filter_ctrl_0/s_axi_aresetn",
           "data_anchor_0/m_axis_aresetn"
         ]
-      },
-      "xlconcat_0_dout": {
-        "ports": [
-          "xlconcat_0/dout",
-          "processing_system7_0/IRQ_F2P"
-        ]
       }
     },
     "addressing": {
@@ -3086,7 +3057,7 @@
           "Data": {
             "segments": {
               "SEG_axi_dma_0_Reg": {
-                "address_block": "/axi_dma_0/S_AXI_LITE/Reg",
+                "address_block": "/axi_dma/S_AXI_LITE/Reg",
                 "offset": "0x40400000",
                 "range": "64K"
               },
@@ -3101,7 +3072,7 @@
           }
         }
       },
-      "/axi_dma_0": {
+      "/axi_dma": {
         "address_spaces": {
           "Data_MM2S": {
             "segments": {

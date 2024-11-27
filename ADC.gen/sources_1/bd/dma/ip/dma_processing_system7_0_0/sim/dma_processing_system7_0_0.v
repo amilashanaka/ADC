@@ -188,7 +188,6 @@ S_AXI_HP2_AWID,
 S_AXI_HP2_WID, 
 S_AXI_HP2_WDATA, 
 S_AXI_HP2_WSTRB, 
-IRQ_F2P, 
 FCLK_CLK0, 
 FCLK_RESET0_N, 
 MIO, 
@@ -345,7 +344,6 @@ input [5 : 0] S_AXI_HP2_AWID;
 input [5 : 0] S_AXI_HP2_WID;
 input [63 : 0] S_AXI_HP2_WDATA;
 input [7 : 0] S_AXI_HP2_WSTRB;
-input [1 : 0] IRQ_F2P;
 output FCLK_CLK0;
 output FCLK_RESET0_N;
 input [53 : 0] MIO;
